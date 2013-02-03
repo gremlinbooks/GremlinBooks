@@ -1,14 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>GremlinBooks</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <meta charset="utf-8">
+  <title>Gremlin Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A calm, blue sky.">
+  <meta name="author" content="Thomas Park">
 
-<%= yield %>
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <%= stylesheet_link_tag "bootstrap" %>
+  <%= stylesheet_link_tag "bootstrap-responsive.min" %>
+  <%= stylesheet_link_tag "bootswatch" %>
+
+  <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function () {
+          var ga = document.createElement('script');
+          ga.type = 'text/javascript';
+          ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
+      })();
+
+  </script>
+</head>
+
+<body class="preview" data-spy="scroll" data-target=".subnav" data-offset="80">
+<%= javascript_include_tag "bsa" %>
+
+<%= render 'layouts/main_navbar' %>
+
+<div class="container">
+  <%= yield %>
+  <br><br><br><br>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<%= javascript_include_tag "bootstrap.min" %>
+<%= javascript_include_tag "app" %>
+<%= javascript_include_tag "bootswatch" %>
 
 </body>
+
+<!-- Footer -->
+<%=  render 'layouts/footer' %>
 </html>
