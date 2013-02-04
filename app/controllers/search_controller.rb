@@ -1,6 +1,7 @@
 class SearchController < ApplicationController
 
-  def show
+
+  def index
     require 'amazon/ecs'
 
     Amazon::Ecs.options = {
@@ -10,10 +11,6 @@ class SearchController < ApplicationController
     }
 
     @res = Amazon::Ecs.item_lookup(params[:search], :id_type => 'ISBN', :search_index => 'Books')
-  end
-
-  def index
-
 
 
   end

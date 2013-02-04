@@ -1,7 +1,35 @@
-
-
 <div style="text-align: center">
-  <%= form_tag :controller => "search", :action => "show" do %>
+  <%= form_tag search_index_path, :method => "get" do %>
+
       <%= search_field_tag :search, params[:search], :placeholder => "Search ISBN", :results => 0 %>
+      <%= button_tag "Search", :type => 'submit', class: "btn btn-primary" %>
+
   <% end %>
 </div>
+
+<% if !params[:search].nil? %>
+    <table class="table table-bordered table-striped table-hover">
+      <% if @res.items.count > 0 %>
+          <% @res.items.each do |item| %>
+
+              <% item_attributes = item.get_element('ItemAttributes') %>
+              <% title = item_attributes.get('Title') %>
+              <% author = item_attributes.get('Author') %>
+              <% link = item.get('DetailPageURL') %>
+              <% product_group = item_attributes.get('ProductGroup') %>
+              <tr>
+
+                <td><%= title %></td>
+                <td><%= author %></td>
+                <td><%= product_group %></td>
+                <td><%= link_to "Buy", link %></td>
+              </tr>
+
+          <% end %>
+      <% else %>
+          <tr>
+            <td>No results to display for <%= params[:search] %></td>
+          </tr>
+      <% end %>
+    </table>
+<% end %>

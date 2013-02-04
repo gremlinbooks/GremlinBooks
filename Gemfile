@@ -9,6 +9,7 @@ gem 'pg'
 gem 'amazon-ecs'
 gem 'thin'
 gem 'newrelic_rpm'
+gem 'devise'
 
 # Gems used only for assets and not required
 # in production environments by default.

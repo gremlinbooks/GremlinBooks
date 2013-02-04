@@ -2760,10 +2760,12 @@ input[type="button"].btn-block {
 .btn {
     border-color: #c5c5c5;
     border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
 }
 .btn-primary {
     color: #ffffff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
     background-color: #0f82f5;
     background-image: -moz-linear-gradient(top, #1a8cff, #0072e6);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1a8cff), to(#0072e6));
