@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_message_bar.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_message_bar.html.erb" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,6 +25,8 @@
     <file path="/edit.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1360018268718" ignored="false" />
     <file path="/devise.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1360021932107" ignored="false" />
     <file path="/development.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1360025222205" ignored="false" />
+    <file path="$PROJECT_DIR$/../musicmanager/app/views/layouts/_message_bar.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1360034105389" ignored="false" />
+    <file path="$PROJECT_DIR$/../musicmanager/app/views/layouts/application.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1360034206100" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,28 +43,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <file leaf-file-name="_main_navbar.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_navbar.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="23" selection-start="1376" selection-end="1726" vertical-scroll-proportion="0.0">
+            <state line="25" column="104" selection-start="990" selection-end="1011" vertical-scroll-proportion="-16.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="87" selection-start="2668" selection-end="2668" vertical-scroll-proportion="0.66386557">
+            <state line="55" column="12" selection-start="1576" selection-end="1623" vertical-scroll-proportion="0.8239645">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <file leaf-file-name="temp.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/temp.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+            <state line="851" column="30" selection-start="30743" selection-end="30759" vertical-scroll-proportion="-19.6">
               <folding />
             </state>
           </provider>
@@ -92,7 +93,6 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_message_bar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_main_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -103,6 +103,7 @@
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_message_bar.html.erb" />
       </list>
     </option>
   </component>
@@ -841,20 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="2" selection-start="1566" selection-end="1566" vertical-scroll-proportion="1.112426">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/temp.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="830" column="29" selection-start="30000" selection-end="30011" vertical-scroll-proportion="0.37869823">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="40" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.81277215">
@@ -869,30 +856,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_navbar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="104" selection-start="990" selection-end="1011" vertical-scroll-proportion="0.5805515">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3259" column="70" selection-start="0" selection-end="138835" vertical-scroll-proportion="0.023703704">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_message_bar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="20" selection-start="236" selection-end="236" vertical-scroll-proportion="0.2322206">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="23" selection-start="1376" selection-end="1726" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -904,16 +870,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+        <state line="69" column="87" selection-start="2668" selection-end="2668" vertical-scroll-proportion="1.5462185">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="87" selection-start="2668" selection-end="2668" vertical-scroll-proportion="0.66386557">
+        <state line="40" column="23" selection-start="1376" selection-end="1726" vertical-scroll-proportion="0.7086835">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.13445379">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/temp.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="851" column="30" selection-start="30743" selection-end="30759" vertical-scroll-proportion="-19.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_message_bar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="16" selection-start="0" selection-end="246" vertical-scroll-proportion="0.069666184">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_navbar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="104" selection-start="990" selection-end="1011" vertical-scroll-proportion="-16.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="12" selection-start="1576" selection-end="1623" vertical-scroll-proportion="0.8239645">
           <folding />
         </state>
       </provider>
