@@ -35,15 +35,12 @@ GremlinBooks::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
-  config.action_mailer.default_url_options = { :host => 'smtp.gmail.com' }
-
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      address:              'smtp.gmail.com',
+      address:              'smtp.mandrillapp.com',
       port:                 587,
-      domain:               'conclusivelabs.com',
-      user_name:            'david',
-      password:             'Paige111',
+      user_name:            'djarmoluk@gmail.com',
+      password:             'QlPMhk_bxK54ScHt6sguJw',
       authentication:       'plain',
       enable_starttls_auto: true  }
 
