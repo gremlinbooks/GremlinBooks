@@ -1,7 +1,11 @@
 <% if !notice.nil? %>
-<p class="notice"><%= notice %></p>
+    <div class="container">
+      <p class="notice"><%= notice %></p>
+    </div>
 <% end %>
 
 <% if !alert.nil? %>
-<p class="alert"><%= alert %></p>
+    <div class="container">
+      <p class="alert alert-block "><%= alert %></p>
+    </div>
 <% end %>

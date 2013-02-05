@@ -64,4 +64,17 @@ GremlinBooks::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  config.action_mailer.default_url_options = { :host => 'smtp.gmail.com' }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      address:              'smtp.gmail.com',
+      port:                 587,
+      domain:               'conclusivelabs.com',
+      user_name:            'david',
+      password:             'Paige111',
+      authentication:       'plain',
+      enable_starttls_auto: true  }
+
 end

@@ -9,6 +9,7 @@
         <span class="icon-bar"></span>
       </a>
       <a class="brand" href="../">Gremlin Books</a>
+
       <div class="nav-collapse" id="main-menu">
         <ul class="nav" id="main-menu-left">
           <li><%= link_to "Home", root_path %></li>
@@ -16,16 +17,16 @@
 
         </ul>
         <div class="nav pull-right" id="main-menu-right">
-          <div style="color:white" id="user_nav">
 
-              <% if user_signed_in? %>
-                  <%= current_user.email %> |
-                  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-              <% else %>
-                  <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
-              <% end %>
 
-          </div>
+          <% if user_signed_in? %>
+              <%= current_user.email %> |
+              <%= link_to "Sign out", destroy_user_session_path, :method => "delete" %>
+          <% else %>
+              <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+          <% end %>
+
+
         </div>
       </div>
     </div>
