@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="GremlinBooks.iws" />
@@ -54,7 +54,16 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="35" selection-start="2832" selection-end="2832" vertical-scroll-proportion="0.79831934">
+            <state line="69" column="87" selection-start="2668" selection-end="2668" vertical-scroll-proportion="0.66386557">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,7 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/newrelic.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/search/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -93,6 +101,7 @@
         <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
@@ -797,13 +806,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="11" selection-start="57" selection-end="57" vertical-scroll-proportion="0.022408964">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/book/search.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -835,13 +837,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="5" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="49" selection-start="3958" selection-end="3958" vertical-scroll-proportion="0.8023599">
           <folding />
         </state>
       </provider>
@@ -902,9 +897,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="218" column="35" selection-start="10669" selection-end="10669" vertical-scroll-proportion="0.54350924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="35" selection-start="2832" selection-end="2832" vertical-scroll-proportion="0.79831934">
+        <state line="69" column="87" selection-start="2668" selection-end="2668" vertical-scroll-proportion="0.66386557">
           <folding />
         </state>
       </provider>
