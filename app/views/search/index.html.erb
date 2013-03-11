@@ -7,29 +7,8 @@
   <% end %>
 </div>
 
-<% if !params[:search].nil? %>
-    <table class="table table-bordered table-striped table-hover">
-      <% if @res.items.count > 0 %>
-          <% @res.items.each do |item| %>
+<%= @res %>
 
-              <% item_attributes = item.get_element('ItemAttributes') %>
-              <% title = item_attributes.get('Title') %>
-              <% author = item_attributes.get('Author') %>
-              <% link = item.get('DetailPageURL') %>
-              <% product_group = item_attributes.get('ProductGroup') %>
-              <tr>
 
-                <td><%= title %></td>
-                <td><%= author %></td>
-                <td><%= product_group %></td>
-                <td><%= link_to "Buy", link %></td>
-              </tr>
 
-          <% end %>
-      <% else %>
-          <tr>
-            <td>No results to display for <%= params[:search] %></td>
-          </tr>
-      <% end %>
-    </table>
-<% end %>
+

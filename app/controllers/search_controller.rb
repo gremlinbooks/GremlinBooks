@@ -3,17 +3,15 @@ class SearchController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    require 'amazon/ecs'
+    require 'vendor_search.rb'
+    require 'amazon.rb'
 
-    Amazon::Ecs.options = {
-        :associate_tag => 'concllabs-20',
-        :AWS_access_key_id => '0C0D1DMW0V4ZH49EZHR2',
-        :AWS_secret_key => 'trNYD6Ky2UzMtjI0y0zMPq3ke24LQbrVCMYQ/DBf'
-    }
+    #log the search
+    SearchLog.create(:search_term => params[:search], :user => current_user)
 
-    @res = Amazon::Ecs.item_lookup(params[:search], :id_type => 'ISBN', :search_index => 'Books')
-
-
+    # TODO: Need to conduct multiple searches here in parallel
+    vendor = VendorSearch.new &AMAZON_SEARCH
+    @res = vendor.getAPISearchResults(params[:search], current_user)
   end
 
 end
