@@ -1695,6 +1695,10 @@ table {
 .table tbody + tbody {
     border-top: 2px solid #dddddd;
 }
+
+
+
+
 .table .table {
     background-color: #ffffff;
 }
@@ -1890,6 +1894,31 @@ table th[class*="span"],
 .table-hover tbody tr.info:hover td {
     background-color: #8d46b0;
 }
+
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+}
+
+th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+
 [class^="icon-"],
 [class*=" icon-"] {
     display: inline-block;
@@ -5639,3 +5668,7 @@ a.thumbnail:hover {
     bottom:0;
     background:#ffffff;
 }
+
+
+
+

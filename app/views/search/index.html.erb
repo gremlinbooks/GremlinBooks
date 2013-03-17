@@ -7,8 +7,59 @@
   <% end %>
 </div>
 
-<%= @res %>
+<% if !params[:search].nil? %>
 
+    <div class="container">
+      <article>
+        <table class="table table-bordered">
+          <th colspan="2" style="background-color: ghostwhite">Book Information</th>
+          <tr>
+            <td><img src="<%= @book_info[0][:image_link] %>"/></td>
 
+            <td>
+              <table>
+                <tr>
+                  <td>Title</td>
+                  <td><%= @book_info[0][:title] %></td>
+                </tr>
+                <tr>
+                  <td>Author</td>
+                  <td><%= @book_info[0][:author] %></td>
+                </tr>
+                <tr>
+                  <td>ISBN</td>
+                  <td><%= @book_info[0][:search] %></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </article>
+    </div>
 
+    <br>
+
+    <table class="table table-bordered table-striped table-hover">
+      <th colspan="4" style="background-color: ghostwhite">Book Offers</th>
+      <% if @book_results.count > 0 %>
+          <% @book_results.each do |item| %>
+              <tr>
+                <td><%= item[:vendor] %></td>
+                <% if item[:rent] %>
+                    <td><%= link_to "Rent", item[:rent_link] %></td>
+                <% else %>
+                    <td><%= link_to "Buy", item[:buy_link] %></td>
+                <% end %>
+                <td><%= link_to "Add to Cart", item[:buy_link] %></td>
+                <td><%= item[:price] %></td>
+              </tr>
+          <% end %>
+      <% else %>
+          <tr>
+            <td>No results to display for <%= params[:search] %></td>
+          </tr>
+      <% end %>
+    </table>
+
+<% end %>
 

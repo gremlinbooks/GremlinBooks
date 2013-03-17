@@ -6,12 +6,14 @@ class SearchController < ApplicationController
     require 'vendor_search.rb'
     require 'amazon.rb'
 
-    #log the search
-    SearchLog.create(:search_term => params[:search], :user => current_user)
+    if !params[:search].nil?
+      book_info = BookInfo.new()
+      vendor = VendorSearch.new()
 
-    # TODO: Need to conduct multiple searches here in parallel
-    vendor = VendorSearch.new &AMAZON_SEARCH
-    @res = vendor.getAPISearchResults(params[:search], current_user)
+      @book_info = book_info.GetBookInfo(params[:search], current_user)
+      @book_results = vendor.GetAllResults(params[:search], current_user)
+    end
+
   end
 
 end
