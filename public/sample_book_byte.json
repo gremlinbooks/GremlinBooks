@@ -1,0 +1,47 @@
+{"Ack"=>"SUCCESS",
+"InventoryInfo"=>
+    {"ISBN_10"=>"1430218339",
+    "Bookbyte_Offers"=>
+        {"Price_30_day"=>nil,
+        "IsGBBAvailable"=>false,
+        "Best_Used"=>
+            {"SKU"=>nil,
+            "Shipping"=>nil,
+            "Cart_URL"=>nil,
+            "Description"=>nil,
+            "Price"=>nil,
+            "IsOfferAvailable"=>false},
+         "Price_60_day"=>nil,
+         "Best_New"=>
+             {"SKU"=>"66480832",
+             "Shipping"=>"3.65",
+             "Cart_URL"=>"http://gan.doubleclick.net/gan_click?lid=41000000035598650&pubid=K620292&adurl=http%3a%2f%2fwww.bookbyte.com%2fcart.aspx%3ffunc%3dadd%26sku%3d66480832%26noredirect%3dtrue",
+             "Description"=>nil,
+             "Price"=>"34.99",
+             "IsOfferAvailable"=>true},
+         "Price_90_day"=>nil,
+         "Price_150_day"=>nil
+         },
+    "ISBN_13"=>"9781430218333",
+            "Marketplace_Offers"=>
+                {"Best_New"=>
+                    {"SKU"=>"76626361",
+                    "Shipping"=>"3.65",
+                    "Cart_URL"=>"http://gan.doubleclick.net/gan_click?lid=41000000035598650&pubid=K620292&adurl=http%3a%2f%2fwww.bookbyte.com%2fcart.aspx%3ffunc%3dadd%26sku%3d76626361%26noredirect%3dtrue",
+                    "SellerName"=>"FastMedia",
+                    "Description"=>"Buy with confidence. Excellent Customer Service & Return policy. New",
+                    "Price"=>"31.63",
+                    "IsOfferAvailable"=>true},
+                "Best_Used"=>
+                    {"SKU"=>nil,
+                    "Shipping"=>nil,
+                    "Cart_URL"=>nil,
+                    "SellerName"=>nil,
+                    "Description"=>nil,
+                    "Price"=>nil,
+                    "IsOfferAvailable"=>false}
+            },
+"Product_Detail_URL"=>"http://gan.doubleclick.net/gan_click?lid=41000000035598236&pubid=K620292&adurl=http%3a%2f%2fwww.bookbyte.com%2fproduct.aspx%3fisbn%3d9781430218333%26noredirect%3dtrue"
+},
+
+"Errors"=>"NONE"}

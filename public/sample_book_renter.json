@@ -1,0 +1,22 @@
+{"response"=>
+{"book"=>
+{"info"=>
+    {"isbn13"=>"9781430218333",
+    "isbn10"=>"1430218339",
+    "title"=>"Pro Git (Expert's Voice in Software Development)",
+    "authors"=>["Scott Chacon"],
+    "book_binding"=>"Paperback",
+    "publisher"=>"Apress",
+    "publication_date"=>"2009-08-27",
+    "retail_price"=>"$34.99",
+    "number_of_pages"=>"288",
+    "description"=>"Git is the version control system developed by Linus Torvalds for Linux kernel development. It took the open source world by storm since its inception in 2005, and is used by small development shops and giants like Google, Red Hat, and IBM, and of course many open source projects. A book by Git experts to turn you into a Git expert Introduces the world of distributed version control Shows how to build a Git development workflow What you’ll learn Use Git as a programmer or a project leader Become a fluent Git user Use distributed features of Git to the full Acquire the ability to insert Git in the development workflow Migrate programming projects from other SCMs to Git Learn how to extend Git Who this book is for This book is for all open source developers: you are bound to encounter Git somewhere in the course of your working life. Proprietary software developers will appreciate Git’s enormous scalability, since it is used for the Linux project, which comprises thousands of developers and testers. Table of Contents Getting Started Git Basics Git Branching Git on the Server Distributed Git Git Tools Customizing Git Git and Other Systems Git Internals ",
+    "description_formatted"=>"<p>Git is the version control system developed by Linus Torvalds for Linux kernel development. It took the open source world by storm since its inception in 2005, and is used by small development shops and giants like Google, Red Hat, and IBM, and of course many open source projects.</p> <ul> <li>A book by Git experts to turn you into a Git expert </li> <li>Introduces the world of distributed version control </li> <li>Shows how to build a Git development workflow </li> </ul> <h3>What you’ll learn</h3><ul> <li>Use Git as a programmer or a project leader</li> <li>Become a fluent Git user</li> <li>Use distributed features of Git to the full</li> <li>Acquire the ability to insert Git in the development workflow</li> <li>Migrate programming projects from other SCMs to Git</li> <li>Learn how to extend Git</li> </ul> <h3>Who this book is for</h3> <p> This book is for all open source developers: you are bound to encounter Git somewhere in the course of your working life. Proprietary software developers will appreciate Git’s enormous scalability, since it is used for the Linux project, which comprises thousands of developers and testers. </p> <h3>Table of Contents</h3><ol> <li>Getting Started </li> <li>Git Basics </li> <li>Git Branching </li> <li>Git on the Server </li> <li>Distributed Git </li> <li>Git Tools </li> <li>Customizing Git </li> <li>Git and Other Systems </li> <li>Git Internals </li> </ol>",
+    "edition"=>"1"},
+"lowest_shipping_price"=>"$0.00",
+"availability"=>"In Stock",
+"book_url"=>"http://www.bookrenter.com/api/product/pro-git-expert-s-voice-in-software-development-chacon-1430218339-9781430218333?developer_key=FqRlncrCJCxKKaRwQaphKGKiH4mNWwdf",
+"book_image_https"=>"https://images.bookrenter.com/images/I/51QmI82PSNL._SL160_.jpg",
+"book_image_http"=>"http://images.bookrenter.com/images/I/51QmI82PSNL._SL160_.jpg",
+"add_to_cart_url"=>"http://www.bookrenter.com/api/add_to_cart?developer_key=FqRlncrCJCxKKaRwQaphKGKiH4mNWwdf&items[][isbn]=9781430218333&items[][rental_period]=RENTAL_PERIOD",
+"shareasale_url"=>"http://www.shareasale.com/r.cfm?u=&b=96706&m=14293&urllink=www.bookrenter.com%2Fpro-git-expert-s-voice-in-software-development-chacon-1430218339-9781430218333"}}}

@@ -28,7 +28,7 @@
                 </tr>
                 <tr>
                   <td>ISBN</td>
-                  <td><%= @book_info[0][:search] %></td>
+                  <td><%= params[:search] %></td>
                 </tr>
               </table>
             </td>
@@ -40,18 +40,35 @@
     <br>
 
     <table class="table table-bordered table-striped table-hover">
-      <th colspan="4" style="background-color: ghostwhite">Book Offers</th>
+      <th colspan="6" style="background-color: ghostwhite">Book Offers</th>
+      <tr style="background-color: lightgrey; font-weight: bold">
+        <td>Vendor</td>
+        <td>Condition</td>
+        <td>Price</td>
+        <td>Shipping</td>
+        <td>Total Cost</td>
+        <td>Rent/Buy</td>
+        <% if Rails.env.development? %>
+            <td>Raw Results</td>
+        <% end %>
+      </tr>
       <% if @book_results.count > 0 %>
           <% @book_results.each do |item| %>
               <tr>
                 <td><%= item[:vendor] %></td>
+                <td><%= item[:condition] %></td>
+                <td><%= number_to_currency(item[:price]) %></td>
+                <td><%= number_to_currency(item[:shipping]) %></td>
+                <td><%= number_to_currency(item[:total_cost]) %></td>
+
                 <% if item[:rent] %>
                     <td><%= link_to "Rent", item[:rent_link] %></td>
                 <% else %>
                     <td><%= link_to "Buy", item[:buy_link] %></td>
                 <% end %>
-                <td><%= link_to "Add to Cart", item[:buy_link] %></td>
-                <td><%= item[:price] %></td>
+                <% if Rails.env.development? %>
+                    <td><%= item[:results_string] %></td>
+                <% end %>
               </tr>
           <% end %>
       <% else %>

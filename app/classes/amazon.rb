@@ -32,16 +32,19 @@ AMAZON_SEARCH = lambda do |context|
           result = {vendor: "Amazon",
                     author: item_attributes.get('Author'),
                     title: item_attributes.get('Title'),
-                    price: offers.get('Offer/OfferListing/Price/FormattedPrice'),
+                    price: offers.get('Offer/OfferListing/Price/Amount').to_f / 100,
                     cart: true,
                     buy: true,
                     rent: false,
                     cart_link: "cart_link",
                     buy_link: item.get('DetailPageURL'),
-                    condition: "condition",
+                    condition: offers.get('Offer/OfferListing/Price/Condition'),
                     image_link: item.get('SmallImage/URL'),
                     rent_link: "",
+                    shipping: "",
+                    total_cost: offers.get('Offer/OfferListing/Price/Amount').to_f / 100,
                     results_string: item.to_s.to_json
+
           }
 
           results << result
