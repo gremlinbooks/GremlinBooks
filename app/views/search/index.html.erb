@@ -62,9 +62,9 @@
                 <td><%= number_to_currency(item[:total_cost]) %></td>
 
                 <% if item[:rent] %>
-                    <td><%= link_to "Rent", item[:rent_link] %></td>
+                    <td><%= link_to "Rent", item[:rent_link], :target => "_new" %></td>
                 <% else %>
-                    <td><%= link_to "Buy", item[:buy_link] %></td>
+                    <td><%= link_to "Buy", item[:buy_link], :target => "_new" %></td>
                 <% end %>
                 <% if Rails.env.development? %>
                     <td><%= item[:results_string] %></td>
