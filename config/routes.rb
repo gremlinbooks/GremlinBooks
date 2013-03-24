@@ -8,6 +8,8 @@ GremlinBooks::Application.routes.draw do
 
   get "pages/index"
 
+  get "pages/mission"
+
   devise_for :users
 
   resources :search, :only => [:index]
