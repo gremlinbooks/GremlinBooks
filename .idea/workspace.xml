@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/amazon.rb" afterPath="$PROJECT_DIR$/app/classes/amazon.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/book_info.rb" afterPath="$PROJECT_DIR$/app/classes/book_info.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/book_renter.rb" afterPath="$PROJECT_DIR$/app/classes/book_renter.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/index.html.erb" afterPath="$PROJECT_DIR$/app/views/search/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/search_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/search_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -193,12 +187,12 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="13" selection-start="800" selection-end="800" vertical-scroll-proportion="0.3059322">
+            <state line="21" column="18" selection-start="800" selection-end="800" vertical-scroll-proportion="0.2898305">
               <folding>
                 <element signature="e#5#31#0" expanded="true" />
-                <element signature="e#1183#1219#0" expanded="true" />
-                <element signature="e#2315#2351#0" expanded="true" />
-                <element signature="e#2391#2445#0" expanded="true" />
+                <element signature="e#1342#1378#0" expanded="true" />
+                <element signature="e#2420#2456#0" expanded="true" />
+                <element signature="e#2494#2548#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1056,12 +1050,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="800" selection-end="800" vertical-scroll-proportion="0.3059322">
+        <state line="21" column="18" selection-start="800" selection-end="800" vertical-scroll-proportion="0.2898305">
           <folding>
             <element signature="e#5#31#0" expanded="true" />
-            <element signature="e#1183#1219#0" expanded="true" />
-            <element signature="e#2315#2351#0" expanded="true" />
-            <element signature="e#2391#2445#0" expanded="true" />
+            <element signature="e#1342#1378#0" expanded="true" />
+            <element signature="e#2420#2456#0" expanded="true" />
+            <element signature="e#2494#2548#0" expanded="true" />
           </folding>
         </state>
       </provider>
