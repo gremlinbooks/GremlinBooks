@@ -1,82 +1,109 @@
 <div style="text-align: center">
   <%= form_tag search_index_path, :method => "get" do %>
-
       <%= search_field_tag :search, params[:search], :placeholder => "Search ISBN", :results => 0 %>
       <%= button_tag "Search", :type => 'submit', class: "btn btn-primary" %>
-
   <% end %>
 </div>
 
 <% if !params[:search].nil? %>
 
-    <div class="container">
-      <article>
-        <table class="table table-bordered">
-          <th colspan="2" style="background-color: ghostwhite">Book Information</th>
-          <tr>
-            <td><img src="<%= @book_info[0][:image_link] %>"/></td>
 
-            <td>
-              <table>
-                <tr>
-                  <td>Title</td>
-                  <td><%= @book_info[0][:title] %></td>
-                </tr>
-                <tr>
-                  <td>Author</td>
-                  <td><%= @book_info[0][:author] %></td>
-                </tr>
-                <tr>
-                  <td>ISBN</td>
-                  <td><%= params[:search] %></td>
-                </tr>
-              </table>
-            </td>
+    <% if @search_results.count > 0 %>
+
+        <!-- TABS -->
+        <ul class="nav nav-tabs">
+          <% @search_results.each do |key, search_result| %>
+              <% if @search_results.keys[0] == key %>
+                  <li class="active"><a href="#tab<%= key %>" data-toggle="tab"><%= key %></a></li>
+              <% else %>
+                  <li><a href="#tab<%= key %>" data-toggle="tab"><%= key %></a></li>
+              <% end %>
+          <% end %>
+        </ul>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content">
+          <% @search_results.each do |key, search_result| %>
+              <!-- DETAILS -->
+              <div class="tab-pane active" id="tab<%= key %>">
+                <div class="container">
+                  <article>
+                    <table class="table table-bordered">
+                      <th colspan="2" style="background-color: ghostwhite">Book Information</th>
+                      <tr>
+                        <td>
+                          <img src="<%= search_result[0][0][:image_link] %>"/>
+                        </td>
+                        <td>
+                          <table>
+                            <tr>
+                              <td>Title</td>
+                              <td><%= search_result[0][0][:title] %></td>
+                            </tr>
+                            <tr>
+                              <td>Author</td>
+                              <td><%= search_result[0][0][:author] %></td>
+                            </tr>
+                            <tr>
+                              <td>ISBN</td>
+                              <td><%= key %></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </article>
+                </div>
+
+                <br>
+
+                <table class="table table-bordered table-striped table-hover">
+                  <th colspan="6" style="background-color: ghostwhite">Book Offers</th>
+                  <tr style="background-color: lightgrey; font-weight: bold">
+                    <td>Vendor</td>
+                    <td>Condition</td>
+                    <td>Price</td>
+                    <td>Shipping</td>
+                    <td>Total Cost</td>
+                    <td>Rent/Buy</td>
+                    <% if Rails.env.development? %>
+                        <td>Raw Results</td>
+                    <% end %>
+                  </tr>
+                  <% if search_result[1].count > 0 %>
+                      <% search_result[1].each do |item| %>
+                          <tr>
+                            <td><%= item[:vendor] %></td>
+                            <td><%= item[:condition] %></td>
+                            <td><%= number_to_currency(item[:price]) %></td>
+                            <td><%= number_to_currency(item[:shipping]) %></td>
+                            <td><%= number_to_currency(item[:total_cost]) %></td>
+
+                            <% if item[:rent] %>
+                                <td><%= link_to "Rent", item[:rent_link], :target => "_new" %></td>
+                            <% else %>
+                                <td><%= link_to "Buy", item[:buy_link], :target => "_new" %></td>
+                            <% end %>
+                            <% if Rails.env.development? %>
+                                <td><%= item[:results_string] %></td>
+                            <% end %>
+                          </tr>
+                      <% end %>
+                  <% else %>
+                      <tr>
+                        <td>No results to display for <%= key %></td>
+                      </tr>
+                  <% end %>
+                </table>
+              </div>
+          <% end %>
+        </div>
+    <% else %>
+        <table>
+          <tr>
+            <td>No results to display for <%= params[:search] %>.</td>
           </tr>
         </table>
-      </article>
-    </div>
-
-    <br>
-
-    <table class="table table-bordered table-striped table-hover">
-      <th colspan="6" style="background-color: ghostwhite">Book Offers</th>
-      <tr style="background-color: lightgrey; font-weight: bold">
-        <td>Vendor</td>
-        <td>Condition</td>
-        <td>Price</td>
-        <td>Shipping</td>
-        <td>Total Cost</td>
-        <td>Rent/Buy</td>
-        <% if Rails.env.development? %>
-            <td>Raw Results</td>
-        <% end %>
-      </tr>
-      <% if @book_results.count > 0 %>
-          <% @book_results.each do |item| %>
-              <tr>
-                <td><%= item[:vendor] %></td>
-                <td><%= item[:condition] %></td>
-                <td><%= number_to_currency(item[:price]) %></td>
-                <td><%= number_to_currency(item[:shipping]) %></td>
-                <td><%= number_to_currency(item[:total_cost]) %></td>
-
-                <% if item[:rent] %>
-                    <td><%= link_to "Rent", item[:rent_link], :target => "_new" %></td>
-                <% else %>
-                    <td><%= link_to "Buy", item[:buy_link], :target => "_new" %></td>
-                <% end %>
-                <% if Rails.env.development? %>
-                    <td><%= item[:results_string] %></td>
-                <% end %>
-              </tr>
-          <% end %>
-      <% else %>
-          <tr>
-            <td>No results to display for <%= params[:search] %></td>
-          </tr>
-      <% end %>
-    </table>
+    <% end %>
 
 <% end %>
-

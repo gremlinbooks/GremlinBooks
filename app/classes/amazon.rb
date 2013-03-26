@@ -30,8 +30,6 @@ AMAZON_SEARCH = lambda do |context|
         if !item_attributes.nil?
 
           result = {vendor: "Amazon",
-                    author: item_attributes.get('Author'),
-                    title: item_attributes.get('Title'),
                     price: offers.get('Offer/OfferListing/Price/Amount').to_f / 100,
                     cart: true,
                     buy: true,
@@ -39,7 +37,6 @@ AMAZON_SEARCH = lambda do |context|
                     cart_link: "cart_link",
                     buy_link: item.get('DetailPageURL'),
                     condition: offers.get('Offer/OfferListing/Price/Condition'),
-                    image_link: item.get('SmallImage/URL'),
                     rent_link: "",
                     shipping: "",
                     total_cost: offers.get('Offer/OfferListing/Price/Amount').to_f / 100,

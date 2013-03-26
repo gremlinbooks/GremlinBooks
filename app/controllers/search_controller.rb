@@ -7,13 +7,32 @@ class SearchController < ApplicationController
     require 'amazon.rb'
 
     if !params[:search].nil?
-      book_info = BookInfo.new()
-      vendor = VendorSearch.new()
+      #split search if more than one ISBN supplied
+      isbns = params[:search].split(',')
+      results = Hash.new
 
-      @book_info = book_info.GetBookInfo(params[:search], current_user)
-      @book_results = vendor.GetAllResults(params[:search], current_user)
+      isbns.each do |isbn|
+        book_info = BookInfo.new()
+        vendor = VendorSearch.new()
+        result = Array.new
+
+        result << book_info.GetBookInfo(isbn.strip, current_user)
+        result << vendor.GetAllResults(isbn.strip, current_user)
+        results[isbn.strip] = result
+      end
+
+      @search_results = results
+    end
+
+    respond_to do |format|
+      format.html
+      format.js do
+        render :json => @search_results.to_json
+      end
     end
 
   end
+
+
 
 end

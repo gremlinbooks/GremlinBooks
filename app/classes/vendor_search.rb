@@ -46,8 +46,6 @@ class VendorSearch
     chegg_response = ActiveSupport::JSON.decode(chegg_request.response.body)
 
     chegg_result = {vendor: "Chegg",
-                    author: "Author",
-                    title: chegg_response["Data"]["Items"][0]["BookInfo"]["Title"],
                     price: "10.00",
                     cart: false,
                     buy: false,
@@ -55,7 +53,6 @@ class VendorSearch
                     cart_link: "cart_link",
                     buy_link: "Buy Link",
                     condition: "condition",
-                    image_link: "",
                     rent_link: "rent link",
                     shipping: "",
                     results_string: chegg_response
@@ -92,8 +89,6 @@ class VendorSearch
     #best used
     if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["IsOfferAvailable"]
       results << {vendor: "Book Byte",
-                  author: "Author",
-                  title: "title",
                   price: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Price"],
                   cart: true,
                   buy: true,
@@ -101,7 +96,6 @@ class VendorSearch
                   cart_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Cart_URL"],
                   buy_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Cart_URL"],
                   condition: "Used",
-                  image_link: "",
                   rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"].to_f,
@@ -112,8 +106,6 @@ class VendorSearch
     #best new
     if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["IsOfferAvailable"]
       results << {vendor: "Book Byte",
-                  author: "Author",
-                  title: "title",
                   price: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Price"],
                   cart: true,
                   buy: true,
@@ -121,7 +113,6 @@ class VendorSearch
                   cart_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Cart_URL"],
                   buy_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Cart_URL"],
                   condition: "New",
-                  image_link: "",
                   rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"].to_f,
@@ -134,8 +125,6 @@ class VendorSearch
     #marketplace new
     if book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["IsOfferAvailable"]
       results << {vendor: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["SellerName"],
-                  author: "Author",
-                  title: "title",
                   price: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Price"],
                   cart: true,
                   buy: true,
@@ -143,7 +132,6 @@ class VendorSearch
                   cart_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Cart_URL"],
                   buy_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Cart_URL"],
                   condition: "New",
-                  image_link: "",
                   rent_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"].to_f,
@@ -154,8 +142,6 @@ class VendorSearch
     #marketplace used
     if book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["IsOfferAvailable"]
       results << {vendor: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["SellerName"],
-                  author: "Author",
-                  title: "title",
                   price: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"],
                   cart: true,
                   buy: true,
@@ -163,7 +149,6 @@ class VendorSearch
                   cart_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Cart_URL"],
                   buy_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Cart_URL"],
                   condition: "Used",
-                  image_link: "",
                   rent_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"].to_f,
@@ -199,8 +184,6 @@ class VendorSearch
     book_renter_response = ActiveSupport::JSON.decode(book_renter_request.response.body)
 
     results << {vendor: "Book Renter",
-                author: "Author",
-                title: "title",
                 price: book_renter_response["response"]["book"]["info"]["retail_price"].to_f,
                 cart: true,
                 buy: false,
@@ -208,7 +191,6 @@ class VendorSearch
                 cart_link: book_renter_response["response"]["book"]["add_to_cart_url"],
                 buy_link: "",
                 condition: "Used",
-                image_link: "",
                 rent_link: book_renter_response["response"]["book"]["add_to_cart_url"],
                 shipping: "0",
                 total_cost: book_renter_response["response"]["book"]["info"]["retail_price"].to_f + 0,

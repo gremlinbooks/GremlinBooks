@@ -14,15 +14,12 @@ BOOKRENTER_SEARCH = lambda do | context |
   results = Array.new
 
   result = { vendor: "Amazon",
-             author: "author",
-             title: "title",
              price: "price",
              cart: true,
              buy: true,
              cart_link: "cart_link",
              buy_link: "buy link",
              condition: "condition",
-             image_link: "item url",
              results_string: @res }
 
 

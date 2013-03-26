@@ -31,12 +31,11 @@ class BookInfo
 
         if !item_attributes.nil?
 
-          result = {vendor: "Amazon",
-                    author: item_attributes.get('Author'),
+          result = {author: item_attributes.get('Author'),
                     title: item_attributes.get('Title'),
                     # retail_price: offers.get('Offer/OfferListing/RetailPrice/FormattedPrice'),
                     image_link: item.get('MediumImage/URL'),
-                    results_string: item.to_s.to_json}
+                    description: ""}
 
           results << result
 
