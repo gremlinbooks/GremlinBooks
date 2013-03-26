@@ -98,7 +98,7 @@ class VendorSearch
                   condition: "Used",
                   rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"],
-                  total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"].to_f,
+                  total_cost: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Price"].to_f,
                   results_string: book_byte_response
       }
     end
@@ -115,7 +115,7 @@ class VendorSearch
                   condition: "New",
                   rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"],
-                  total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"].to_f,
+                  total_cost: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Price"].to_f,
                   results_string: book_byte_response
       }
     end
@@ -134,7 +134,7 @@ class VendorSearch
                   condition: "New",
                   rent_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"],
-                  total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"].to_f,
+                  total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Price"].to_f,
                   results_string: book_byte_response
       }
     end
