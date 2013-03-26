@@ -35,22 +35,38 @@
                   <table class="table table-bordered">
                     <th colspan="2" style="background-color: ghostwhite">Book Information</th>
                     <tr>
-                      <td>
-                        <img src="<%= search_result[0][0][:image_link] %>"/>
+                      <td style="width: 20%; text-align: center">
+                        <img src="<%= search_result[0][:image_link] %>"/>
                       </td>
-                      <td>
+                      <td style="width: 80%">
                         <table>
                           <tr>
                             <td>Title</td>
-                            <td><%= search_result[0][0][:title] %></td>
+                            <td><%= search_result[0][:title] %></td>
                           </tr>
                           <tr>
                             <td>Author</td>
-                            <td><%= search_result[0][0][:author] %></td>
+                            <td><%= search_result[0][:author].to_sentence %></td>
                           </tr>
                           <tr>
                             <td>ISBN</td>
                             <td><%= key %></td>
+                          </tr>
+                          <tr>
+                            <td>Description</td>
+                            <td><%= search_result[0][:description] %></td>
+                          </tr>
+                          <tr>
+                            <td>Publisher</td>
+                            <td><%= search_result[0][:publisher] %></td>
+                          </tr>
+                          <tr>
+                            <td>Binding</td>
+                            <td><%= search_result[0][:binding] %></td>
+                          </tr>
+                          <tr>
+                            <td>Retail Price</td>
+                            <td><%= search_result[0][:retail_price] %></td>
                           </tr>
                         </table>
                       </td>

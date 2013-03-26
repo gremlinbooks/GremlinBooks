@@ -16,7 +16,7 @@ class SearchController < ApplicationController
         vendor = VendorSearch.new()
         result = Array.new
 
-        result << book_info.GetBookInfo(isbn.strip, current_user)
+        result << book_info.GetBookInfoFromBookRenter(isbn.strip, current_user)
         result << vendor.GetAllResults(isbn.strip, current_user)
         results[isbn.strip] = result
       end

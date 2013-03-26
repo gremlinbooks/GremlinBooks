@@ -20,9 +20,7 @@ class BookInfo
 
     # make api call to amazon
     res = Amazon::Ecs.item_lookup(search_text, :id_type => 'ISBN', :merchant_id => 'Amazon', :search_index => 'Books', :response_group => 'Large')
-
-    # map results to common interface (hash)
-    results = Array.new
+    result = ""
 
     if res.items.count > 0
       res.items.each do |item|
@@ -33,20 +31,51 @@ class BookInfo
 
           result = {author: item_attributes.get('Author'),
                     title: item_attributes.get('Title'),
-                    # retail_price: offers.get('Offer/OfferListing/RetailPrice/FormattedPrice'),
                     image_link: item.get('MediumImage/URL'),
-                    description: ""}
-
-          results << result
+                    description: "",
+                    retail_price: ""}
 
         end
 
       end
     end
 
-    results
+    result
   end
 
+  def GetBookInfoFromBookRenter(search_text, current_user)
+    require 'typhoeus'
+
+    #log the search
+    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => "BookRenter")
+
+    book_renter_request = Typhoeus::Request.new("http://www.bookrenter.com/api/fetch_book_info",
+                                                :body => "this is a request body",
+                                                :method => :post,
+                                                :headers => {:Accept => "text/html"},
+                                                :timeout => 100, # milliseconds
+                                                :params => {:developer_key => "FqRlncrCJCxKKaRwQaphKGKiH4mNWwdf",
+                                                            :version => "2011-02-01",
+                                                            :book_details => "y",
+                                                            :format => "js",
+                                                            :isbn => search_text})
+
+    hydra = Typhoeus::Hydra.new
+    hydra.queue book_renter_request
+    hydra.run
+
+    book_renter_response = ActiveSupport::JSON.decode(book_renter_request.response.body)
+
+    result = {  author: book_renter_response["response"]["book"]["info"]["authors"],
+                  title: book_renter_response["response"]["book"]["info"]["title"],
+                  image_link: book_renter_response["response"]["book"]["book_image_http"],
+                  description: book_renter_response["response"]["book"]["info"]["description"],
+                  retail_price: book_renter_response["response"]["book"]["info"]["retail_price"],
+                  publisher: book_renter_response["response"]["book"]["info"]["publisher"],
+                  binding: book_renter_response["response"]["book"]["info"]["book_binding"] }
+
+    result
+  end
 
 end
 
