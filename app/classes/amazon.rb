@@ -38,7 +38,7 @@ AMAZON_SEARCH = lambda do |context|
                     buy_link: item.get('DetailPageURL'),
                     condition: offers.get('Offer/OfferListing/Price/Condition'),
                     rent_link: "",
-                    shipping: "",
+                    shipping: 0,
                     total_cost: offers.get('Offer/OfferListing/Price/Amount').to_f / 100,
                     results_string: item.to_s.to_json
 

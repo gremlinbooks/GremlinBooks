@@ -53,7 +53,7 @@ class VendorSearch
                     cart_link: "cart_link",
                     buy_link: "Buy Link",
                     condition: "condition",
-                    rent_link: "rent link",
+                    rent_link: "http://www.chegg.com/?referrer=REFER&PID=PID&AID=AID&SID=SID&pids=PIDS",
                     shipping: "",
                     results_string: chegg_response
     }

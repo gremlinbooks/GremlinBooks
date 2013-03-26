@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/amazon.rb" afterPath="$PROJECT_DIR$/app/classes/amazon.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
     </list>
     <ignored path="GremlinBooks.iws" />
@@ -137,7 +138,7 @@
     <file path="/song_writer.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361157737820" ignored="false" />
     <file path="$PROJECT_DIR$/../musicmanager/app/models/song_publisher.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361157898587" ignored="false" />
     <file path="/strategy_pattern.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1362530818148" ignored="false" />
-    <file path="/vendor_search.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1363825347082" ignored="false" />
+    <file path="/vendor_search.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364270886300" ignored="false" />
     <file path="/amazon.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1363826026028" ignored="false" />
     <file path="/book_renter.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1362544477412" ignored="false" />
     <file path="/book_info.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364266857645" ignored="false" />
@@ -184,39 +185,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="vendor_search.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="vendor_search.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="186" selection-start="6793" selection-end="6793" vertical-scroll-proportion="0.5983264">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sample_book_renter.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/sample_book_renter.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="29" selection-start="4128" selection-end="4128" vertical-scroll-proportion="-24.428572">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="book_info.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/classes/book_info.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="32" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.0">
+            <state line="56" column="33" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#43#1142#0" expanded="false" />
+                <element signature="e#2349#8150#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chegg_example.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="chegg_example.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/chegg_example.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="22" selection-start="2640" selection-end="2640" vertical-scroll-proportion="-38.67857">
+            <state line="36" column="43" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.579661">
               <folding />
             </state>
           </provider>
@@ -249,12 +232,12 @@
         <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/classes/book_renter.rb" />
-        <option value="$PROJECT_DIR$/app/classes/amazon.rb" />
         <option value="$PROJECT_DIR$/public/chegg_example.json" />
         <option value="$PROJECT_DIR$/public/sample_book_renter.json" />
         <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
         <option value="$PROJECT_DIR$/app/classes/book_info.rb" />
         <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/classes/amazon.rb" />
         <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
       </list>
     </option>
@@ -1005,13 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/amazon.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="20" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.6200837">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="28" selection-start="289" selection-end="289" vertical-scroll-proportion="0.1302485">
@@ -1040,32 +1016,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/sample_book_renter.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="29" selection-start="4128" selection-end="4128" vertical-scroll-proportion="-24.428572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/book_info.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="32" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.0">
+        <state line="74" column="32" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.58195364">
           <folding>
             <element signature="e#43#1142#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/chegg_example.json">
+    <entry file="file://$PROJECT_DIR$/public/sample_book_renter.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="22" selection-start="2640" selection-end="2640" vertical-scroll-proportion="-38.67857">
+        <state line="36" column="29" selection-start="4128" selection-end="4128" vertical-scroll-proportion="0.5861183">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/amazon.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="54" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.6677824">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="186" selection-start="6793" selection-end="6793" vertical-scroll-proportion="0.5983264">
+        <state line="56" column="33" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#2349#8150#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/chegg_example.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="43" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.579661">
           <folding />
         </state>
       </provider>
