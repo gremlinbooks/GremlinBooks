@@ -1,19 +1,17 @@
 GremlinBooks::Application.routes.draw do
 
+  resources :contacts
+
+
   get "book/search"
-
   get "book/show"
-
   get "book/index"
-
   get "pages/index"
-
   get "pages/mission"
 
   devise_for :users
 
   resources :search, :only => [:index]
-
 
   #get "search/:search" => "search#show", :as => :search
   #get "search" => "search#index", :as => :search_form

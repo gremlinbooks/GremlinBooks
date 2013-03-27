@@ -1,0 +1,38 @@
+
+  <div class="form-horizontal well">
+    <h2>Contact Us</h2>
+
+    <%= form_for(@contact) do |f| %>
+        <% if @contact.errors.any? %>
+            <div id="error_explanation">
+              <ul>
+                <% @contact.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+
+        <div class="field">
+          <%= f.label :name %>
+
+          <%= f.text_field :name %>
+        </div>
+        <div class="field">
+          <%= f.label :email %>
+
+          <%= f.text_field :email %>
+        </div>
+        <div class="field">
+          <%= f.label :comments %>
+
+          <%= f.text_area :comments, :size => "500x10" %>
+        </div>
+        <br/>
+
+        <div class="actions">
+          <%= f.submit "Submit", :class => "btn btn-primary" %>
+        </div>
+    <% end %>
+
+  </div>

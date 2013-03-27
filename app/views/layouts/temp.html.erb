@@ -3,18 +3,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Gremlin Books</title>
+  <title>Bootswatch: Spacelab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="An ode to Metro.">
+  <meta name="description" content="Silvery and sleek.">
   <meta name="author" content="Thomas Park">
 
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <%= stylesheet_link_tag "bootstrap" %>
-  <%= stylesheet_link_tag "bootstrap-responsive.min" %>
-  <%= stylesheet_link_tag "bootswatch" %>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="../default/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/bootswatch.css" rel="stylesheet">
 
   <script type="text/javascript">
 
@@ -34,7 +35,7 @@
 
 </head>
 
-<body class="preview" data-spy="scroll" data-target=".subnav" data-offset="80">
+<body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
 <script src="../js/bsa.js"></script>
 
 
@@ -48,11 +49,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="../">Gremlin Books</a>
-      <div class="nav-collapse" id="main-menu">
+      <a class="brand" href="../">Bootswatch</a>
+      <div class="nav-collapse collapse" id="main-menu">
         <ul class="nav" id="main-menu-left">
           <li><a onclick="pageTracker._link(this.href); return false;" href="http://news.bootswatch.com">News</a></li>
-          <li><a id="swatch-link" href="/#gallery">Gallery</a></li>
+          <li><a id="swatch-link" href="../#gallery">Gallery</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Preview <b class="caret"></b></a>
             <ul class="dropdown-menu" id="swatch-menu">
@@ -100,8 +101,8 @@
 <header class="jumbotron subhead" id="overview">
   <div class="row">
     <div class="span6">
-      <h1>Cosmo</h1>
-      <p class="lead">An ode to Metro.</p>
+      <h1>Spacelab</h1>
+      <p class="lead">Silvery and sleek.</p>
     </div>
     <div class="span6">
       <div class="bsa well">
@@ -866,7 +867,7 @@
 <hr>
 
 <footer id="footer">
-  <p class="pull-right"><a href="#">Back to top</a></p>
+  <p class="pull-right"><a href="#top">Back to top</a></p>
   <div class="links">
     <a href="http://news.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a>
     <a href="http://feeds.feedburner.com/bootswatch">RSS</a>
@@ -877,9 +878,9 @@
     <a href="http://news.bootswatch.com/post/22193315172/bootswatch-api">API</a>
     <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F22JEM3Q78JC2">Donate</a>
   </div>
-  Made by <a target="_blank" href="http://thomaspark.me" onclick="pageTracker._link(this.href); return false;">Thomas Park</a>. Contact him <a href="mailto:hello@thomaspark.me">hello@thomaspark.me</a>.<br/>
-  Code licensed under the <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.<br/>
-  Based on <a target="_blank" href="http://twitter.github.com/bootstrap/">Bootstrap</a>. Hosted on <a target="_blank" href="http://pages.github.com/">GitHub</a>. Icons from <a target="_blank" href="http://glyphicons.com/">Glyphicons</a>. Web fonts from <a target="_blank" href="http://www.google.com/webfonts">Google</a>.</p>
+  Made by <a href="http://thomaspark.me">Thomas Park</a>. Contact him <a href="mailto:hello@thomaspark.me">hello@thomaspark.me</a>.<br/>
+  Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.<br/>
+  Based on <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>. Hosted on <a href="http://pages.github.com/">GitHub</a>. Icons from <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a>. Favicon by <a href="https://twitter.com/geraldhiller">Gerald Hiller</a>.</p>
 </footer>
 
 </div><!-- /container -->
@@ -889,11 +890,10 @@
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<%= javascript_include_tag "bootstrap.min" %>
-<%= javascript_include_tag "app" %>
-<%= javascript_include_tag "bootswatch" %>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/jquery.smooth-scroll.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootswatch.js"></script>
 
 
 </body>
