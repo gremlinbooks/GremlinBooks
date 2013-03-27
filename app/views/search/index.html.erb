@@ -85,6 +85,7 @@
                   <td>Price</td>
                   <td>Shipping</td>
                   <td>Total Cost</td>
+                  <td>Notes</td>
                   <td>Rent/Buy</td>
                   <% if Rails.env.development? %>
                       <td>Raw Results</td>
@@ -94,25 +95,25 @@
                     <% search_result[1].each do |item| %>
                         <tr>
                           <td><%= item[:vendor] %></td>
-                          <td><%= item[:condition] %></td>
+                          <td><%= item[:condition].to_s.titleize %></td>
                           <% if item[:price] == 0 %>
                               <td>Unknown</td>
                           <% else %>
-                              <td><%= number_to_currency(item[:price]) %></td>
+                              <td><%= convert_to_currency(item[:price]) %></td>
                           <% end %>
 
                           <% if item[:shipping] == 0 %>
                               <td>Unknown</td>
                           <% else %>
-                              <td><%= number_to_currency(item[:shipping]) %></td>
+                              <td><%= convert_to_currency(item[:shipping]) %></td>
                           <% end %>
 
                           <% if item[:total_cost] == 0 %>
                               <td>Unknown</td>
                           <% else %>
-                              <td><%= number_to_currency(item[:total_cost]) %></td>
+                              <td><%= convert_to_currency(item[:total_cost]) %></td>
                           <% end %>
-
+                          <td><%= item[:notes] %></td>
                           <% if item[:rent] %>
                               <td><%= link_to "Rent", item[:rent_link], :target => "_new" %></td>
                           <% else %>

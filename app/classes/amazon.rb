@@ -40,6 +40,7 @@ AMAZON_SEARCH = lambda do |context|
                     rent_link: "",
                     shipping: 0,
                     total_cost: offers.get('Offer/OfferListing/Price/Amount').to_f / 100,
+                    notes: "",
                     results_string: item.to_s.to_json
 
           }

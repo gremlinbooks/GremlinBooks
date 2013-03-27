@@ -46,7 +46,7 @@ class VendorSearch
     chegg_response = ActiveSupport::JSON.decode(chegg_request.response.body)
 
     chegg_result = {vendor: "Chegg",
-                    price: "10.00",
+                    price: 0,
                     cart: false,
                     buy: false,
                     rent: true,
@@ -54,7 +54,9 @@ class VendorSearch
                     buy_link: "Buy Link",
                     condition: "condition",
                     rent_link: "http://www.chegg.com/?referrer=REFER&PID=PID&AID=AID&SID=SID&pids=PIDS",
-                    shipping: "",
+                    shipping: 0,
+                    total_cost: 0,
+                    notes: "",
                     results_string: chegg_response
     }
 
@@ -99,6 +101,7 @@ class VendorSearch
                   rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Price"].to_f,
+                  notes: "",
                   results_string: book_byte_response
       }
     end
@@ -116,6 +119,7 @@ class VendorSearch
                   rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Price"].to_f,
+                  notes: "",
                   results_string: book_byte_response
       }
     end
@@ -135,6 +139,7 @@ class VendorSearch
                   rent_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Price"].to_f,
+                  notes: "",
                   results_string: book_byte_response
       }
     end
@@ -152,6 +157,7 @@ class VendorSearch
                   rent_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"].to_f,
+                  notes: "",
                   results_string: book_byte_response
       }
     end
@@ -183,19 +189,63 @@ class VendorSearch
 
     book_renter_response = ActiveSupport::JSON.decode(book_renter_request.response.body)
 
-    results << {vendor: "Book Renter",
-                price: book_renter_response["response"]["book"]["info"]["retail_price"].to_f,
-                cart: true,
-                buy: false,
-                rent: true,
-                cart_link: book_renter_response["response"]["book"]["add_to_cart_url"],
-                buy_link: "",
-                condition: "Used",
-                rent_link: book_renter_response["response"]["book"]["add_to_cart_url"],
-                shipping: 0,
-                total_cost: book_renter_response["response"]["book"]["info"]["retail_price"].to_f + 0,
-                results_string: book_renter_response
-    }
+    # book renter response is kind of jacked
+    # first check if there is anything in the prices collection
+    if  book_renter_response["response"]["book"]["prices"]
+      # there are items in the prices collection
+      # now pull out the rentals and purchases
+      book_renter_response["response"]["book"]["prices"].each do |item|
+        if item["term"]    # rentals
+          results << {vendor: "Book Renter",
+                      price: item["rental_price"],
+                      cart: true,
+                      buy: false,
+                      rent: true,
+                      cart_link: book_renter_response["response"]["book"]["add_to_cart_url"],
+                      buy_link: "",
+                      condition: "Rental",
+                      rent_link: book_renter_response["response"]["book"]["add_to_cart_url"],
+                      shipping: 0,
+                      total_cost: item["rental_price"],
+                      notes: item["term"] + ' ' + item["days"],
+                      results_string: book_renter_response
+          }
+        else
+          if item["condition"]  # purchase
+            results << {vendor: "Book Renter",
+                        price: item["purchase_price"],
+                        cart: true,
+                        buy: true,
+                        rent: false,
+                        cart_link: book_renter_response["response"]["book"]["add_to_cart_url"],
+                        buy_link: book_renter_response["response"]["book"]["add_to_cart_url"],
+                        condition: item["condition"],
+                        rent_link: "",
+                        shipping: 0,
+                        total_cost: item["purchase_price"],
+                        notes: "",
+                        results_string: book_renter_response
+            }
+          end
+        end
+      end
+    else
+      # there aren't any price items in the collection, therefore pull standard book info
+      results << {vendor: "Book Renter",
+                  price: book_renter_response["response"]["book"]["info"]["retail_price"],
+                  cart: true,
+                  buy: true,
+                  rent: false,
+                  cart_link: book_renter_response["response"]["book"]["add_to_cart_url"],
+                  buy_link: book_renter_response["response"]["book"]["add_to_cart_url"],
+                  condition: "Unknown",
+                  rent_link: "",
+                  shipping: 0,
+                  total_cost: book_renter_response["response"]["book"]["info"]["retail_price"],
+                  notes: "",
+                  results_string: book_renter_response
+      }
+    end
 
     results
   end
