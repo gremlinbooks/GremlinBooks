@@ -19,7 +19,6 @@
         </ul>
         <div class="nav pull-right" id="main-menu-right">
 
-
           <% if user_signed_in? %>
               <%= current_user.email %> |
               <%= link_to "Sign out", destroy_user_session_path, :method => "delete" %>

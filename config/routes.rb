@@ -1,7 +1,6 @@
 GremlinBooks::Application.routes.draw do
 
-  resources :contacts
-
+  resources :contacts, :only => [:new, :show, :create]
 
   get "book/search"
   get "book/show"
