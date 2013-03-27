@@ -11,14 +11,14 @@ class SearchController < ApplicationController
       isbns = params[:search].split(',')
       results = Hash.new
 
-      dc = Dalli::Client.new('localhost:11211')
+      #dc = Dalli::Client.new('localhost:11211')}
 
       isbns.each do |isbn|
         #log the user search
         UserSearchLog.create!(:search_term => isbn, :user => current_user)
 
         #check cache for isbn first
-        isbn_result = dc.get(isbn.strip)
+        isbn_result = Rails.cache.read(isbn.strip)
 
         if !isbn_result.nil?
           results[isbn.strip] = isbn_result
@@ -29,7 +29,7 @@ class SearchController < ApplicationController
 
           result << book_info.GetBookInfoFromBookRenter(isbn.strip, current_user)
           result << vendor.GetAllResults(isbn.strip, current_user)
-          dc.set(isbn.strip, result)
+          Rails.cache.write(isbn.strip, result)
           results[isbn.strip] = result
         end
       end
