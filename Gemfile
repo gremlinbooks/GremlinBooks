@@ -12,6 +12,7 @@ gem 'newrelic_rpm'
 gem 'devise'
 gem 'json'
 gem 'typhoeus'
+gem 'dalli'
 
 # Gems used only for assets and not required
 # in production environments by default.

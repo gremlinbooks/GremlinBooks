@@ -192,7 +192,7 @@ class VendorSearch
                 buy_link: "",
                 condition: "Used",
                 rent_link: book_renter_response["response"]["book"]["add_to_cart_url"],
-                shipping: "0",
+                shipping: 0,
                 total_cost: book_renter_response["response"]["book"]["info"]["retail_price"].to_f + 0,
                 results_string: book_renter_response
     }

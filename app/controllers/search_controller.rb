@@ -5,20 +5,33 @@ class SearchController < ApplicationController
   def index
     require 'vendor_search.rb'
     require 'amazon.rb'
+    require 'dalli'
 
     if !params[:search].nil?
-      #split search if more than one ISBN supplied
       isbns = params[:search].split(',')
       results = Hash.new
 
-      isbns.each do |isbn|
-        book_info = BookInfo.new()
-        vendor = VendorSearch.new()
-        result = Array.new
+      dc = Dalli::Client.new('localhost:11211')
 
-        result << book_info.GetBookInfoFromBookRenter(isbn.strip, current_user)
-        result << vendor.GetAllResults(isbn.strip, current_user)
-        results[isbn.strip] = result
+      isbns.each do |isbn|
+        #log the user search
+        UserSearchLog.create!(:search_term => isbn, :user => current_user)
+
+        #check cache for isbn first
+        isbn_result = dc.get(isbn.strip)
+
+        if !isbn_result.nil?
+          results[isbn.strip] = isbn_result
+        else  #not in cache - get from vendors
+          book_info = BookInfo.new()
+          vendor = VendorSearch.new()
+          result = Array.new
+
+          result << book_info.GetBookInfoFromBookRenter(isbn.strip, current_user)
+          result << vendor.GetAllResults(isbn.strip, current_user)
+          dc.set(isbn.strip, result)
+          results[isbn.strip] = result
+        end
       end
 
       @search_results = results

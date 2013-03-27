@@ -95,9 +95,23 @@
                         <tr>
                           <td><%= item[:vendor] %></td>
                           <td><%= item[:condition] %></td>
-                          <td><%= number_to_currency(item[:price]) %></td>
-                          <td><%= number_to_currency(item[:shipping]) %></td>
-                          <td><%= number_to_currency(item[:total_cost]) %></td>
+                          <% if item[:price] == 0 %>
+                              <td>Unknown</td>
+                          <% else %>
+                              <td><%= number_to_currency(item[:price]) %></td>
+                          <% end %>
+
+                          <% if item[:shipping] == 0 %>
+                              <td>Unknown</td>
+                          <% else %>
+                              <td><%= number_to_currency(item[:shipping]) %></td>
+                          <% end %>
+
+                          <% if item[:total_cost] == 0 %>
+                              <td>Unknown</td>
+                          <% else %>
+                              <td><%= number_to_currency(item[:total_cost]) %></td>
+                          <% end %>
 
                           <% if item[:rent] %>
                               <td><%= link_to "Rent", item[:rent_link], :target => "_new" %></td>

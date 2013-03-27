@@ -40,7 +40,8 @@ GremlinBooks::Application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 
   # Use a different cache store in production
-  # config.cache_store = :mem_cache_store
+  config.action_controller.perform_caching = true
+  config.cache_store = :dalli_store
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
@@ -67,7 +68,7 @@ GremlinBooks::Application.configure do
 
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { :host => 'murmuring-sands-3618.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'gremlin.herokuapp.com' }
   ActionMailer::Base.smtp_settings = {
       :address    => "smtp.sendgrid.net",
       :port       => 25,
