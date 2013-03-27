@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/index.html.erb" afterPath="$PROJECT_DIR$/app/views/search/index.html.erb" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,7 +12,7 @@
     <file path="/database.yml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1363893211314" ignored="false" />
     <file path="/search_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364406122649" ignored="false" />
     <file path="/routes.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364416313887" ignored="false" />
-    <file path="/index.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364417050234" ignored="false" />
+    <file path="/index.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364421701702" ignored="false" />
     <file path="/show.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1360464049778" ignored="false" />
     <file path="/temp.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1359925816516" ignored="false" />
     <file path="/_main_navbar.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364414937452" ignored="false" />
@@ -191,41 +191,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="61" selection-start="749" selection-end="749" vertical-scroll-proportion="-13.571428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vendor_search.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="87" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
+            <state line="135" column="14" selection-start="5642" selection-end="5642" vertical-scroll-proportion="0.6135593">
               <folding>
-                <element signature="e#675#2389#0" expanded="false" />
-                <element signature="e#2393#8310#0" expanded="false" />
+                <element signature="tag#table#0;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1" expanded="false" />
+                <element signature="tag#table#0;tag#div#0;tag#div#0;tag#div#1" expanded="false" />
+                <element signature="e#5758#5785#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="amazon.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/classes/amazon.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="79" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.5976821">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="92" selection-start="508" selection-end="537" vertical-scroll-proportion="-8.142858">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -260,10 +234,10 @@
         <option value="$PROJECT_DIR$/app/models/contact.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_main_navbar.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
+        <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
       </list>
     </option>
   </component>
@@ -1089,22 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="26" selection-start="6502" selection-end="6502" vertical-scroll-proportion="2.479661">
-          <folding>
-            <element signature="e#5#31#0" expanded="true" />
-            <element signature="tag#ul#0" expanded="false" />
-            <element signature="e#1342#1378#0" expanded="true" />
-            <element signature="e#1452#1490#0" expanded="true" />
-            <element signature="e#1620#1638#0" expanded="true" />
-            <element signature="e#3219#3255#0" expanded="true" />
-            <element signature="e#3293#3347#0" expanded="true" />
-            <element signature="e#5750#5777#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="28" selection-start="425" selection-end="425" vertical-scroll-proportion="0.11009934">
@@ -1154,16 +1112,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/classes/amazon.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="749" selection-end="749" vertical-scroll-proportion="-13.571428">
+        <state line="38" column="79" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.5976821">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="87" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
+        <state line="21" column="87" selection-start="671" selection-end="671" vertical-scroll-proportion="0.330298">
           <folding>
             <element signature="e#675#2389#0" expanded="false" />
             <element signature="e#2393#8310#0" expanded="false" />
@@ -1171,10 +1129,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/amazon.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="79" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.5976821">
+        <state line="20" column="61" selection-start="749" selection-end="749" vertical-scroll-proportion="0.3220339">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="14" selection-start="5642" selection-end="5642" vertical-scroll-proportion="0.6135593">
+          <folding>
+            <element signature="tag#table#0;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1" expanded="false" />
+            <element signature="tag#table#0;tag#div#0;tag#div#0;tag#div#1" expanded="false" />
+            <element signature="e#5758#5785#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
