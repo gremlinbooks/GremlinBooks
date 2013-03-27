@@ -12,7 +12,7 @@ class VendorSearch
     #chegg_results = GetCheggResults(search_text, current_user)
     book_byte_results = GetBookByteResults(search_text, current_user)
     book_renter_results = GetBookRenterResults(search_text, current_user)
-    amazon_results + chegg_results + book_byte_results + book_renter_results
+    amazon_results + book_byte_results + book_renter_results
   end
 
   def GetAmazonResults(search_text, current_user)

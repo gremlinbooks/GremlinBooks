@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -192,10 +191,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="61" selection-start="749" selection-end="749" vertical-scroll-proportion="0.3220339">
+            <state line="20" column="61" selection-start="749" selection-end="749" vertical-scroll-proportion="-13.571428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vendor_search.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="87" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#675#2389#0" expanded="false" />
+                <element signature="e#2393#8310#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="amazon.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/classes/amazon.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="79" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.5976821">
               <folding />
             </state>
           </provider>
@@ -228,7 +248,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/pages/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
@@ -244,6 +263,7 @@
         <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
       </list>
     </option>
   </component>
@@ -1034,13 +1054,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="89" selection-start="1153" selection-end="1164" vertical-scroll-proportion="0.7392384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
@@ -1073,16 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="543" selection-end="543" vertical-scroll-proportion="0.23592715">
-          <folding>
-            <element signature="e#691#2405#0" expanded="false" />
-            <element signature="e#2409#8326#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,7 +1156,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="749" selection-end="749" vertical-scroll-proportion="0.3220339">
+        <state line="20" column="61" selection-start="749" selection-end="749" vertical-scroll-proportion="-13.571428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="87" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#675#2389#0" expanded="false" />
+            <element signature="e#2393#8310#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/amazon.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="79" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.5976821">
           <folding />
         </state>
       </provider>
