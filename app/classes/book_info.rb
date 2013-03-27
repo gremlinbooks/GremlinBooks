@@ -66,15 +66,17 @@ class BookInfo
 
     book_renter_response = ActiveSupport::JSON.decode(book_renter_request.response.body)
 
-    result = {  author: book_renter_response["response"]["book"]["info"]["authors"],
-                  title: book_renter_response["response"]["book"]["info"]["title"],
-                  image_link: book_renter_response["response"]["book"]["book_image_http"],
-                  description: book_renter_response["response"]["book"]["info"]["description"],
-                  retail_price: book_renter_response["response"]["book"]["info"]["retail_price"],
-                  publisher: book_renter_response["response"]["book"]["info"]["publisher"],
-                  binding: book_renter_response["response"]["book"]["info"]["book_binding"] }
+    if book_renter_response["response"]["book"]
+      result = {author: book_renter_response["response"]["book"]["info"]["authors"],
+                title: book_renter_response["response"]["book"]["info"]["title"],
+                image_link: book_renter_response["response"]["book"]["book_image_http"],
+                description: book_renter_response["response"]["book"]["info"]["description"],
+                retail_price: book_renter_response["response"]["book"]["info"]["retail_price"],
+                publisher: book_renter_response["response"]["book"]["info"]["publisher"],
+                binding: book_renter_response["response"]["book"]["info"]["book_binding"]}
 
-    result
+      result
+    end
   end
 
 end

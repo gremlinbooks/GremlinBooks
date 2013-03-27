@@ -11,8 +11,6 @@ class SearchController < ApplicationController
       isbns = params[:search].split(',')
       results = Hash.new
 
-      #dc = Dalli::Client.new('localhost:11211')}
-
       isbns.each do |isbn|
         #log the user search
         UserSearchLog.create!(:search_term => isbn, :user => current_user)
@@ -22,15 +20,19 @@ class SearchController < ApplicationController
 
         if !isbn_result.nil?
           results[isbn.strip] = isbn_result
-        else  #not in cache - get from vendors
+        else #not in cache - get from vendors
           book_info = BookInfo.new()
           vendor = VendorSearch.new()
           result = Array.new
 
-          result << book_info.GetBookInfoFromBookRenter(isbn.strip, current_user)
-          result << vendor.GetAllResults(isbn.strip, current_user)
-          Rails.cache.write(isbn.strip, result)
-          results[isbn.strip] = result
+          book_info = book_info.GetBookInfoFromBookRenter(isbn.strip, current_user)
+
+          if book_info
+            result << book_info
+            result << vendor.GetAllResults(isbn.strip, current_user)
+            Rails.cache.write(isbn.strip, result)
+            results[isbn.strip] = result
+          end
         end
       end
 
@@ -45,7 +47,6 @@ class SearchController < ApplicationController
     end
 
   end
-
 
 
 end
