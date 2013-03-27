@@ -194,11 +194,12 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="14" selection-start="5642" selection-end="5642" vertical-scroll-proportion="0.6135593">
+            <state line="162" column="13" selection-start="6497" selection-end="6497" vertical-scroll-proportion="0.9016949">
               <folding>
                 <element signature="tag#table#0;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1" expanded="false" />
                 <element signature="tag#table#0;tag#div#0;tag#div#0;tag#div#1" expanded="false" />
-                <element signature="e#5758#5785#0" expanded="true" />
+                <element signature="tag#div#1;tag#div#1" expanded="false" />
+                <element signature="e#5755#5782#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1138,11 +1139,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="14" selection-start="5642" selection-end="5642" vertical-scroll-proportion="0.6135593">
+        <state line="162" column="13" selection-start="6497" selection-end="6497" vertical-scroll-proportion="0.9016949">
           <folding>
             <element signature="tag#table#0;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1" expanded="false" />
             <element signature="tag#table#0;tag#div#0;tag#div#0;tag#div#1" expanded="false" />
-            <element signature="e#5758#5785#0" expanded="true" />
+            <element signature="tag#div#1;tag#div#1" expanded="false" />
+            <element signature="e#5755#5782#0" expanded="true" />
           </folding>
         </state>
       </provider>
