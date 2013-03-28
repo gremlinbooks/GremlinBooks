@@ -1,3 +1,12 @@
+<% if params[:search].nil? %>
+    <p><h4>Have you ever bought something and wondered if you could have bought it cheaper somewhere else? Well now you
+      don't!! Within seconds, Gremlin can scour over 150 textbook sites for you! The Gremlin search engine uses what is
+      called the ISBN (International Standard Book Number), which is the book industry's way of tracking the millions of
+      titles that are available. It is found on every book, usually on the back cover in the lower right hand corner OR
+      you can find it listed under the details of any book available online too. So...find that ISBN and leave the rest
+      to Gremlin!! (Please note: Gremlin accepts ISBN numbers in either 10 or 13 digit format)</h4></p>    <br/>
+<% end %>
+
 <div style="text-align: center">
   <%= form_tag search_index_path, :method => "get" do %>
       <%= search_field_tag :search, params[:search], :placeholder => "Search ISBN", :results => 0 %>
