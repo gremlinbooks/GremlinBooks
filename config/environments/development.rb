@@ -38,11 +38,11 @@ GremlinBooks::Application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      address:              'smtp.mandrillapp.com',
-      port:                 587,
-      user_name:            'djarmoluk@gmail.com',
-      password:             'QlPMhk_bxK54ScHt6sguJw',
-      authentication:       'plain',
-      enable_starttls_auto: true  }
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :user_name            => 'david@conclusivelabs.com',
+      :password             => 'Paige111',
+      :authentication       => 'plain',
+      :enable_starttls_auto => true  }
 
 end

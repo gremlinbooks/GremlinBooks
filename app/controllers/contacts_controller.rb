@@ -42,6 +42,9 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(params[:contact])
 
+    #send email
+    ContactMailer.contact_email(params[:contact]).deliver
+
     respond_to do |format|
       if @contact.save
         format.html { redirect_to @contact, notice: 'Thank you for contacting us. If necessary, someone will respond to your request as soon as possible.' }

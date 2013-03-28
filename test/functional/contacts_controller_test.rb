@@ -16,15 +16,15 @@ class ContactsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create contact" do
+  test "should create contact_mailer" do
     assert_difference('Contact.count') do
-      post :create, contact: { comments: @contact.comments, email: @contact.email, name: @contact.name }
+      post :create, contact_mailer: { comments: @contact.comments, email: @contact.email, name: @contact.name }
     end
 
-    assert_redirected_to contact_path(assigns(:contact))
+    assert_redirected_to contact_path(assigns(:contact_mailer))
   end
 
-  test "should show contact" do
+  test "should show contact_mailer" do
     get :show, id: @contact
     assert_response :success
   end
@@ -34,12 +34,12 @@ class ContactsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should update contact" do
-    put :update, id: @contact, contact: { comments: @contact.comments, email: @contact.email, name: @contact.name }
-    assert_redirected_to contact_path(assigns(:contact))
+  test "should update contact_mailer" do
+    put :update, id: @contact, contact_mailer: { comments: @contact.comments, email: @contact.email, name: @contact.name }
+    assert_redirected_to contact_path(assigns(:contact_mailer))
   end
 
-  test "should destroy contact" do
+  test "should destroy contact_mailer" do
     assert_difference('Contact.count', -1) do
       delete :destroy, id: @contact
     end
