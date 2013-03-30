@@ -1,10 +1,10 @@
 <% if params[:search].nil? %>
     <p><h4>Have you ever bought something and wondered if you could have bought it cheaper somewhere else? Well now you
-      don't!! Within seconds, Gremlin can scour over 150 textbook sites for you! The Gremlin search engine uses what is
-      called the ISBN (International Standard Book Number), which is the book industry's way of tracking the millions of
-      titles that are available. It is found on every book, usually on the back cover in the lower right hand corner OR
-      you can find it listed under the details of any book available online too. So...find that ISBN and leave the rest
-      to Gremlin!! (Please note: Gremlin accepts ISBN numbers in either 10 or 13 digit format)</h4></p>    <br/>
+  don't!! Within seconds, Gremlin can scour over 150 textbook sites for you! The Gremlin search engine uses what is
+  called the ISBN (International Standard Book Number), which is the book industry's way of tracking the millions of
+  titles that are available. It is found on every book, usually on the back cover in the lower right hand corner OR
+  you can find it listed under the details of any book available online too. So...find that ISBN and leave the rest
+  to Gremlin!! (Please note: Gremlin accepts ISBN numbers in either 10 or 13 digit format)</h4></p>    <br/>
 <% end %>
 
 <div style="text-align: center">
@@ -124,9 +124,9 @@
                           <% end %>
                           <td><%= item[:notes] %></td>
                           <% if item[:rent] %>
-                              <td><%= link_to "Rent", item[:rent_link], :target => "_new" %></td>
+                              <td><%= link_to "Rent", {:controller => "search", :action => "buy", :buy_link => item[:buy_link], :user => current_user, :isbn => key}, :target => "_new" %></td>
                           <% else %>
-                              <td><%= link_to "Buy", item[:buy_link], :target => "_new" %></td>
+                              <td><%= link_to "Buy", {:controller => "search", :action => "buy", :buy_link => item[:buy_link], :user => current_user, :isbn => key}, :target => "_new" %></td>
                           <% end %>
                           <% if Rails.env.development? %>
                               <td><%= item[:results_string] %></td>
@@ -171,3 +171,4 @@
     <% end %>
 
 <% end %>
+

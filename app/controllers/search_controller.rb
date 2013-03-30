@@ -48,5 +48,10 @@ class SearchController < ApplicationController
 
   end
 
+  def buy
+    # track that the user wants to buy book, then redirect to vendor site
+    UserBuyLog.create!(:user => params[:user], :isbn => params[:isbn], :link => params[:buy_link])
+    redirect_to params[:buy_link]
+  end
 
 end
