@@ -197,7 +197,7 @@ class VendorSearch
       book_renter_response["response"]["book"]["prices"].each do |item|
         if item["term"]    # rentals
           results << {vendor: "Book Renter",
-                      price: item["rental_price"],
+                      price: item["rental_price"].sub('$', '').to_f,
                       cart: true,
                       buy: false,
                       rent: true,
@@ -206,14 +206,14 @@ class VendorSearch
                       condition: "Rental",
                       rent_link: book_renter_response["response"]["book"]["add_to_cart_url"],
                       shipping: 0,
-                      total_cost: item["rental_price"],
+                      total_cost: item["rental_price"].sub('$', '').to_f,
                       notes: item["term"] + ' ' + item["days"],
                       results_string: book_renter_response
           }
         else
           if item["condition"]  # purchase
             results << {vendor: "Book Renter",
-                        price: item["purchase_price"],
+                        price: item["purchase_price"].sub('$', '').to_f,
                         cart: true,
                         buy: true,
                         rent: false,
@@ -222,7 +222,7 @@ class VendorSearch
                         condition: item["condition"],
                         rent_link: "",
                         shipping: 0,
-                        total_cost: item["purchase_price"],
+                        total_cost: item["purchase_price"].sub('$', '').to_f,
                         notes: "",
                         results_string: book_renter_response
             }
@@ -232,7 +232,7 @@ class VendorSearch
     else
       # there aren't any price items in the collection, therefore pull standard book info
       results << {vendor: "Book Renter",
-                  price: book_renter_response["response"]["book"]["info"]["retail_price"],
+                  price: book_renter_response["response"]["book"]["info"]["retail_price"].sub('$', '').to_f,
                   cart: true,
                   buy: true,
                   rent: false,
@@ -241,7 +241,7 @@ class VendorSearch
                   condition: "Unknown",
                   rent_link: "",
                   shipping: 0,
-                  total_cost: book_renter_response["response"]["book"]["info"]["retail_price"],
+                  total_cost: book_renter_response["response"]["book"]["info"]["retail_price"].sub('$', '').to_f,
                   notes: "",
                   results_string: book_renter_response
       }

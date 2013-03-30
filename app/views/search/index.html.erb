@@ -101,6 +101,7 @@
                   <td>Total Cost</td>
                   <td>Notes</td>
                   <td>Rent/Buy</td>
+                  <td></td>
                   <% if Rails.env.development? %>
                       <td>Raw Results</td>
                   <% end %>
@@ -113,19 +114,19 @@
                           <% if item[:price] == 0 %>
                               <td>Unknown</td>
                           <% else %>
-                              <td><%= convert_to_currency(item[:price]) %></td>
+                              <td><%= number_to_currency(item[:price]) %></td>
                           <% end %>
 
                           <% if item[:shipping] == 0 %>
                               <td>Unknown</td>
                           <% else %>
-                              <td><%= convert_to_currency(item[:shipping]) %></td>
+                              <td><%= number_to_currency(item[:shipping]) %></td>
                           <% end %>
 
                           <% if item[:total_cost] == 0 %>
                               <td>Unknown</td>
                           <% else %>
-                              <td><%= convert_to_currency(item[:total_cost]) %></td>
+                              <td><%= number_to_currency(item[:total_cost]) %></td>
                           <% end %>
                           <td><%= item[:notes] %></td>
                           <% if item[:rent] %>
@@ -133,9 +134,15 @@
                           <% else %>
                               <td><%= link_to "Buy", {:controller => "search", :action => "buy", :buy_link => item[:buy_link], :user => current_user, :isbn => key}, :target => "_new" %></td>
                           <% end %>
+                          <td>
+                            <% if search_result[1][0] == item %>
+                                <%=  image_tag("check-mark1.jpg", :size => "35x35", :alt => "Best Price")   %><br/>Best Choice
+                            <% end %>
+                          </td>
                           <% if Rails.env.development? %>
                               <td><%= item[:results_string] %></td>
                           <% end %>
+
                         </tr>
                     <% end %>
                 <% else %>
@@ -159,7 +166,8 @@
                       complete your purchase through each vendor.
                     </li>
                     <li>Any item marked unknown usually is the result of minimal vendor information. For example, it
-                      could indicate that shipping is free, or that shipping is truly unknown.
+                      could indicate that shipping is free, or that shipping is truly unknown. Please confirm all
+                      pricing on vendor site before completing your purchase.
                     </li>
                   </ul>
                 </td>
