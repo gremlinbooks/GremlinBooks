@@ -30,7 +30,7 @@ class SearchController < ApplicationController
           if book_info
             result << book_info
             result << vendor.GetAllResults(isbn.strip, current_user)
-            Rails.cache.write(isbn.strip, result)
+            Rails.cache.write(isbn.strip, result, :expires_in => 1440.minutes)
             results[isbn.strip] = result
           end
         end
