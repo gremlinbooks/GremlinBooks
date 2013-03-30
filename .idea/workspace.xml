@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bestprice.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/check-mark1.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/classes/book_renter.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/index.html.erb" afterPath="$PROJECT_DIR$/app/views/search/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/search_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/search_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,11 +13,11 @@
     <file path="/database.yml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364424694849" ignored="false" />
     <file path="/search_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364665520203" ignored="false" />
     <file path="/routes.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364601615612" ignored="false" />
-    <file path="/index.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364666667405" ignored="false" />
+    <file path="/index.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364666971081" ignored="false" />
     <file path="/show.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1360464049778" ignored="false" />
     <file path="/temp.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1359925816516" ignored="false" />
     <file path="/_main_navbar.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364414937452" ignored="false" />
-    <file path="/application.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364604629686" ignored="false" />
+    <file path="/application.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364666936794" ignored="false" />
     <file path="/_footer.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364426595948" ignored="false" />
     <file path="/bootstrap.css" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364604690964" ignored="false" />
     <file path="/production.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364427164232" ignored="false" />
@@ -253,7 +247,18 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="118" selection-start="6777" selection-end="6777" vertical-scroll-proportion="0.7009426">
+            <state line="146" column="91" selection-start="6969" selection-end="6969" vertical-scroll-proportion="0.7335047">
+              <folding>
+                <element signature="e#6457#6483#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="27" selection-start="1411" selection-end="1411" vertical-scroll-proportion="-25.178572">
               <folding />
             </state>
           </provider>
@@ -288,10 +293,10 @@
         <option value="$PROJECT_DIR$/app/mailers/contact_mailer.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
         <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
       </list>
     </option>
@@ -1176,13 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="31" selection-start="1768" selection-end="1768" vertical-scroll-proportion="-36.642857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5813" column="1" selection-start="137640" selection-end="137640" vertical-scroll-proportion="0.9046025">
@@ -1216,10 +1214,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="27" selection-start="1411" selection-end="1411" vertical-scroll-proportion="-25.178572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="118" selection-start="6777" selection-end="6777" vertical-scroll-proportion="0.7009426">
-          <folding />
+        <state line="146" column="91" selection-start="6969" selection-end="6969" vertical-scroll-proportion="0.7335047">
+          <folding>
+            <element signature="e#6457#6483#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -92,7 +92,7 @@
               <br>
 
               <table class="table table-bordered table-striped table-hover">
-                <th colspan="7" style="background-color: ghostwhite">Book Offers</th>
+                <th colspan="8" style="background-color: ghostwhite">Book Offers</th>
                 <tr style="background-color: lightgrey; font-weight: bold">
                   <td>Vendor</td>
                   <td>Condition</td>
@@ -134,7 +134,7 @@
                           <% else %>
                               <td><%= link_to "Buy", {:controller => "search", :action => "buy", :buy_link => item[:buy_link], :user => current_user, :isbn => key}, :target => "_new" %></td>
                           <% end %>
-                          <td>
+                          <td style="text-align: center">
                             <% if search_result[1][0] == item %>
                                 <%=  image_tag("check-mark1.jpg", :size => "35x35", :alt => "Best Price")   %><br/>Best Choice
                             <% end %>
