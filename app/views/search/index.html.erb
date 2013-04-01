@@ -134,9 +134,9 @@
                           <% else %>
                               <td><%= link_to "Buy", {:controller => "search", :action => "buy", :buy_link => item[:buy_link], :user => current_user, :isbn => key}, :target => "_new" %></td>
                           <% end %>
-                          <td style="text-align: center">
+                          <td style="text-align: center; color: green">
                             <% if search_result[1][0] == item %>
-                                <img style="height: 35px; width: 35px;" src="<%= image_path("check-mark1.jpg") %>" />
+                                <img style="height: 35px; width: 35px;" src="<%= image_path("check.png") %>" />
                                 <br/>Best Choice
                             <% end %>
                           </td>
