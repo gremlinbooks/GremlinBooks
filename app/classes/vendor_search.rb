@@ -45,6 +45,7 @@ class VendorSearch
 
     chegg_response = ActiveSupport::JSON.decode(chegg_request.response.body)
 
+
     chegg_result = {vendor: "Chegg",
                     price: 0,
                     cart: false,

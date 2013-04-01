@@ -136,7 +136,8 @@
                           <% end %>
                           <td style="text-align: center">
                             <% if search_result[1][0] == item %>
-                                <%=  image_tag("check-mark1.jpg", :size => "35x35", :alt => "Best Price")   %><br/>Best Choice
+                                <img style="height: 35px; width: 35px;" src="<%= image_path("check-mark1.jpg") %>" />
+                                <br/>Best Choice
                             <% end %>
                           </td>
                           <% if Rails.env.development? %>
