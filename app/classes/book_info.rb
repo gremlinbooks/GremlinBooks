@@ -47,14 +47,14 @@ class BookInfo
     require 'typhoeus'
 
     #log the search
-    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => "BookRenter")
+    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => Settings.book_renter.vendor_name)
 
-    book_renter_request = Typhoeus::Request.new("http://www.bookrenter.com/api/fetch_book_info",
-                                                :body => "this is a request body",
+    book_renter_request = Typhoeus::Request.new(Settings.book_renter.base_url,
+                                                :body => "Gremlin Books",
                                                 :method => :post,
                                                 :headers => {:Accept => "text/html"},
                                                 :timeout => 100, # milliseconds
-                                                :params => {:developer_key => "FqRlncrCJCxKKaRwQaphKGKiH4mNWwdf",
+                                                :params => {:developer_key => Settings.book_renter.developer_key,
                                                             :version => "2011-02-01",
                                                             :book_details => "y",
                                                             :format => "js",

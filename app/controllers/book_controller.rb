@@ -1,4 +1,5 @@
 class BookController < ApplicationController
+
   def search
   end
 
@@ -7,4 +8,5 @@ class BookController < ApplicationController
 
   def index
   end
+
 end

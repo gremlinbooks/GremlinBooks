@@ -1,0 +1,19 @@
+  amazon:
+    vendor_name: 'Amazon'
+    access_key: '0C0D1DMW0V4ZH49EZHR2'
+    secret_key: 'trNYD6Ky2UzMtjI0y0zMPq3ke24LQbrVCMYQ/DBf'
+    associate_tag: 'concllabs-20'
+  chegg:
+    vendor_name: 'Chegg'
+    key: '1522fa5538fd041d8855c507ac1bf6a5'
+    base_url: 'http://api.chegg.com/rent.svc'
+    password: '4190344'
+  book_byte:
+    vendor_name: 'Book Byte'
+    auth_token: 'Lk1YwBqGUVIa4QOOcNT6oA=='
+    publisher_id: 'K620292'
+    base_url: 'http://webservices.bookbyte.com/rest/v1/getinventoryprice.aspx'
+  book_renter:
+    vendor_name: 'Book Renter'
+    developer_key: 'FqRlncrCJCxKKaRwQaphKGKiH4mNWwdf'
+    base_url: 'http://www.bookrenter.com/api/fetch_book_info'

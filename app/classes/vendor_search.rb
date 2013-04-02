@@ -25,18 +25,18 @@ class VendorSearch
     require 'typhoeus'
 
     #log the search
-    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => "Chegg")
+    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => Settings.chegg.vendor_name)
     results = Array.new
 
-    chegg_request = Typhoeus::Request.new("http://api.chegg.com/rent.svc",
-                                          :body => "this is a request body",
+    chegg_request = Typhoeus::Request.new(Settings.chegg.base_url,
+                                          :body => "Gremlin Books",
                                           :method => :post,
                                           :headers => {:Accept => "text/html"},
                                           :timeout => 100, # milliseconds
-                                          :params => {:KEY => "1522fa5538fd041d8855c507ac1bf6a5",
+                                          :params => {:KEY => Settings.chegg.key,
                                                       :isbn => search_text,
                                                       :V => "2.0",
-                                                      :PW => "4190344",
+                                                      :PW => Settings.chegg.password,
                                                       :R => "JSON"})
 
     hydra = Typhoeus::Hydra.new
@@ -69,16 +69,16 @@ class VendorSearch
     require 'typhoeus'
 
     #log the search
-    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => "BookByte")
+    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => Settings.book_byte.vendor_name)
     results = Array.new
 
-    book_byte_request = Typhoeus::Request.new("http://webservices.bookbyte.com/rest/v1/getinventoryprice.aspx",
-                                              :body => "this is a request body",
+    book_byte_request = Typhoeus::Request.new(Settings.book_byte.base_url,
+                                              :body => "Gremlin Books",
                                               :method => :post,
                                               :headers => {:Accept => "text/html"},
                                               :timeout => 100, # milliseconds
-                                              :params => {:AuthToken => "Lk1YwBqGUVIa4QOOcNT6oA==",
-                                                          :PublisherId => "K620292",
+                                              :params => {:AuthToken => Settings.book_byte.auth_token,
+                                                          :PublisherId => Settings.book_byte.publisher_id,
                                                           :AffiliateType => "GAN",
                                                           :ItemIdType => "ISBN",
                                                           :ItemId => search_text})
@@ -91,7 +91,7 @@ class VendorSearch
 
     #best used
     if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["IsOfferAvailable"]
-      results << {vendor: "Book Byte",
+      results << {vendor: Settings.book_byte.vendor_name,
                   price: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Price"],
                   cart: true,
                   buy: true,
@@ -109,7 +109,7 @@ class VendorSearch
 
     #best new
     if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["IsOfferAvailable"]
-      results << {vendor: "Book Byte",
+      results << {vendor: Settings.book_byte.vendor_name,
                   price: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Price"],
                   cart: true,
                   buy: true,
@@ -170,15 +170,15 @@ class VendorSearch
     require 'typhoeus'
 
     #log the search
-    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => "BookRenter")
+    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => Settings.book_renter.vendor_name)
     results = Array.new
 
-    book_renter_request = Typhoeus::Request.new("http://www.bookrenter.com/api/fetch_book_info",
-                                                :body => "this is a request body",
+    book_renter_request = Typhoeus::Request.new(Settings.book_renter.base_url,
+                                                :body => "Gremlin Books",
                                                 :method => :post,
                                                 :headers => {:Accept => "text/html"},
                                                 :timeout => 100, # milliseconds
-                                                :params => {:developer_key => "FqRlncrCJCxKKaRwQaphKGKiH4mNWwdf",
+                                                :params => {:developer_key => Settings.book_renter.developer_key,
                                                             :version => "2011-02-01",
                                                             :book_details => "y",
                                                             :format => "js",

@@ -4,9 +4,9 @@ AMAZON_SEARCH = lambda do |context|
   require 'json'
 
   Amazon::Ecs.options = {
-      :associate_tag => 'concllabs-20',
-      :AWS_access_key_id => '0C0D1DMW0V4ZH49EZHR2',
-      :AWS_secret_key => 'trNYD6Ky2UzMtjI0y0zMPq3ke24LQbrVCMYQ/DBf'
+      :associate_tag => Settings.amazon.associate_tag,
+      :AWS_access_key_id => Settings.amazon.access_key,
+      :AWS_secret_key => Settings.amazon.secret_key
   }
 
   # make api call to amazon
