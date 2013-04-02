@@ -110,7 +110,13 @@
                     <% search_result[1].each do |item| %>
                         <tr>
                           <td><%= item[:vendor] %></td>
-                          <td><%= item[:condition].to_s.titleize %></td>
+
+                          <% if item[:condition].nil? %>
+                              <td>Unknown</td>
+                          <% else %>
+                              <td><%= item[:condition].to_s.titleize %></td>
+                          <% end %>
+
                           <% if item[:price] == 0 %>
                               <td>Unknown</td>
                           <% else %>
@@ -135,8 +141,8 @@
                               <td><%= link_to "Buy", {:controller => "search", :action => "buy", :buy_link => item[:buy_link], :user => current_user, :isbn => key}, :target => "_new" %></td>
                           <% end %>
                           <td style="text-align: center; color: green">
-                            <% if search_result[1][0] == item %>
-                                <img style="height: 35px; width: 35px;" src="<%= image_path("check.png") %>" />
+                            <% if item[:best_offer] %>
+                                <img style="height: 35px; width: 35px;" src="<%= image_path("check.png") %>"/>
                                 <br/>Best Choice
                             <% end %>
                           </td>
@@ -167,8 +173,9 @@
                       complete your purchase through each vendor.
                     </li>
                     <li>Any item marked unknown usually is the result of minimal vendor information. For example, it
-                      could indicate that shipping is free, or that shipping is truly unknown. Please confirm all
-                      pricing on vendor site before completing your purchase.
+                      could indicate that shipping is free, or that shipping is truly unknown. It could also indicate
+                      that the item is out of stock. Please confirm
+                      pricing and availability on the vendor site before completing your purchase.
                     </li>
                   </ul>
                 </td>

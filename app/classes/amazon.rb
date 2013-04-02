@@ -13,9 +13,7 @@ AMAZON_SEARCH = lambda do |context|
   res = Amazon::Ecs.item_lookup(context.search_text, :id_type => 'ISBN', :merchant_id => 'Amazon', :search_index => 'Books', :response_group => 'Large')
 
   #log the search
-  SearchLog.create(:search_term => context.search_text, :user => context.current_user, :vendor => "Amazon")
-
-  # map results to common interface (hash)
+  SearchLog.create(:search_term => context.search_text, :user => context.current_user, :vendor => Settings.amazon.vendor_name)
 
   results = Array.new
 
@@ -29,18 +27,19 @@ AMAZON_SEARCH = lambda do |context|
 
         if !item_attributes.nil?
 
-          result = {vendor: "Amazon",
+          result = {vendor: Settings.amazon.vendor_name,
                     price: offers.get('Offer/OfferListing/Price/Amount').to_f / 100,
                     cart: true,
                     buy: true,
                     rent: false,
                     cart_link: "cart_link",
                     buy_link: item.get('DetailPageURL'),
-                    condition: offers.get('Offer/OfferListing/Price/Condition'),
+                    condition: offers.get('Offer/OfferAttributes/Condition'),
                     rent_link: "",
                     shipping: 0,
                     total_cost: offers.get('Offer/OfferListing/Price/Amount').to_f / 100,
                     notes: "",
+                    best_offer: false,
                     results_string: item.to_s.to_json
 
           }

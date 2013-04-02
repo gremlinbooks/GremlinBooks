@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/amazon.rb" afterPath="$PROJECT_DIR$/app/classes/amazon.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/book_info.rb" afterPath="$PROJECT_DIR$/app/classes/book_info.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/index.html.erb" afterPath="$PROJECT_DIR$/app/views/search/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sample.xml" afterPath="$PROJECT_DIR$/public/sample.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/search_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/search_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
     </list>
@@ -15,7 +17,7 @@
     <file path="/database.yml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364424694849" ignored="false" />
     <file path="/search_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364872414062" ignored="false" />
     <file path="/routes.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364601615612" ignored="false" />
-    <file path="/index.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364872155918" ignored="false" />
+    <file path="/index.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364877400660" ignored="false" />
     <file path="/show.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1360464049778" ignored="false" />
     <file path="/temp.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1359925816516" ignored="false" />
     <file path="/_main_navbar.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364414937452" ignored="false" />
@@ -140,8 +142,8 @@
     <file path="/song_writer.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361157737820" ignored="false" />
     <file path="$PROJECT_DIR$/../musicmanager/app/models/song_publisher.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361157898587" ignored="false" />
     <file path="/strategy_pattern.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1362530818148" ignored="false" />
-    <file path="/vendor_search.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364871149697" ignored="false" />
-    <file path="/amazon.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1363826026028" ignored="false" />
+    <file path="/vendor_search.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364876134500" ignored="false" />
+    <file path="/amazon.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364876632763" ignored="false" />
     <file path="/book_renter.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1362544477412" ignored="false" />
     <file path="/book_info.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364871811447" ignored="false" />
     <file path="/search_log.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1363227809628" ignored="false" />
@@ -229,44 +231,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="book_info.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/classes/book_info.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="32" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vendor_search.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#674#2389#0" expanded="false" />
-                <element signature="e#2393#8347#0" expanded="false" />
-                <element signature="e#8351#12374#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="128" selection-end="151" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="88" selection-start="2902" selection-end="2902" vertical-scroll-proportion="0.54715025">
-              <folding>
-                <element signature="e#7384#7409#0" expanded="true" />
-              </folding>
+            <state line="178" column="30" selection-start="8216" selection-end="8216" vertical-scroll-proportion="0.7046632">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -289,21 +258,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/public/sample_book_renter.json" />
         <option value="$PROJECT_DIR$/public/chegg_example.json" />
         <option value="$PROJECT_DIR$/config/vendor.yml" />
         <option value="$PROJECT_DIR$/app/controllers/book_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/classes/amazon.rb" />
         <option value="$PROJECT_DIR$/config/settings.yml" />
         <option value="$PROJECT_DIR$/config/settings/test.yml" />
         <option value="$PROJECT_DIR$/config/settings/production.yml" />
         <option value="$PROJECT_DIR$/config/settings/development.yml" />
-        <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
         <option value="$PROJECT_DIR$/app/classes/book_info.rb" />
         <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
+        <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
+        <option value="$PROJECT_DIR$/public/sample.xml" />
+        <option value="$PROJECT_DIR$/app/classes/amazon.rb" />
         <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
       </list>
     </option>
@@ -369,7 +338,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -384,6 +353,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="settings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1040,20 +1013,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="75" selection-end="75" vertical-scroll-proportion="0.025165563">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="0.40264902">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/rails_config.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1075,13 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/amazon.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="49" selection-start="170" selection-end="199" vertical-scroll-proportion="0.15099338">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/settings/development.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="61" selection-start="669" selection-end="669" vertical-scroll-proportion="0.45298013">
@@ -1090,13 +1042,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/settings/production.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="61" selection-start="669" selection-end="669" vertical-scroll-proportion="0.45298013">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings/test.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="61" selection-start="669" selection-end="669" vertical-scroll-proportion="0.45298013">
           <folding />
@@ -1126,35 +1071,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/book_info.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
+        <state line="44" column="23" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.8310139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="68" selection-start="757" selection-end="757" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#674#2389#0" expanded="false" />
-            <element signature="e#2393#8347#0" expanded="false" />
-            <element signature="e#8351#12374#0" expanded="false" />
-          </folding>
+        <state line="22" column="0" selection-start="738" selection-end="738" vertical-scroll-proportion="0.33996025">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
+    <entry file="file://$PROJECT_DIR$/public/sample.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="128" selection-end="151" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/settings/test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="61" selection-start="669" selection-end="669" vertical-scroll-proportion="0.33996025">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sample.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="21" selection-start="8133" selection-end="8133" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/amazon.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="42" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.75447315">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="88" selection-start="2902" selection-end="2902" vertical-scroll-proportion="0.54715025">
-          <folding>
-            <element signature="e#7384#7409#0" expanded="true" />
-          </folding>
+        <state line="178" column="30" selection-start="8216" selection-end="8216" vertical-scroll-proportion="0.7046632">
+          <folding />
         </state>
       </provider>
     </entry>

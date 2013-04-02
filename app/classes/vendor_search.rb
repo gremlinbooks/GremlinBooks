@@ -11,7 +11,14 @@ class VendorSearch
     #chegg_results = GetCheggResults(search_text, current_user)
     book_byte_results = GetBookByteResults(search_text, current_user)
     book_renter_results = GetBookRenterResults(search_text, current_user)
-    amazon_results + book_byte_results + book_renter_results
+    all_results = (amazon_results + book_byte_results + book_renter_results).sort_by { |hsh| hsh[:total_cost] }
+
+    all_results.each do | result |
+      result[:best_offer] = true if result[:total_cost] > 0
+      break if result[:total_cost] > 0
+    end
+
+    all_results
   end
 
   def GetAmazonResults(search_text, current_user)
@@ -57,6 +64,7 @@ class VendorSearch
                     shipping: 0,
                     total_cost: 0,
                     notes: "",
+                    best_offer: false,
                     results_string: chegg_response
     }
 
@@ -102,6 +110,7 @@ class VendorSearch
                   shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Price"].to_f,
                   notes: "",
+                  best_offer: false,
                   results_string: book_byte_response
       }
     end
@@ -120,6 +129,7 @@ class VendorSearch
                   shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Price"].to_f,
                   notes: "",
+                  best_offer: false,
                   results_string: book_byte_response
       }
     end
@@ -140,6 +150,7 @@ class VendorSearch
                   shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Price"].to_f,
                   notes: "",
+                  best_offer: false,
                   results_string: book_byte_response
       }
     end
@@ -158,6 +169,7 @@ class VendorSearch
                   shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"],
                   total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"].to_f,
                   notes: "",
+                  best_offer: false,
                   results_string: book_byte_response
       }
     end
@@ -208,6 +220,7 @@ class VendorSearch
                       shipping: 0,
                       total_cost: item["rental_price"].sub('$', '').to_f,
                       notes: item["term"] + ' ' + item["days"],
+                      best_offer: false,
                       results_string: book_renter_response
           }
         else
@@ -224,6 +237,7 @@ class VendorSearch
                         shipping: 0,
                         total_cost: item["purchase_price"].sub('$', '').to_f,
                         notes: "",
+                        best_offer: false,
                         results_string: book_renter_response
             }
           end
@@ -243,6 +257,7 @@ class VendorSearch
                   shipping: 0,
                   total_cost: book_renter_response["response"]["book"]["info"]["retail_price"].sub('$', '').to_f,
                   notes: "",
+                  best_offer: false,
                   results_string: book_renter_response
       }
     end
