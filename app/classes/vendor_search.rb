@@ -4,7 +4,6 @@ class VendorSearch
 
   def initialize()
     @mapper = AMAZON_SEARCH
-
   end
 
   def GetAllResults(search_text, current_user)

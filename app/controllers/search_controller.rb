@@ -15,26 +15,22 @@ class SearchController < ApplicationController
         #log the user search
         UserSearchLog.create!(:search_term => isbn, :user => current_user)
 
-        #check cache for isbn first
         isbn_result = Rails.cache.read(isbn.strip)
 
-        if !isbn_result.nil?
-          results[isbn.strip] = isbn_result
-        else #not in cache - get from vendors
-          book_info = BookInfo.new()
+        if isbn_result.nil?    # not in cache
+          book_info = BookInfo.new(isbn.strip, current_user)
           vendor = VendorSearch.new()
           result = Array.new
 
-          book_info = book_info.GetBookInfoFromBookRenter(isbn.strip, current_user)
-
-          if book_info
+          if book_info.title
             result << book_info
             result << vendor.GetAllResults(isbn.strip, current_user).sort_by { |hsh| hsh[:total_cost] }
-            #result << vendor.GetAllResults(isbn.strip, current_user).sort {|a,b| a[:total_cost] <=> b[:total_cost]}
 
             Rails.cache.write(isbn.strip, result, :expires_in => 1440.minutes)
             results[isbn.strip] = result
           end
+        else #in cache - use it
+          results[isbn.strip] = isbn_result
         end
       end
 
