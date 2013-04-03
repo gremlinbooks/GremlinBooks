@@ -1,19 +1,19 @@
 class SearchController < ApplicationController
-
   before_filter :authenticate_user!
 
   def index
     require 'vendor_search.rb'
     require 'amazon.rb'
     require 'dalli'
+    require 'tracker.rb'
 
     if !params[:search].nil?
       isbns = params[:search].split(',')
       results = Hash.new
 
       isbns.each do |isbn|
-        #log the user search
-        UserSearchLog.create!(:search_term => isbn, :user => current_user)
+        tracker = Tracker.new()
+        tracker.track_user_search(isbn, current_user)
 
         isbn_result = Rails.cache.read(isbn.strip)
 
@@ -24,8 +24,7 @@ class SearchController < ApplicationController
 
           if book_info.title
             result << book_info
-            result << vendor.GetAllResults(isbn.strip, current_user)
-
+            result << vendor.get_all_results(isbn.strip, current_user)
 
             Rails.cache.write(isbn.strip, result, :expires_in => 1440.minutes)
             results[isbn.strip] = result
@@ -48,8 +47,9 @@ class SearchController < ApplicationController
   end
 
   def buy
-    # track that the user wants to buy book, then redirect to vendor site
-    UserBuyLog.create!(:user => params[:user], :isbn => params[:isbn], :link => params[:buy_link])
+    require 'tracker.rb'
+    tracker = Tracker.new()
+    tracker.track_buy_click(params)
     redirect_to params[:buy_link]
   end
 

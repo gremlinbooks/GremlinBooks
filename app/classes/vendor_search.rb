@@ -6,32 +6,40 @@ class VendorSearch
     @mapper = AMAZON_SEARCH
   end
 
-  def GetAllResults(search_text, current_user)
-    amazon_results = GetAmazonResults(search_text, current_user)
-    #chegg_results = GetCheggResults(search_text, current_user)
-    book_byte_results = GetBookByteResults(search_text, current_user)
-    book_renter_results = GetBookRenterResults(search_text, current_user)
+  def get_all_results(search_text, current_user)
+    amazon_results = get_amazon_results(search_text, current_user)
+    #chegg_results = get_chegg_results(search_text, current_user)
+    book_byte_results = get_book_byte_results(search_text, current_user)
+    book_renter_results = get_book_renter_results(search_text, current_user)
     all_results = (amazon_results + book_byte_results + book_renter_results).sort_by { |hsh| hsh[:total_cost] }
+    determine_best_offer(all_results)
+  end
 
-    all_results.each do | result |
+  private
+
+  # mark best offer for item with lowest cost, but greater than 0
+  def determine_best_offer(results)
+    results.each do | result |
       result[:best_offer] = true if result[:total_cost] > 0
       break if result[:total_cost] > 0
     end
 
-    all_results
+    results
   end
 
-  def GetAmazonResults(search_text, current_user)
+  def get_amazon_results(search_text, current_user)
     @search_text = search_text
     @current_user = current_user
     @mapper.call(self)
   end
 
-  def GetCheggResults(search_text, current_user)
+  def get_chegg_results(search_text, current_user)
     require 'typhoeus'
+    require 'tracker.rb'
 
-    #log the search
-    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => Settings.chegg.vendor_name)
+    tracker = Tracker.new()
+    tracker.track_vendor_search(search_text, current_user, Settings.chegg.vendor_name)
+
     results = Array.new
 
     chegg_request = Typhoeus::Request.new(Settings.chegg.base_url,
@@ -50,7 +58,6 @@ class VendorSearch
     hydra.run
 
     chegg_response = ActiveSupport::JSON.decode(chegg_request.response.body)
-
 
     chegg_result = {vendor: "Chegg",
                     price: 0,
@@ -72,11 +79,13 @@ class VendorSearch
     results
   end
 
-  def GetBookByteResults(search_text, current_user)
+  def get_book_byte_results(search_text, current_user)
     require 'typhoeus'
+    require 'tracker.rb'
 
-    #log the search
-    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => Settings.book_byte.vendor_name)
+    tracker = Tracker.new()
+    tracker.track_vendor_search(search_text, current_user, Settings.book_byte.vendor_name)
+
     results = Array.new
 
     book_byte_request = Typhoeus::Request.new(Settings.book_byte.base_url,
@@ -177,11 +186,13 @@ class VendorSearch
     results
   end
 
-  def GetBookRenterResults(search_text, current_user)
+  def get_book_renter_results(search_text, current_user)
     require 'typhoeus'
+    require 'tracker.rb'
 
-    #log the search
-    SearchLog.create(:search_term => search_text, :user => current_user, :vendor => Settings.book_renter.vendor_name)
+    tracker = Tracker.new()
+    tracker.track_vendor_search(search_text, current_user, Settings.book_renter.vendor_name)
+
     results = Array.new
 
     book_renter_request = Typhoeus::Request.new(Settings.book_renter.base_url,

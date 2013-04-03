@@ -7,7 +7,6 @@ GremlinBooks::Application.routes.draw do
   get "book/index"
   get "pages/index"
   get "pages/mission"
-
   get "search/buy"
 
   devise_for :users

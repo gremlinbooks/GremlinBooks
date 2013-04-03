@@ -10,9 +10,10 @@ class BookInfo
 
   def GetBookInfo(isbn, current_user)
     require 'typhoeus'
+    require 'tracker.rb'
 
-    #log the search
-    SearchLog.create(:search_term => isbn, :user => current_user, :vendor => Settings.book_renter.vendor_name)
+    tracker = Tracker.new()
+    tracker.track_vendor_search(:search_term => isbn, :user => current_user, :vendor => Settings.book_renter.vendor_name)
 
     book_renter_request = Typhoeus::Request.new(Settings.book_renter.base_url,
                                                 :body => "Gremlin Books",

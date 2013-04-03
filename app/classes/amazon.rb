@@ -2,6 +2,10 @@ AMAZON_SEARCH = lambda do |context|
   # get amazon specific keys from yml here
   require 'amazon/ecs'
   require 'json'
+  require 'tracker.rb'
+
+  tracker = Tracker.new()
+  tracker.track_vendor_search(context.search_text, context.current_user, Settings.amazon.vendor_name)
 
   Amazon::Ecs.options = {
       :associate_tag => Settings.amazon.associate_tag,
@@ -11,9 +15,6 @@ AMAZON_SEARCH = lambda do |context|
 
   # make api call to amazon
   res = Amazon::Ecs.item_lookup(context.search_text, :id_type => 'ISBN', :merchant_id => 'Amazon', :search_index => 'Books', :response_group => 'Large')
-
-  #log the search
-  SearchLog.create(:search_term => context.search_text, :user => context.current_user, :vendor => Settings.amazon.vendor_name)
 
   results = Array.new
 

@@ -14,6 +14,8 @@ gem 'json'
 gem 'typhoeus'
 gem 'dalli'
 gem 'rails_config'
+gem 'delayed_job_active_record'
+gem 'daemons'
 
 # Gems used only for assets and not required
 # in production environments by default.
