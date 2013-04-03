@@ -2,7 +2,11 @@ class Tracker
 
   def track_buy_click(params)
     #log the buy/rent link click
-    UserBuyLog.create!(:user => params[:user], :isbn => params[:isbn], :link => params[:buy_link])
+    UserBuyLog.create!(:user => params[:user],
+                       :isbn => params[:isbn],
+                       :link => params[:buy_link],
+                       :affiliate_percent => Settings[params[:vendor]][:affiliate_percent],
+                       :item_cost => params[:item_cost])
   end
   handle_asynchronously :track_buy_click, :priority => 20
 

@@ -1,3 +1,3 @@
 class UserBuyLog < ActiveRecord::Base
-  attr_accessible :isbn, :link, :user
+  attr_accessible :isbn, :link, :user, :affiliate_percent, :item_cost
 end
