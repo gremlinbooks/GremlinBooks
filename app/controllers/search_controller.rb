@@ -14,6 +14,7 @@ class SearchController < ApplicationController
       isbns.each do |isbn|
         tracker = Tracker.new()
         tracker.track_user_search(isbn, current_user)
+        isbn = isbn.gsub("-", "")   # strip out the - if in submitted ISBN
 
         isbn_result = Rails.cache.read(isbn.strip)
 

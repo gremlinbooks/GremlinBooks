@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/delayed_job_config.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/tracker.rb" afterPath="$PROJECT_DIR$/app/classes/tracker.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/search_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/search_controller.rb" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -13,7 +10,7 @@
     <file path="/Gemfile" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364866979462" ignored="false" />
     <file path="/Dummy.txt" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1365029177537" ignored="false" />
     <file path="/database.yml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364424694849" ignored="false" />
-    <file path="/search_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364959898908" ignored="false" />
+    <file path="/search_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1365044188250" ignored="false" />
     <file path="/routes.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364601615612" ignored="false" />
     <file path="/index.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1365002496532" ignored="false" />
     <file path="/show.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1360464049778" ignored="false" />
@@ -236,10 +233,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tracker.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tracker.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/classes/tracker.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="86" selection-start="489" selection-end="489" vertical-scroll-proportion="0.34131736">
+            <state line="12" column="86" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -262,6 +259,15 @@
                 <element signature="e#2816#8930#0" expanded="false" />
                 <element signature="e#8934#13090#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="9" selection-start="481" selection-end="481" vertical-scroll-proportion="0.28892216">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -293,7 +299,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
         <option value="$PROJECT_DIR$/app/classes/amazon.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/jquery.expander.js" />
@@ -309,6 +314,7 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/config/initializers/delayed_job_config.rb" />
         <option value="$PROJECT_DIR$/app/classes/tracker.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
       </list>
     </option>
   </component>
@@ -958,9 +964,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/classes/tracker.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="18" selection-start="1260" selection-end="1260" vertical-scroll-proportion="1.4505988">
+        <state line="12" column="86" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/delayed_job_config.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="46" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/book_info.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="80" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -975,23 +995,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/book_info.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="80" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/delayed_job_config.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="46" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/tracker.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="86" selection-start="489" selection-end="489" vertical-scroll-proportion="0.34131736">
+        <state line="17" column="9" selection-start="481" selection-end="481" vertical-scroll-proportion="0.28892216">
           <folding />
         </state>
       </provider>
