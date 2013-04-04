@@ -5,7 +5,7 @@ class Tracker
     UserBuyLog.create!(:user => params[:user],
                        :isbn => params[:isbn],
                        :link => params[:buy_link],
-                       :affiliate_percent => Settings[params[:vendor]][:affiliate_percent],
+                       :affiliate_percent => Settings[params[:vendor].downcase][:affiliate_percent],
                        :item_cost => params[:item_cost])
   end
   handle_asynchronously :track_buy_click, :priority => 20
