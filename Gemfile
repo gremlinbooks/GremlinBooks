@@ -16,6 +16,7 @@ gem 'dalli'
 gem 'rails_config'
 gem 'delayed_job_active_record'
 gem 'daemons'
+gem 'rack-mini-profiler'
 
 # Gems used only for assets and not required
 # in production environments by default.

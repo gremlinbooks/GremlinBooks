@@ -14,7 +14,7 @@ AMAZON_SEARCH = lambda do |context|
   }
 
   # make api call to amazon
-  res = Amazon::Ecs.item_lookup(context.search_text, :id_type => 'ISBN', :merchant_id => 'Amazon', :search_index => 'Books', :response_group => 'Large')
+  res = Amazon::Ecs.item_lookup(context.search_text, :id_type => 'ISBN', :search_index => 'Books', :response_group => 'Large')
 
   results = Array.new
 
@@ -42,7 +42,6 @@ AMAZON_SEARCH = lambda do |context|
                     notes: "",
                     best_offer: false,
                     results_string: item.to_s.to_json
-
           }
 
           results << result
