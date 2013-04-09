@@ -43,7 +43,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
 
     #send email
-    ContactMailer.contact_email(params[:contact]).deliver
+    ContactMailer.delay.contact_email(params[:contact])
 
     respond_to do |format|
       if @contact.save

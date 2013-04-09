@@ -7,6 +7,5 @@ class ContactMailer < ActionMailer::Base
 
     mail(:from => @email, :to => "cnowotny@gremlinbooks.com, djarmoluk@gmail.com", :subject => "Gremlin Books - Contact Form Submitted")
   end
-  handle_asynchronously :contact_email
 
 end

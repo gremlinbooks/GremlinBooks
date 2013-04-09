@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/contact_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/contact_mailer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -173,7 +174,7 @@
     <file path="/contact.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364414204968" ignored="false" />
     <file path="/bootswatch.css" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364413836832" ignored="false" />
     <file path="/_form.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364426817285" ignored="false" />
-    <file path="/contacts_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1365294896650" ignored="false" />
+    <file path="/contacts_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1365475492515" ignored="false" />
     <file path="/contact.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364503250971" ignored="false" />
     <file path="$PROJECT_DIR$/../realenergyforlife/app/assets/stylesheets/bootstrap.min.css" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364423986511" ignored="false" />
     <file path="$PROJECT_DIR$/../realenergyforlife/app/assets/stylesheets/bootstrap-responsive.min.css" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364424016929" ignored="false" />
@@ -244,7 +245,7 @@
       <file leaf-file-name="contacts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="165" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0">
+            <state line="75" column="163" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -253,7 +254,7 @@
       <file leaf-file-name="contact_mailer.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/mailers/contact_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="68" selection-start="348" selection-end="348" vertical-scroll-proportion="0.18874173">
+            <state line="11" column="50" selection-start="309" selection-end="309" vertical-scroll-proportion="0.17301324">
               <folding />
             </state>
           </provider>
@@ -290,9 +291,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootswatch.css" />
         <option value="$PROJECT_DIR$/config/initializers/recaptcha.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
         <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
         <option value="$PROJECT_DIR$/app/mailers/contact_mailer.rb" />
       </list>
     </option>
@@ -1159,14 +1160,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="165" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0">
+        <state line="75" column="163" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/contact_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="68" selection-start="348" selection-end="348" vertical-scroll-proportion="0.18874173">
+        <state line="11" column="50" selection-start="309" selection-end="309" vertical-scroll-proportion="0.17301324">
           <folding />
         </state>
       </provider>
