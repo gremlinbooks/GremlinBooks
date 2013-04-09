@@ -17,6 +17,7 @@ gem 'rails_config'
 gem 'delayed_job_active_record'
 gem 'daemons'
 gem 'rack-mini-profiler'
+gem 'recaptcha', :require => 'recaptcha/rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
