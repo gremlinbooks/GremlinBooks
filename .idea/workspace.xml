@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/recaptcha.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/contact_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/contact_mailer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/index.html.erb" afterPath="$PROJECT_DIR$/app/views/search/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -208,7 +202,7 @@
     <file path="/contact_mailer.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364502968729" ignored="false" />
     <file path="/contact_mailer.text.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364503115211" ignored="false" />
     <file path="/temp.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364503998089" ignored="false" />
-    <file path="/contact_mailer.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1365295612338" ignored="false" />
+    <file path="/contact_mailer.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1365475039189" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/rubymine.jar!/resources/relaxng.rng" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364589555846" ignored="false" />
     <file path="/vendor.yml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364868103438" ignored="false" />
     <file path="/settings.yml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1365288084817" ignored="false" />
@@ -247,19 +241,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="vendor_search.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
+      <file leaf-file-name="contacts_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="233" column="91" selection-start="11295" selection-end="11295" vertical-scroll-proportion="0.339404">
+            <state line="67" column="165" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
+      <file leaf-file-name="contact_mailer.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/mailers/contact_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="222" selection-start="5905" selection-end="5905" vertical-scroll-proportion="-19.678572">
+            <state line="12" column="68" selection-start="348" selection-end="348" vertical-scroll-proportion="0.18874173">
               <folding />
             </state>
           </provider>
@@ -297,9 +291,9 @@
         <option value="$PROJECT_DIR$/config/initializers/recaptcha.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/mailers/contact_mailer.rb" />
         <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
         <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
+        <option value="$PROJECT_DIR$/app/mailers/contact_mailer.rb" />
       </list>
     </option>
   </component>
@@ -1149,20 +1143,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="165" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/contact_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="46" selection-start="350" selection-end="350" vertical-scroll-proportion="0.18874173">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="132" column="222" selection-start="5905" selection-end="5905" vertical-scroll-proportion="-19.678572">
@@ -1172,7 +1152,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="233" column="91" selection-start="11295" selection-end="11295" vertical-scroll-proportion="0.339404">
+        <state line="248" column="168" selection-start="12049" selection-end="12049" vertical-scroll-proportion="0.57533115">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="165" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/contact_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="68" selection-start="348" selection-end="348" vertical-scroll-proportion="0.18874173">
           <folding />
         </state>
       </provider>

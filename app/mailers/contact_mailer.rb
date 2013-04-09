@@ -5,8 +5,8 @@ class ContactMailer < ActionMailer::Base
     @email = contact[:email]
     @comment = contact[:comment]
 
-    mail(:from => "djarmoluk@gremlinbooks.com", :to => "cnowotny@gremlinbooks.com", :subject => "Gremlin Books - Contact Form Submitted")
+    mail(:from => @email, :to => "cnowotny@gremlinbooks.com, djarmoluk@gmail.com", :subject => "Gremlin Books - Contact Form Submitted")
   end
-  #handle_asynchronously :contact_email
+  handle_asynchronously :contact_email
 
 end
