@@ -19,6 +19,14 @@
   <% end %>
 </div>
 
+<% if params[:search].nil? %>
+    <div style="text-align: center">
+      <p>
+      <h5>To search multiple ISBN's, separate each ISBN with a comma.</h5>
+      </p>
+    </div>
+<% end %>
+
 <% if !params[:search].nil? %>
 
 
