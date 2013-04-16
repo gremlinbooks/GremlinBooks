@@ -1,63 +1,22 @@
 {"Error"=>false,
-"Data"=>{
-"Items"=>
-[{"Renting"=>true,
-"ISBN"=>"1430218339",
-"EAN"=>"9781430218333",
+"Data"=>
+{"Items"=>
+[{"Renting"=>true, "ISBN"=>"1430218339", "EAN"=>"9781430218333",
 "BookInfo"=>
-{"Title"=>"Pro Git",
-"EditionNumber"=>"1",
-"EditionType"=>"",
-"PubDate"=>"2009-08-27",
-"PubName"=>"Apress L. P.",
-"ListPrice"=>"34.99",
-"Authors"=>["Danic, Mario", "Aljord, Patrick", "Chacon, Scott"],
-"ImageThumb"=>"http://c.cheggcdn.com/covers2/9580000/thumbs/9587517_1264034211.JPG",
-"ImageSmall"=>"http://c.cheggcdn.com/covers2/9580000/9587517_1264034211.JPG",
-"ImageMedium"=>"http://c.cheggcdn.com/covers2/9580000/9587517_1264034211.JPG",
-"ImageLarge"=>"http://c.cheggcdn.com/covers2/9580000/9587517_1264034211.JPG"},
+    {"Title"=>"Pro Git", "EditionNumber"=>"1", "EditionType"=>"", "PubDate"=>"2009-08-27", "PubName"=>"Apress L. P.", "ListPrice"=>"34.99",
+    "Authors"=>["Danic, Mario", "Aljord, Patrick", "Chacon, Scott"], "ImageThumb"=>"http://c.cheggcdn.com/covers2/9580000/thumbs/9587517_1264034211.JPG",
+    "ImageSmall"=>"http://c.cheggcdn.com/covers2/9580000/9587517_1264034211.JPG",
+    "ImageMedium"=>"http://c.cheggcdn.com/covers2/9580000/9587517_1264034211.JPG",
+    "ImageLarge"=>"http://c.cheggcdn.com/covers2/9580000/9587517_1264034211.JPG"},
+
 "Terms"=>
-[{"id"=>"120",
-"term"=>"SEMESTER",
-"name"=>"Semester Rental",
-"term_days"=>"138",
-"due_date"=>"2013-08-02",
-"price"=>"45.49"},
-{"id"=>"120",
-"term"=>"QUARTER",
-"name"=>"Quarter Rental",
-"term_days"=>"138",
-"due_date"=>"2013-08-02",
-"price"=>"45.49"},
-{"id"=>"120",
-"term"=>"SUMMER",
-"name"=>"Summer Rental",
-"term_days"=>"138",
-"due_date"=>"2013-08-02",
-"price"=>"45.49"}],
+[{"id"=>"120", "term"=>"SEMESTER", "name"=>"Semester Rental", "term_days"=>"108", "due_date"=>"2013-08-02", "price"=>"32.99", "pid"=>"td2RrBjJ^it1i-z7NXFE-FkS43Dg3H6miDRBB7tAgcPLdG1Ev2oWmup1sIOZGE6by1h7XLDNvfDiyH3xbg76uQ"},
+{"id"=>"120", "term"=>"QUARTER", "name"=>"Quarter Rental", "term_days"=>"108", "due_date"=>"2013-08-02", "price"=>"32.99", "   pid"=>"td2RrBjJ^it1i-z7NXFE-FkS43Dg3H6miDRBB7tAgcPLdG1Ev2oWmup1sIOZGE6by1h7XLDNvfDiyH3xbg76uQ"},
+{"id"=>"120", "term"=>"SUMMER", "name"=>"Summer Rental", "term_days"=>"108", "due_date"=>"2013-08-02", "price"=>"32.99", "     pid"=>"td2RrBjJ^it1i-z7NXFE-FkS43Dg3H6miDRBB7tAgcPLdG1Ev2oWmup1sIOZGE6by1h7XLDNvfDiyH3xbg76uQ"}],
+
 "ShippingPrices"=>
-[{"method_name"=>"Ground Shipping",
-"cost_first"=>"5.99",
-"cost_each"=>"2.99",
-"guarantee_date"=>"03-25-2013"},
-{"method_name"=>"Standard",
-"cost_first"=>"4.99",
-"cost_each"=>"3.99",
-"guarantee_date"=>"03-27-2013"},
-{"method_name"=>"UPS 3rd Day",
-"cost_first"=>"5.99",
-"cost_each"=>"2.99",
-"guarantee_date"=>"03-21-2013"},
-{"method_name"=>"UPS 2nd Day",
-"cost_first"=>"10.99",
-"cost_each"=>"5.99",
-"guarantee_date"=>"03-20-2013"},
-{"method_name"=>"UPS Next Day Air",
-"cost_first"=>"16.99",
-"cost_each"=>"10.99",
-"guarantee_date"=>"03-18-2013"}]}]}}
-
-
-
-
-{"Error"=>false, "Data"=>{"Items"=>[{"Renting"=>false, "ISBN"=>"1934356131", "EAN"=>"9781934356135", "BookInfo"=>{"Title"=>"Web Design for Developers", "EditionNumber"=>"0", "EditionType"=>"Illustrated", "PubDate"=>"2010-01-06", "PubName"=>"Pragmatic Bookshelf, The", "ListPrice"=>"42.95", "Authors"=>["Hogan, Brian P.", "Steinberg, Daniel H.", "Hogan, Brian"], "ImageThumb"=>"http://c.cheggcdn.com/covers2/9800000/thumbs/9805823_1250804037.jpg", "ImageSmall"=>"http://c.cheggcdn.com/covers2/9800000/9805823_1250804037.jpg", "ImageMedium"=>"http://c.cheggcdn.com/covers2/9800000/9805823_1250804037.jpg", "ImageLarge"=>"http://c.cheggcdn.com/covers2/9800000/9805823_1250804037.jpg"}, "ShippingPrices"=>[{"method_name"=>"Ground Shipping", "cost_first"=>"5.99", "cost_each"=>"2.99", "guarantee_date"=>"04-08-2013"}, {"method_name"=>"Standard", "cost_first"=>"4.99", "cost_each"=>"3.99", "guarantee_date"=>"04-10-2013"}, {"method_name"=>"UPS 3rd Day", "cost_first"=>"5.99", "cost_each"=>"2.99", "guarantee_date"=>"04-04-2013"}, {"method_name"=>"UPS 2nd Day", "cost_first"=>"10.99", "cost_each"=>"5.99", "guarantee_date"=>"04-03-2013"}, {"method_name"=>"UPS Next Day Air", "cost_first"=>"16.99", "cost_each"=>"10.99", "guarantee_date"=>"04-01-2013"}]}]}}
+[{"method_name"=>"Ground Shipping", "cost_first"=>"5.99", "cost_each"=>"2.99", "guarantee_date"=>"04-24-2013"},
+{"method_name"=>"Standard", "cost_first"=>"4.99", "cost_each"=>"3.99", "guarantee_date"=>"04-26-2013"},
+{"method_name"=>"UPS 3rd Day", "cost_first"=>"5.99", "cost_each"=>"2.99", "guarantee_date"=>"04-20-2013"},
+{"method_name"=>"UPS 2nd Day", "cost_first"=>"10.99", "cost_each"=>"5.99", "guarantee_date"=>"04-19-2013"},
+{"method_name"=>"UPS Next Day Air", "cost_first"=>"16.99", "cost_each"=>"10.99", "guarantee_date"=>"04-17-2013"}]}]}}

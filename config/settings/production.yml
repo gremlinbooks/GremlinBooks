@@ -10,6 +10,9 @@
     base_url: 'http://api.chegg.com/rent.svc'
     password: '4190344'
     affiliate_percent: 6
+    aid: 'AID'
+    pid: 'PID'
+    sid: 'SID'
   book_byte:
     vendor_name: 'Book Byte'
     auth_token: 'Lk1YwBqGUVIa4QOOcNT6oA=='

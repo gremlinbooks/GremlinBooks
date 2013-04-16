@@ -8,10 +8,10 @@ class VendorSearch
 
   def get_all_results(search_text, current_user)
     amazon_results = get_amazon_results(search_text, current_user)
-    #chegg_results = get_chegg_results(search_text, current_user)
+    chegg_results = get_chegg_results(search_text, current_user)
     book_byte_results = get_book_byte_results(search_text, current_user)
     book_renter_results = get_book_renter_results(search_text, current_user)
-    all_results = (amazon_results + book_byte_results + book_renter_results).sort_by { |hsh| hsh[:total_cost] }
+    all_results = (amazon_results + book_byte_results + book_renter_results + chegg_results).sort_by { |hsh| hsh[:total_cost] }
     determine_best_offer(all_results)
   end
 
@@ -51,7 +51,8 @@ class VendorSearch
                                                       :isbn => search_text,
                                                       :V => "2.0",
                                                       :PW => Settings.chegg.password,
-                                                      :R => "JSON"})
+                                                      :R => "JSON",
+                                                      :with_pids => 1})
 
     hydra = Typhoeus::Hydra.new
     hydra.queue chegg_request
@@ -59,23 +60,32 @@ class VendorSearch
 
     chegg_response = ActiveSupport::JSON.decode(chegg_request.response.body)
 
-    chegg_result = {vendor: "Chegg",
-                    price: 0,
-                    cart: false,
-                    buy: false,
-                    rent: true,
-                    cart_link: "cart_link",
-                    buy_link: "Buy Link",
-                    condition: "condition",
-                    rent_link: "http://www.chegg.com/?referrer=REFER&PID=PID&AID=AID&SID=SID&pids=PIDS",
-                    shipping: 0,
-                    total_cost: 0,
-                    notes: "",
-                    best_offer: false,
-                    results_string: chegg_response
-    }
+    if chegg_response["Data"]["Items"]
+      chegg_response["Data"]["Items"].each do | item |
+        if item["Renting"]
+          if item["Terms"]
+            item["Terms"].each do | term |
+              results << {vendor: Settings.chegg.vendor_name,
+                          price: term["price"].to_f,
+                          cart: true,
+                          buy: false,
+                          rent: true,
+                          cart_link: "",
+                          buy_link: "",
+                          condition: "Rent",
+                          rent_link: "http://www.chegg.com/?referrer=CJGATEWAY&PID=#{Settings.chegg.pid}&AID=#{Settings.chegg.aid}&SID=#{Settings.chegg.sid}&pids=#{term["pid"]}",
+                          shipping: 0,
+                          total_cost: term["price"].to_f,
+                          notes: term["name"],
+                          best_offer: false,
+                          results_string: chegg_response
+              }
+            end
+          end
+        end
+      end
+    end
 
-    results << chegg_result
     results
   end
 
