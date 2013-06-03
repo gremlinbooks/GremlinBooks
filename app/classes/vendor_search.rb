@@ -244,24 +244,24 @@ class VendorSearch
                       best_offer: false,
                       results_string: book_renter_response
           }
-        else
-          if item["condition"]  # purchase
-            results << {vendor: "Book Renter",
-                        price: item["purchase_price"].sub('$', '').to_f,
-                        cart: true,
-                        buy: true,
-                        rent: false,
-                        cart_link: book_renter_response["response"]["book"]["add_to_cart_url"].sub('RENTAL_PERIOD', 0.to_s),
-                        buy_link: book_renter_response["response"]["book"]["add_to_cart_url"].sub('RENTAL_PERIOD', 0.to_s),
-                        condition: item["condition"],
-                        rent_link: "",
-                        shipping: 0,
-                        total_cost: item["purchase_price"].sub('$', '').to_f,
-                        notes: "",
-                        best_offer: false,
-                        results_string: book_renter_response
-            }
-          end
+        #else    - Book Renter does not give commission on new books to buy. Therefore, removing buy option. 6-3-2013
+          #if item["condition"]  # purchase
+          #  results << {vendor: "Book Renter",
+          #              price: item["purchase_price"].sub('$', '').to_f,
+          #              cart: true,
+          #              buy: true,
+          #              rent: false,
+          #              cart_link: book_renter_response["response"]["book"]["add_to_cart_url"].sub('RENTAL_PERIOD', 0.to_s),
+          #              buy_link: book_renter_response["response"]["book"]["add_to_cart_url"].sub('RENTAL_PERIOD', 0.to_s),
+          #              condition: item["condition"],
+          #              rent_link: "",
+          #              shipping: 0,
+          #              total_cost: item["purchase_price"].sub('$', '').to_f,
+          #              notes: "",
+          #              best_offer: false,
+          #              results_string: book_renter_response
+          # }
+          # end
         end
       end
     else
