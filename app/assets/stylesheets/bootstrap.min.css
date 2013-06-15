@@ -690,7 +690,7 @@ a.text-success:hover, a.text-success:focus {
     text-align: center
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, h7 {
     margin: 10.5px 0;
     font-family: inherit;
     font-weight: normal;
@@ -731,6 +731,11 @@ h5 {
 
 h6 {
     font-size: 12.75px
+}
+
+h7 {
+    font-style: italic;
+    font-size: 11.75px
 }
 
 h1 small {
@@ -5811,4 +5816,8 @@ html, body {
 }
 .footer, .push {
     height: 142px; /* .push must be the same height as .footer */
+}
+
+.custom_button_size {
+    width: 125px !important;
 }

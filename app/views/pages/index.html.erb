@@ -1,24 +1,55 @@
-<h2>Textbooks are really expensive...we can help!! </h2>
-<p>Paying too much for textbooks is no fun, and neither is standing in a long line, waiting to pay too much for them!
-  That's where we can help. Our free service, will search the web to bring you the best deals from your favorite sources
-  across the web. The whole process will take less then 10 minutes and you won't even have to leave your seat. You will
-  save tons of money and time... what a way to start the semester! If only we could take your test for you...maybe in
-  the next release? Probably not.</p>
-
-
-
-
-
-<h2>So why use us?</h2>
-<p>I am so glad you asked. We went through college and grad school, and buying textbooks was about as much fun as
-  cleaning up after your dog... so we want to make this service fast and easy, so we look at over fifty different sites
-  so you don't have to. Also, we are partnering with literacy groups around the country to promote reading among young
-  children. So every time some one uses our service, we are going to make a donation to this cause. Wow, saving money,
-  time, and helping young kids read. You really might have super powers!!</p>
 <br>
-<p>Click <%= link_to "Sign Up", new_user_registration_path %> to register. </p>
+<table>
+  <tr>
+    <td style="text-align: center"><%= image_tag("gremlin_small.png") %></td>
+  </tr>
+  <tr>
+    <td style="text-align: center"><h4>Textbooks are really expensive...we can help!! </h4></td>
+  </tr>
+  <tr>
+    <td style="text-align: center"><h5> It's fast, it's free, it's awesome.</h5></td>
+  </tr>
+  <tr>
+    <td><br></td>
+  </tr>
+  <tr>
+    <td><br></td>
+  </tr>
+  <tr>
 
-<p>If you're already a registered user, click  <%= link_to "Sign In", new_user_session_path %>     </p>
+    <td>
+      <center>
+        <table style="width: 50%">
+          <tr>
+            <td style="width: 50%; text-align: center"><%= link_to "Sign Up", new_user_registration_path, :class => "btn btn-primary btn-large custom_button_size" %></td>
+            <td style="width: 50%; text-align: center"><%= link_to "Sign In", new_user_session_path, :class => "btn btn-inverse btn-large custom_button_size" %></td>
+          </tr>
+          <tr>
+            <td style="width: 50%; text-align: center">
+              <h7>Signing up is easy and fast. Just provide an email and password and you're on your way. Listen, we
+                like
+                junk
+                email as much as you do, so we promise never to sell your information to anyone. Pinky promise.</h7>
+            </td>
+            <td style="width: 50%; text-align: center">
+              <h7>Existing users, click here to sign in. <br> Welcome back!</h7>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
 
 
 
