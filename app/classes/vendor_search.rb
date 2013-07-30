@@ -58,7 +58,7 @@ class VendorSearch
     xml.search('products').map do |product|
 
       results << {vendor: product.at('advertiser-name').text,
-                  price: 11.00,
+                  price: product.at('price').inner_text.to_f,
                   cart: true,
                   buy: true,
                   rent: false,
@@ -67,7 +67,7 @@ class VendorSearch
                   condition: "Buy",
                   rent_link: "",
                   shipping: 0,
-                  total_cost: 11.00,
+                  total_cost: product.at('price').inner_text.to_f,
                   notes: "",
                   best_offer: false,
                   results_string: cj_request.response.body
