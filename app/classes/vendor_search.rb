@@ -63,7 +63,7 @@ class VendorSearch
                   buy: true,
                   rent: false,
                   cart_link: "",
-                  buy_link: product.at('buy-url'),
+                  buy_link: product.at('buy-url').text,
                   condition: "Buy",
                   rent_link: "",
                   shipping: 0,
