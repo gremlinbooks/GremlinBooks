@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/GremlinBooks.iml" afterPath="$PROJECT_DIR$/.idea/GremlinBooks.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/settings.yml" afterPath="$PROJECT_DIR$/config/settings.yml" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -362,17 +360,7 @@
     <favorites_list name="GremlinBooks" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="vendor_search.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="209" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.5662252">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -404,9 +392,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/settings.yml" />
         <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
+        <option value="$PROJECT_DIR$/config/settings.yml" />
       </list>
     </option>
   </component>
@@ -1231,13 +1219,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1331" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67241377" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.670977" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12092283" sideWeight="0.98381877" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12092283" sideWeight="0.98381877" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.670977" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1349,11 +1337,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="51" selection-start="2354" selection-end="2354" vertical-scroll-proportion="1.7529762" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/settings.local.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1371,11 +1354,6 @@
         <state line="126" column="52" selection-start="6639" selection-end="6639" vertical-scroll-proportion="0.5438067" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="25" selection-start="2507" selection-end="2507" vertical-scroll-proportion="0.94207317" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="36" selection-start="1334" selection-end="1334" vertical-scroll-proportion="-3.7818472" />
@@ -1391,9 +1369,23 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="51" selection-start="2354" selection-end="2354" vertical-scroll-proportion="0.96854305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/settings.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="24" selection-start="822" selection-end="822" vertical-scroll-proportion="0.39748955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="209" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.5662252">
+        <state line="61" column="7" selection-start="2212" selection-end="2212" vertical-scroll-proportion="-3.4983444">
           <folding />
         </state>
       </provider>

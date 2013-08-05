@@ -23,7 +23,7 @@
     vendor_name: 'Book Renter'
     developer_key: 'FqRlncrCJCxKKaRwQaphKGKiH4mNWwdf'
     base_url: 'http://www.bookrenter.com/api/fetch_book_info'
-    affiliate_percent: 6
+    affiliate_percent: 4
   commission_junction:
     website_id: 7045869
     auth_key: '00b18d488889010d9f0176f59a2777cc296a56f575ed4c60009640d9af3f2ed449a0d21b3e679c8a91f86feb0936ba39518552541da59ba373f8b573b7b76d3539/1ac9d647c364054a184e7a7fe7b48b7934322a96c056e5a5310657d1b916b7b0a3abd613937ca76f2ae0d542988eea0fcbd03a15475deebc6a85a305e5c59a01'
