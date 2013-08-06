@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/GremlinBooks.iml" afterPath="$PROJECT_DIR$/.idea/GremlinBooks.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,7 +137,7 @@
     <file path="/song_writer.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361157737820" ignored="false" />
     <file path="$PROJECT_DIR$/../musicmanager/app/models/song_publisher.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361157898587" ignored="false" />
     <file path="/strategy_pattern.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1362530818148" ignored="false" />
-    <file path="/vendor_search.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1375823505778" ignored="false" />
+    <file path="/vendor_search.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1375825649869" ignored="false" />
     <file path="/amazon.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1365129127362" ignored="false" />
     <file path="/book_renter.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1362544477412" ignored="false" />
     <file path="/book_info.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1365004321012" ignored="false" />
@@ -366,11 +364,11 @@
       <file leaf-file-name="vendor_search.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="74" selection-start="811" selection-end="811" vertical-scroll-proportion="0.330298">
+            <state line="24" column="122" selection-start="930" selection-end="930" vertical-scroll-proportion="0.37748346">
               <folding>
-                <element signature="e#1218#2938#0" expanded="false" />
-                <element signature="e#2943#5410#0" expanded="false" />
-                <element signature="e#11363#15664#0" expanded="false" />
+                <element signature="e#1206#2926#0" expanded="false" />
+                <element signature="e#2931#5398#0" expanded="false" />
+                <element signature="e#11351#15652#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1117,11 +1115,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="74" selection-start="811" selection-end="811" vertical-scroll-proportion="0.330298">
+        <state line="24" column="122" selection-start="930" selection-end="930" vertical-scroll-proportion="0.37748346">
           <folding>
-            <element signature="e#1218#2938#0" expanded="false" />
-            <element signature="e#2943#5410#0" expanded="false" />
-            <element signature="e#11363#15664#0" expanded="false" />
+            <element signature="e#1206#2926#0" expanded="false" />
+            <element signature="e#2931#5398#0" expanded="false" />
+            <element signature="e#11351#15652#0" expanded="false" />
           </folding>
         </state>
       </provider>
