@@ -16,9 +16,23 @@ gem 'dalli'
 gem 'rails_config'
 gem 'delayed_job_active_record'
 gem 'daemons'
-gem 'rack-mini-profiler'
-gem 'recaptcha', :require => 'recaptcha/rails'
 gem 'crack'
+
+group :development, :test do
+  gem 'pg'
+  gem 'amazon-ecs'
+  gem 'thin'
+  gem 'newrelic_rpm'
+  gem 'devise'
+  gem 'json'
+  gem 'typhoeus'
+  gem 'dalli'
+  gem 'rails_config'
+  gem 'delayed_job_active_record'
+  gem 'daemons'
+  gem 'rack-mini-profiler'
+  gem 'crack'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
