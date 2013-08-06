@@ -94,6 +94,9 @@ class VendorSearch
 
     results = Array.new
 
+
+    # http://www.jdoqocy.com/click-7045869-10586024?url=
+
     chegg_request = Typhoeus::Request.new(Settings.chegg.base_url,
                                           :body => "Gremlin Books",
                                           :method => :post,
@@ -125,6 +128,7 @@ class VendorSearch
                           cart_link: "",
                           buy_link: "",
                           condition: "Rent",
+                          #rent_link: "http://www.chegg.com/textbooks/1430218339/sku%3D1430218339&isbn=1430218339&item_cost=26.49&user=1&vendor=Chegg",
                           rent_link: "http://www.chegg.com/?referrer=CJGATEWAY&PID=#{Settings.chegg.pid}&AID=#{Settings.chegg.aid}&SID=#{Settings.chegg.sid}&pids=#{term["pid"]}",
                           shipping: 0,
                           total_cost: term["price"].to_f,
@@ -167,6 +171,19 @@ class VendorSearch
 
     book_byte_response = ActiveSupport::JSON.decode(book_byte_request.response.body)
 
+    # create the url for a user buy click
+    cart_url = book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Cart_URL"]
+    cart_url_parts = cart_url.split('&')
+    ad_url = ''
+
+    cart_url_parts.each do | part |
+      if part.starts_with?('adurl=')
+        ad_url = part.slice(6, part.length - 1)
+      end
+    end
+
+    buy_url = 'http://www.jdoqocy.com/click-7045869-10365124?url=' + ad_url
+
     #best used
     if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["IsOfferAvailable"]
       results << {vendor: Settings.book_byte.vendor_name,
@@ -174,8 +191,8 @@ class VendorSearch
                   cart: true,
                   buy: true,
                   rent: false,
-                  cart_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Cart_URL"],
-                  buy_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Cart_URL"],
+                  cart_link: buy_url,
+                  buy_link: buy_url,
                   condition: "Used",
                   rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"],
@@ -193,8 +210,8 @@ class VendorSearch
                   cart: true,
                   buy: true,
                   rent: false,
-                  cart_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Cart_URL"],
-                  buy_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Cart_URL"],
+                  cart_link: buy_url,
+                  buy_link: buy_url,
                   condition: "New",
                   rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"],
@@ -214,8 +231,8 @@ class VendorSearch
                   cart: true,
                   buy: true,
                   rent: false,
-                  cart_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Cart_URL"],
-                  buy_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Cart_URL"],
+                  cart_link: buy_url,
+                  buy_link: buy_url,
                   condition: "New",
                   rent_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"],
@@ -233,8 +250,8 @@ class VendorSearch
                   cart: true,
                   buy: true,
                   rent: false,
-                  cart_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Cart_URL"],
-                  buy_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Cart_URL"],
+                  cart_link: buy_url,
+                  buy_link: buy_url,
                   condition: "Used",
                   rent_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Cart_URL"],
                   shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"],
@@ -274,6 +291,11 @@ class VendorSearch
 
     book_renter_response = ActiveSupport::JSON.decode(book_renter_request.response.body)
 
+    # create the url for a user buy click
+    cart_url = book_renter_response["response"]["book"]["add_to_cart_url"]
+    buy_url = 'http://www.jdoqocy.com/click-7045869-10737829?url=' + cart_url
+
+
     # book renter response is kind of jacked
     # first check if there is anything in the prices collection
     if  book_renter_response["response"]["book"]["prices"]
@@ -303,8 +325,8 @@ class VendorSearch
                         cart: true,
                         buy: true,
                         rent: false,
-                        cart_link: book_renter_response["response"]["book"]["add_to_cart_url"].sub('RENTAL_PERIOD', 0.to_s),
-                        buy_link: book_renter_response["response"]["book"]["add_to_cart_url"].sub('RENTAL_PERIOD', 0.to_s),
+                        cart_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                        buy_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
                         condition: item["condition"],
                         rent_link: "",
                         shipping: 0,
@@ -323,8 +345,8 @@ class VendorSearch
                   cart: true,
                   buy: true,
                   rent: false,
-                  cart_link: book_renter_response["response"]["book"]["add_to_cart_url"].sub('RENTAL_PERIOD', 0.to_s),
-                  buy_link: book_renter_response["response"]["book"]["add_to_cart_url"].sub('RENTAL_PERIOD', 0.to_s),
+                  cart_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                  buy_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
                   condition: "Unknown",
                   rent_link: "",
                   shipping: 0,
