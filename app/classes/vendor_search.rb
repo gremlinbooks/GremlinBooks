@@ -8,13 +8,11 @@ class VendorSearch
 
   def get_all_results(search_text, current_user)
     amazon_results = get_amazon_results(search_text, current_user)
-    #cj_results = get_cj_results(search_text, current_user)
+    cj_results = get_cj_results(search_text, current_user)
     chegg_results = get_chegg_results(search_text, current_user)
     book_byte_results = get_book_byte_results(search_text, current_user)
     book_renter_results = get_book_renter_results(search_text, current_user)
-    all_results = (amazon_results + book_byte_results + book_renter_results + chegg_results).sort_by { |hsh| hsh[:total_cost] }
-
-    #all_results = (amazon_results + cj_results).sort_by { |hsh| hsh[:total_cost] }
+    all_results = (amazon_results + book_byte_results + book_renter_results + chegg_results + cj_results).sort_by { |hsh| hsh[:total_cost] }
     determine_best_offer(all_results)
   end
 
@@ -53,7 +51,7 @@ class VendorSearch
                                        :timeout => 100, # milliseconds
                                        :params => {:'website-id' => Settings.commission_junction.website_id,
                                                    :isbn => search_text,
-                                                   :'advertiser-ids' => 'joined',
+                                                   :'advertiser-ids' => '1087150,1845757,520129,3812999',
                                                    :'serviceable-area' => 'US'})
 
     hydra = Typhoeus::Hydra.new
