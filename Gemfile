@@ -17,6 +17,7 @@ gem 'rails_config'
 gem 'delayed_job_active_record'
 gem 'daemons'
 gem 'crack'
+gem 'safe_yaml', '~> 0.9.5'
 
 group :development, :test do
   gem 'pg'
