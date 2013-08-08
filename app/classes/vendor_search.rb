@@ -61,21 +61,25 @@ class VendorSearch
     xml = Nokogiri::XML(cj_request.response.body)
     xml.search('products').map do |product|
 
-      results << {vendor: product.at('advertiser-name').text,
-                  price: product.at('price').inner_text.to_f,
-                  cart: true,
-                  buy: true,
-                  rent: false,
-                  cart_link: "",
-                  buy_link: product.at('buy-url').text,
-                  condition: "Buy",
-                  rent_link: "",
-                  shipping: 0,
-                  total_cost: product.at('price').inner_text.to_f,
-                  notes: "",
-                  best_offer: false,
-                  results_string: cj_request.response.body
-      }
+      if product.at('advertiser-name')
+
+        results << {vendor: product.at('advertiser-name').text,
+                    price: product.at('price').inner_text.to_f,
+                    cart: true,
+                    buy: true,
+                    rent: false,
+                    cart_link: "",
+                    buy_link: product.at('buy-url').text,
+                    condition: "Buy",
+                    rent_link: "",
+                    shipping: 0,
+                    total_cost: product.at('price').inner_text.to_f,
+                    notes: "",
+                    best_offer: false,
+                    results_string: cj_request.response.body
+        }
+
+      end
     end
 
     results
@@ -174,7 +178,7 @@ class VendorSearch
     cart_url_parts = cart_url.split('&')
     ad_url = ''
 
-    cart_url_parts.each do | part |
+    cart_url_parts.each do |part|
       if part.starts_with?('adurl=')
         ad_url = part.slice(6, part.length - 1)
       end
