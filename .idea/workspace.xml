@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -363,19 +363,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="vendor_search.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="vendor_search.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="206" column="27" selection-start="8119" selection-end="8119" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="48" selection-start="149" selection-end="149" vertical-scroll-proportion="0.12582782">
+            <state line="315" column="75" selection-start="13622" selection-end="13670" vertical-scroll-proportion="1.2066946">
               <folding />
             </state>
           </provider>
@@ -414,8 +405,8 @@
         <option value="$PROJECT_DIR$/config/settings.yml" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
       </list>
     </option>
   </component>
@@ -1302,16 +1293,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="27" selection-start="8119" selection-end="8119" vertical-scroll-proportion="0.0">
+        <state line="8" column="48" selection-start="149" selection-end="149" vertical-scroll-proportion="0.12582782">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="48" selection-start="149" selection-end="149" vertical-scroll-proportion="0.12582782">
+        <state line="315" column="75" selection-start="13622" selection-end="13670" vertical-scroll-proportion="1.2066946">
           <folding />
         </state>
       </provider>

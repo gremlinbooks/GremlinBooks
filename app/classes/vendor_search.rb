@@ -313,7 +313,7 @@ class VendorSearch
                       cart_link: book_renter_response["response"]["book"]["add_to_cart_url"],
                       buy_link: "",
                       condition: "Rental",
-                      rent_link: book_renter_response["response"]["book"]["add_to_cart_url"].sub('RENTAL_PERIOD', item["days"].to_s),
+                      rent_link: buy_url.sub('RENTAL_PERIOD', item["days"].to_s),
                       shipping: 0,
                       total_cost: item["rental_price"].sub('$', '').to_f,
                       notes: item["term"] + ' ' + item["days"],
