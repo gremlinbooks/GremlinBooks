@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
   private
 
   def current_tenant
-    Tenant.find_by_subdomain request.subdomain
+     Tenant.find_by_subdomain request.subdomain
   end
   helper_method :current_tenant
 

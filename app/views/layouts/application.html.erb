@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="College text books for cheap!">
   <meta name="author" content="Gremlin Books, LLC">
+  <%= favicon_link_tag 'favicon.png' %>
 
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -45,13 +46,9 @@
 <div class="container">
   <%= yield %>
   <br><br><br><br>
-
-
 </div>
 
 <%= render 'layouts/footer' %>
-
-</div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <%= javascript_include_tag "bootstrap.min" %>
