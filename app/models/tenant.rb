@@ -20,7 +20,8 @@ class Tenant < ActiveRecord::Base
                   :cj_website_id,
                   :color,
                   :logo,
-                  :title
+                  :title,
+                  :url
 
   def self.find_by_subdomain(subdomain)
     where(:sub_domain => subdomain)[0]

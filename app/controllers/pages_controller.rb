@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   end
 
   def customers
-
+    @tenants = Tenant.all
   end
 
 end

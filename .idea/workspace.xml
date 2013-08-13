@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/favicon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootswatch.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootswatch.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/customers.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/customers.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/tenant.rb" afterPath="$PROJECT_DIR$/app/models/tenant.rb" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -127,7 +125,7 @@
     <file path="$PROJECT_DIR$/../unitmanager/lib/tasks/sample_data.rake" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361080436526" ignored="false" />
     <file path="/sample_data.rake" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361080369050" ignored="false" />
     <file path="$PROJECT_DIR$/../unitmanager/db/seeds.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361081231001" ignored="false" />
-    <file path="/seeds.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376426231846" ignored="false" />
+    <file path="/seeds.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376428950099" ignored="false" />
     <file path="$PROJECT_DIR$/../unitmanager/Gemfile" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1363321666172" ignored="false" />
     <file path="/a.rxml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361042210718" ignored="false" />
     <file path="/a.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361042217463" ignored="false" />
@@ -173,7 +171,7 @@
     <file path="$PROJECT_DIR$/../rustydanmyer/config/database.yml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1363893211314" ignored="false" />
     <file path="$PROJECT_DIR$/../rustydanmyer/config/environments/production.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1363894905389" ignored="false" />
     <file path="/mission.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376408633452" ignored="false" />
-    <file path="/pages_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376408510429" ignored="false" />
+    <file path="/pages_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376429029070" ignored="false" />
     <file path="/application_helper.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364868838618" ignored="false" />
     <file path="/contact_us.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1364409512585" ignored="false" />
     <file path="/contact.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1375298866165" ignored="false" />
@@ -345,8 +343,8 @@
     <file path="$PROJECT_DIR$/../octopress/.gitignore" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1375458251246" ignored="false" />
     <file path="$PROJECT_DIR$/../conclusivelabs/app/controllers/application_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1375920547195" ignored="false" />
     <file path="/application_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376426704107" ignored="false" />
-    <file path="/customers.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376408671849" ignored="false" />
-    <file path="/tenant.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376417232309" ignored="false" />
+    <file path="/customers.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376429775236" ignored="false" />
+    <file path="/tenant.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376429003365" ignored="false" />
     <file path="/20130813172344_remove_cj_auth_key_from_tenant.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376414738366" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -372,28 +370,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+      <file leaf-file-name="customers.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/pages/customers.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="44" selection-start="213" selection-end="213" vertical-scroll-proportion="-6.107143">
+            <state line="24" column="26" selection-start="594" selection-end="594" vertical-scroll-proportion="0.38644066">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootswatch.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootswatch.css">
+      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="44" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.34957266">
+            <state line="21" column="20" selection-start="921" selection-end="934" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css">
+      <file leaf-file-name="tenant.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/tenant.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5669" column="4" selection-start="139299" selection-end="139299" vertical-scroll-proportion="-38.4">
+            <state line="16" column="41" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -418,22 +416,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/_main_navbar.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/classes/book_info.rb" />
         <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130813172344_remove_cj_auth_key_from_tenant.rb" />
-        <option value="$PROJECT_DIR$/app/models/tenant.rb" />
         <option value="$PROJECT_DIR$/app/classes/amazon.rb" />
         <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootswatch.css" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/app/models/tenant.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/pages/customers.html.erb" />
       </list>
     </option>
   </component>
@@ -497,6 +495,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GremlinBooks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GremlinBooks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1345,33 +1361,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="240" selection-end="240" vertical-scroll-proportion="0.17301324">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/book_info.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="69" selection-start="431" selection-end="431" vertical-scroll-proportion="0.2044702">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="143" selection-end="161" vertical-scroll-proportion="0.07949791">
-          <folding>
-            <element signature="e#1495#1751#0" expanded="false" />
-            <element signature="e#3377#5127#0" expanded="false" />
-            <element signature="e#5131#7301#0" expanded="false" />
-            <element signature="e#7305#13173#0" expanded="false" />
-            <element signature="e#13177#17399#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.31456953">
@@ -1421,20 +1410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="28" selection-start="6183" selection-end="6183" vertical-scroll-proportion="0.26861924">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/tenant.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="3" selection-start="838" selection-end="838" vertical-scroll-proportion="0.42466888">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="24" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.7245763">
@@ -1449,16 +1424,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootswatch.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="44" selection-start="213" selection-end="213" vertical-scroll-proportion="-6.107143">
+        <state line="96" column="44" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.34957266">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootswatch.css">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="44" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.34957266">
+        <state line="9" column="44" selection-start="213" selection-end="213" vertical-scroll-proportion="0.14491525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130813212001_add_url_to_tenant.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="2" selection-start="137" selection-end="137" vertical-scroll-proportion="0.2044702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="20" selection-start="921" selection-end="934" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/tenant.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="41" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/customers.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="26" selection-start="594" selection-end="594" vertical-scroll-proportion="0.38644066">
           <folding />
         </state>
       </provider>

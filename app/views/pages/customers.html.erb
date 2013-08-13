@@ -1,37 +1,27 @@
-<h2>Our Customers</h2>
-<table>
-  <tr>
-    <td>LOGO</td>
-    <td>AOII</td>
-    <td>URL</td>
-  </tr>
-  <tr>
-    <td>LOGO</td>
-    <td>AOII</td>
-    <td>URL</td>
-  </tr>
-  <tr>
-    <td>LOGO</td>
-    <td>AOII</td>
-    <td>URL</td>
-  </tr>
-  <tr>
-    <td>LOGO</td>
-    <td>AOII</td>
-    <td>URL</td>
-  </tr>
-  <tr>
-    <td>LOGO</td>
-    <td>AOII</td>
-    <td>URL</td>
-  </tr>
-  <tr>
-    <td>LOGO</td>
-    <td>AOII</td>
-    <td>URL</td>
-  </tr>
-</table>
+<table class="table table-striped">
 
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>URL</th>
+    <th>Commission Junction ID</th>
+    <th>Amazon ID</th>
+    <th>Logo</th>
+  </tr>
+  </thead>
+
+  <% if @tenants.count > 0 %>
+      <% @tenants.each do |tenant| %>
+          <tr>
+            <td><%= tenant.title %></td>
+            <td><%= link_to tenant.url, tenant.url %></td>
+            <td><%= tenant.cj_website_id %></td>
+            <td><%= tenant.amazon_associate_tag %></td>
+            <td><%= image_tag(tenant.logo, size: "30x30") %></td>
+          </tr>
+      <% end %>
+  <% end %>
+</table>
 
 
 

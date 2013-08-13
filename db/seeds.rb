@@ -29,7 +29,8 @@ Tenant.create(sub_domain: 'aoii',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7208985',
-              chegg_sid: ""
+              chegg_sid: '',
+              url: 'http://aoii.grmbkstr.com'
 )
 
 #Gremlin
@@ -53,7 +54,8 @@ Tenant.create(sub_domain: 'www',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7045869',
-              chegg_sid: ""
+              chegg_sid: '',
+              url: 'http://www.gremlinbooks.com'
 )
 
 #Chi Psi
@@ -77,7 +79,8 @@ Tenant.create(sub_domain: 'chipsi',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7225055',
-              chegg_sid: ""
+              chegg_sid: '',
+              url: 'http://chipsi.grmbkstr.com'
 )
 
 #Alpha Sig
@@ -101,7 +104,8 @@ Tenant.create(sub_domain: 'alphasig',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7208989',
-              chegg_sid: ""
+              chegg_sid: '',
+              url: 'http://alphasig.grmbkstr.com'
 )
 
 #Sig Ep
@@ -125,7 +129,8 @@ Tenant.create(sub_domain: 'sigep',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7208987',
-              chegg_sid: ""
+              chegg_sid: '',
+              url: 'http://sigep.grmbkstr.com'
 )
 
 #pikapp
@@ -149,5 +154,6 @@ Tenant.create(sub_domain: 'pikapp',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7225069',
-              chegg_sid: ""
+              chegg_sid: '',
+              url: 'http://pikapp.grmbkstr.com'
 )
