@@ -3,7 +3,6 @@ class SearchController < ApplicationController
 
   def index
     require 'vendor_search.rb'
-    require 'amazon.rb'
     require 'dalli'
     require 'tracker.rb'
 
