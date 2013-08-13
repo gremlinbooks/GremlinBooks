@@ -17,10 +17,11 @@ class SearchController < ApplicationController
         isbn = isbn.gsub("-", "")   # strip out the - if in submitted ISBN
 
         isbn_result = Rails.cache.read(isbn.strip)
+        params = get_tenant_params
 
         if isbn_result.nil?    # not in cache
-          book_info = BookInfo.new(isbn.strip, current_user)
-          vendor = VendorSearch.new()
+          book_info = BookInfo.new(isbn.strip, current_user, params[:bookrenter_base_url], params[:bookrenter_developer_key])
+          vendor = VendorSearch.new(params)
           result = Array.new
 
           if book_info.title

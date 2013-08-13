@@ -1,16 +1,15 @@
 AMAZON_SEARCH = lambda do |context|
-  # get amazon specific keys from yml here
   require 'amazon/ecs'
   require 'json'
   require 'tracker.rb'
 
   tracker = Tracker.new()
-  tracker.track_vendor_search(context.search_text, context.current_user, Settings.amazon.vendor_name)
+  tracker.track_vendor_search(context.search_text, context.current_user, "Amazon")
 
   Amazon::Ecs.options = {
-      :associate_tag => Settings.amazon.associate_tag,
-      :AWS_access_key_id => Settings.amazon.access_key,
-      :AWS_secret_key => Settings.amazon.secret_key
+      :associate_tag => context.amazon_associate_tag,
+      :AWS_access_key_id => context.amazon_access_key,
+      :AWS_secret_key => context.amazon_secret_key
   }
 
   # make api call to amazon
@@ -28,7 +27,7 @@ AMAZON_SEARCH = lambda do |context|
 
         if !item_attributes.nil?
 
-          result = {vendor: Settings.amazon.vendor_name,
+          result = {vendor: "Amazon",
                     price: offers.get('Offer/OfferListing/Price/Amount').to_f / 100,
                     cart: true,
                     buy: true,

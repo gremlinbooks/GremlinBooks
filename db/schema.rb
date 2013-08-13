@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130403151842) do
+ActiveRecord::Schema.define(:version => 20130813163007) do
 
   create_table "contacts", :force => true do |t|
     t.string   "name"
@@ -43,6 +43,31 @@ ActiveRecord::Schema.define(:version => 20130403151842) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.string   "vendor"
+  end
+
+  create_table "tenants", :force => true do |t|
+    t.string   "amazon_access_key"
+    t.string   "amazon_secret_key"
+    t.string   "amazon_associate_tag"
+    t.string   "bookbyte_base_url"
+    t.string   "bookbyte_auth_token"
+    t.string   "bookbyte_publisher_id"
+    t.string   "cj_website_id"
+    t.string   "cj_auth_key"
+    t.string   "cj_base_url"
+    t.string   "bookrenter_base_url"
+    t.string   "bookrenter_developer_key"
+    t.string   "chegg_base_url"
+    t.string   "chegg_password"
+    t.string   "chegg_key"
+    t.string   "chegg_aid"
+    t.string   "chegg_pid"
+    t.string   "chegg_sid"
+    t.string   "logo"
+    t.string   "color"
+    t.string   "title"
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
   end
 
   create_table "user_buy_logs", :force => true do |t|

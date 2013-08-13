@@ -2,8 +2,26 @@ class VendorSearch
   attr_reader :search_text, :current_user
   attr_accessor :mapper
 
-  def initialize()
+  def initialize(params)
     @mapper = AMAZON_SEARCH
+
+    @amazon_access_key = params[:amazon_access_key]
+    @amazon_secret_key = params[:amazon_secret_key]
+    @amazon_associate_tag = params[:amazon_associate_tag]
+    @bookbyte_base_url = params[:bookbyte_base_url]
+    @bookbyte_auth_token = params[:bookbyte_auth_token]
+    @bookbyte_publisher_id = params[:bookbyte_publisher_id]
+    @cj_website_id = params[:cj_website_id]
+    @cj_auth_key = params[:cj_auth_key]
+    @cj_base_url = params[:cj_base_url]
+    @bookrenter_base_url = params[:bookrenter_base_url]
+    @bookrenter_developer_key = params[:bookrenter_developer_key]
+    @chegg_base_url = params[:chegg_base_url]
+    @chegg_password = params[:chegg_password]
+    @chegg_key = params[:chegg_key]
+    @chegg_aid = params[:chegg_aid]
+    @chegg_pid = params[:chegg_pid]
+    @chegg_sid = params[:chegg_sid]
   end
 
   def get_all_results(search_text, current_user)
@@ -45,11 +63,11 @@ class VendorSearch
 
     results = Array.new
 
-    cj_request = Typhoeus::Request.new(Settings.commission_junction.base_url,
+    cj_request = Typhoeus::Request.new(@cj_base_url,
                                        :method => :get,
-                                       :headers => {:authorization => Settings.commission_junction.auth_key},
+                                       :headers => {:authorization => @cj_auth_key},
                                        :timeout => 100, # milliseconds
-                                       :params => {:'website-id' => Settings.commission_junction.website_id,
+                                       :params => {:'website-id' => @cj_website_id,
                                                    :isbn => search_text,
                                                    :'advertiser-ids' => '1087150,1845757,520129,3812999',
                                                    :'serviceable-area' => 'US'})
@@ -86,28 +104,24 @@ class VendorSearch
 
   end
 
-
   def get_chegg_results(search_text, current_user)
     require 'typhoeus'
     require 'tracker.rb'
 
     tracker = Tracker.new()
-    tracker.track_vendor_search(search_text, current_user, Settings.chegg.vendor_name)
+    tracker.track_vendor_search(search_text, current_user, "Chegg")
 
     results = Array.new
 
-
-    # http://www.jdoqocy.com/click-7045869-10586024?url=
-
-    chegg_request = Typhoeus::Request.new(Settings.chegg.base_url,
+    chegg_request = Typhoeus::Request.new(@chegg_base_url,
                                           :body => "Gremlin Books",
                                           :method => :post,
                                           :headers => {:Accept => "text/html"},
                                           :timeout => 100, # milliseconds
-                                          :params => {:KEY => Settings.chegg.key,
+                                          :params => {:KEY => @chegg_key,
                                                       :isbn => search_text,
                                                       :V => "2.0",
-                                                      :PW => Settings.chegg.password,
+                                                      :PW => @chegg_password,
                                                       :R => "JSON",
                                                       :with_pids => 1})
 
@@ -122,7 +136,7 @@ class VendorSearch
         if item["Renting"]
           if item["Terms"]
             item["Terms"].each do |term|
-              results << {vendor: Settings.chegg.vendor_name,
+              results << {vendor: "Chegg",
                           price: term["price"].to_f,
                           cart: true,
                           buy: false,
@@ -130,8 +144,7 @@ class VendorSearch
                           cart_link: "",
                           buy_link: "",
                           condition: "Rent",
-                          #rent_link: "http://www.chegg.com/textbooks/1430218339/sku%3D1430218339&isbn=1430218339&item_cost=26.49&user=1&vendor=Chegg",
-                          rent_link: "http://www.chegg.com/?referrer=CJGATEWAY&PID=#{Settings.chegg.pid}&AID=#{Settings.chegg.aid}&SID=#{Settings.chegg.sid}&pids=#{term["pid"]}",
+                          rent_link: "http://www.chegg.com/?referrer=CJGATEWAY&PID=#{@chegg_pid}&AID=#{@chegg_aid}&SID=#{@chegg_sid}&pids=#{term["pid"]}",
                           shipping: 0,
                           total_cost: term["price"].to_f,
                           notes: term["name"],
@@ -152,18 +165,18 @@ class VendorSearch
     require 'tracker.rb'
 
     tracker = Tracker.new()
-    tracker.track_vendor_search(search_text, current_user, Settings.book_byte.vendor_name)
+    tracker.track_vendor_search(search_text, current_user, "Book Byte")
 
     results = Array.new
 
-    book_byte_request = Typhoeus::Request.new(Settings.book_byte.base_url,
+    book_byte_request = Typhoeus::Request.new(@bookbyte_base_url,
                                               :body => "Gremlin Books",
                                               :method => :post,
                                               :headers => {:Accept => "text/html"},
                                               :timeout => 100, # milliseconds
-                                              :params => {:AuthToken => Settings.book_byte.auth_token,
-                                                          :PublisherId => Settings.book_byte.publisher_id,
-                                                          :AffiliateType => "GAN",
+                                              :params => {:AuthToken => @bookbyte_auth_token,
+                                                          :PublisherId => @bookbyte_publisher_id,
+                                                          :AffiliateType => "CJ",
                                                           :ItemIdType => "ISBN",
                                                           :ItemId => search_text})
 
@@ -184,11 +197,11 @@ class VendorSearch
       end
     end
 
-    buy_url = 'http://www.jdoqocy.com/click-7045869-10365124?url=' + ad_url
+    buy_url = "http://www.jdoqocy.com/click-#{@cj_website_id}-10365124?url=" + ad_url
 
     #best used
     if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["IsOfferAvailable"]
-      results << {vendor: Settings.book_byte.vendor_name,
+      results << {vendor: "Book Byte",
                   price: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Price"],
                   cart: true,
                   buy: true,
@@ -207,7 +220,7 @@ class VendorSearch
 
     #best new
     if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["IsOfferAvailable"]
-      results << {vendor: Settings.book_byte.vendor_name,
+      results << {vendor: "Book Byte",
                   price: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Price"],
                   cart: true,
                   buy: true,
@@ -272,16 +285,16 @@ class VendorSearch
     require 'tracker.rb'
 
     tracker = Tracker.new()
-    tracker.track_vendor_search(search_text, current_user, Settings.book_renter.vendor_name)
+    tracker.track_vendor_search(search_text, current_user, "Book Renter")
 
     results = Array.new
 
-    book_renter_request = Typhoeus::Request.new(Settings.book_renter.base_url,
+    book_renter_request = Typhoeus::Request.new(@bookrenter_base_url,
                                                 :body => "Gremlin Books",
                                                 :method => :post,
                                                 :headers => {:Accept => "text/html"},
                                                 :timeout => 100, # milliseconds
-                                                :params => {:developer_key => Settings.book_renter.developer_key,
+                                                :params => {:developer_key => @bookrenter_developer_key,
                                                             :version => "2011-02-01",
                                                             :book_details => "y",
                                                             :format => "js",
@@ -295,7 +308,7 @@ class VendorSearch
 
     # create the url for a user buy click
     cart_url = book_renter_response["response"]["book"]["add_to_cart_url"]
-    buy_url = 'http://www.jdoqocy.com/click-7045869-10737829?url=' + cart_url
+    buy_url = "http://www.jdoqocy.com/click-#{@cj_website_id}-10737829?url=" + cart_url
 
 
     # book renter response is kind of jacked

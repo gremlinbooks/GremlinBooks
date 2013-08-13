@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+
   def index
 
   end
@@ -7,6 +8,8 @@ class PagesController < ApplicationController
 
   end
 
+  def customers
 
+  end
 
 end
