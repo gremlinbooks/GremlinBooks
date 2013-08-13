@@ -6,9 +6,10 @@ class ApplicationController < ActionController::Base
   end
 
   def get_tenant_params
-    tenant = Tenant.find_by_subdomain! request.subdomain
+    tenant = Tenant.find_by_subdomain request.subdomain
 
     params[:amazon_access_key] = tenant.amazon_access_key
+    params[:amazon_secret_key] = tenant.amazon_secret_key
     params[:amazon_associate_tag] = tenant.amazon_associate_tag
     params[:bookbyte_base_url] = tenant.bookbyte_base_url
     params[:bookbyte_auth_token] = tenant.bookbyte_auth_token
@@ -32,7 +33,7 @@ class ApplicationController < ActionController::Base
   private
 
   def current_tenant
-    Tenant.find_by_subdomain! request.subdomain
+    Tenant.find_by_subdomain request.subdomain
   end
   helper_method :current_tenant
 

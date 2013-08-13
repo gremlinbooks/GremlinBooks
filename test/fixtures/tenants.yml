@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  amazon_access_key: MyString
+  amazon_secret_key: MyString
+  amazon_associate_tag: MyString
+  bookbyte_base_url: MyString
+  bookbyte_auth_token: MyString
+  bookbyte_publisher_id: MyString
+  cj_website_id: MyString
+  cj_auth_key: MyString
+  cj_base_url: MyString
+  bookrenter_base_url: MyString
+  bookrenter_developer_key: MyString
+  chegg_base_url: MyString
+  chegg_password: MyString
+  chegg_key: MyString
+  chegg_aid: MyString
+  chegg_pid: MyString
+  chegg_sid: MyString
+  logo: MyString
+  color: MyString
+  title: MyString
+
+two:
+  amazon_access_key: MyString
+  amazon_secret_key: MyString
+  amazon_associate_tag: MyString
+  bookbyte_base_url: MyString
+  bookbyte_auth_token: MyString
+  bookbyte_publisher_id: MyString
+  cj_website_id: MyString
+  cj_auth_key: MyString
+  cj_base_url: MyString
+  bookrenter_base_url: MyString
+  bookrenter_developer_key: MyString
+  chegg_base_url: MyString
+  chegg_password: MyString
+  chegg_key: MyString
+  chegg_aid: MyString
+  chegg_pid: MyString
+  chegg_sid: MyString
+  logo: MyString
+  color: MyString
+  title: MyString

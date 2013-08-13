@@ -1,10 +1,7 @@
 class VendorSearch
   attr_reader :search_text, :current_user
-  attr_accessor :mapper
 
   def initialize(params)
-    @mapper = AMAZON_SEARCH
-
     @amazon_access_key = params[:amazon_access_key]
     @amazon_secret_key = params[:amazon_secret_key]
     @amazon_associate_tag = params[:amazon_associate_tag]
@@ -36,8 +33,8 @@ class VendorSearch
 
   private
 
-  # mark best offer for item with lowest cost, but greater than 0
   def determine_best_offer(results)
+    # mark best offer for item with lowest cost, but greater than 0
     results.each do |result|
       result[:best_offer] = true if result[:total_cost] > 0
       break if result[:total_cost] > 0
@@ -47,9 +44,59 @@ class VendorSearch
   end
 
   def get_amazon_results(search_text, current_user)
-    @search_text = search_text
-    @current_user = current_user
-    @mapper.call(self)
+    require 'amazon/ecs'
+    require 'json'
+    require 'tracker.rb'
+
+    tracker = Tracker.new()
+    tracker.track_vendor_search(search_text, current_user, 'Amazon')
+
+    Amazon::Ecs.options = {
+        :associate_tag => @amazon_associate_tag,
+        :AWS_access_key_id => @amazon_access_key,
+        :AWS_secret_key => @amazon_secret_key
+    }
+
+    # make api call to amazon
+    res = Amazon::Ecs.item_lookup(search_text, :id_type => 'ISBN', :search_index => 'Books', :response_group => 'Large')
+
+    results = Array.new
+
+    if res.items.count > 0
+      res.items.each do |item|
+
+        item_attributes = item.get_element('ItemAttributes')
+        offers = item.get_element('Offers')
+
+        if !offers.nil?
+
+          if !item_attributes.nil?
+
+            result = {vendor: "Amazon",
+                      price: offers.get('Offer/OfferListing/Price/Amount').to_f / 100,
+                      cart: true,
+                      buy: true,
+                      rent: false,
+                      cart_link: "cart_link",
+                      buy_link: item.get('DetailPageURL'),
+                      condition: offers.get('Offer/OfferAttributes/Condition'),
+                      rent_link: "",
+                      shipping: 0,
+                      total_cost: offers.get('Offer/OfferListing/Price/Amount').to_f / 100,
+                      notes: "",
+                      best_offer: false,
+                      results_string: item.to_s.to_json
+            }
+
+            results << result
+
+          end
+
+        end
+      end
+    end
+
+    results
   end
 
   def get_cj_results(search_text, current_user)
