@@ -2,18 +2,18 @@ class BookInfo
 
   attr_accessor :author, :title, :image_link, :description, :retail_price, :publisher, :binding
 
-  def initialize(isbn, current_user, bookrenter_base_url, bookrenter_developer_key)
-    GetBookInfo(isbn, current_user, bookrenter_base_url, bookrenter_developer_key)
+  def initialize(isbn, current_user, bookrenter_base_url, bookrenter_developer_key, sub_domain)
+    GetBookInfo(isbn, current_user, bookrenter_base_url, bookrenter_developer_key, sub_domain)
   end
 
   private
 
-  def GetBookInfo(isbn, current_user, bookrenter_base_url, bookrenter_developer_key)
+  def GetBookInfo(isbn, current_user, bookrenter_base_url, bookrenter_developer_key, sub_domain)
     require 'typhoeus'
     require 'tracker.rb'
 
     tracker = Tracker.new()
-    tracker.track_vendor_search(:search_term => isbn, :user => current_user, :vendor => "Bookrenter")
+    tracker.track_vendor_search(isbn, current_user, 'Book Renter', sub_domain)
 
     book_renter_request = Typhoeus::Request.new(bookrenter_base_url,
                                                 :body => "Gremlin Books",

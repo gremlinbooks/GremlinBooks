@@ -12,15 +12,15 @@ class SearchController < ApplicationController
 
       isbns.each do |isbn|
         tracker = Tracker.new()
-        tracker.track_user_search(isbn, current_user)
+        tracker.track_user_search(isbn, current_user, request.subdomain)
         isbn = isbn.gsub("-", "")   # strip out the - if in submitted ISBN
 
         isbn_result = Rails.cache.read(isbn.strip + '-' + request.subdomain)
-        params = get_tenant_params
+        tenant_info = get_tenant_params
 
         if isbn_result.nil?    # not in cache
-          book_info = BookInfo.new(isbn.strip, current_user, params[:bookrenter_base_url], params[:bookrenter_developer_key])
-          vendor = VendorSearch.new(params)
+          book_info = BookInfo.new(isbn.strip, current_user, tenant_info[:bookrenter_base_url], tenant_info[:bookrenter_developer_key], request.subdomain)
+          vendor = VendorSearch.new(tenant_info)
           result = Array.new
 
           if book_info.title

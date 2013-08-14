@@ -25,6 +25,7 @@ class ApplicationController < ActionController::Base
     params[:chegg_aid] = tenant.chegg_aid
     params[:chegg_pid] = tenant.chegg_pid
     params[:chegg_sid] = tenant.chegg_sid
+    params[:sub_domain] = tenant.sub_domain
 
     params
 

@@ -19,6 +19,7 @@ class VendorSearch
     @chegg_aid = params[:chegg_aid]
     @chegg_pid = params[:chegg_pid]
     @chegg_sid = params[:chegg_sid]
+    @sub_domain = params[:sub_domain]
   end
 
   def get_all_results(search_text, current_user)
@@ -49,7 +50,7 @@ class VendorSearch
     require 'tracker.rb'
 
     tracker = Tracker.new()
-    tracker.track_vendor_search(search_text, current_user, 'Amazon')
+    tracker.track_vendor_search(search_text, current_user, 'Amazon', @sub_domain)
 
     Amazon::Ecs.options = {
         :associate_tag => @amazon_associate_tag,
@@ -106,7 +107,7 @@ class VendorSearch
     require 'open-uri'
 
     tracker = Tracker.new()
-    tracker.track_vendor_search(search_text, current_user, 'CJ')
+    tracker.track_vendor_search(search_text, current_user, 'CJ', @sub_domain)
 
     results = Array.new
 
@@ -156,7 +157,7 @@ class VendorSearch
     require 'tracker.rb'
 
     tracker = Tracker.new()
-    tracker.track_vendor_search(search_text, current_user, "Chegg")
+    tracker.track_vendor_search(search_text, current_user, "Chegg", @sub_domain)
 
     results = Array.new
 
@@ -212,7 +213,7 @@ class VendorSearch
     require 'tracker.rb'
 
     tracker = Tracker.new()
-    tracker.track_vendor_search(search_text, current_user, "Book Byte")
+    tracker.track_vendor_search(search_text, current_user, "Book Byte", @sub_domain)
 
     results = Array.new
 
@@ -332,7 +333,7 @@ class VendorSearch
     require 'tracker.rb'
 
     tracker = Tracker.new()
-    tracker.track_vendor_search(search_text, current_user, "Book Renter")
+    tracker.track_vendor_search(search_text, current_user, 'Book Renter', @sub_domain)
 
     results = Array.new
 
