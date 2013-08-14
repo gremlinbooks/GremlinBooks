@@ -162,7 +162,7 @@ body .one .bsa_it_p {
     text-align: center;
     width: 100%;
     font-size: 12px;
-    position:absolute;
+    position:relative;
     bottom:0;
     background:#ffffff;
 }

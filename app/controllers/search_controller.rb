@@ -15,7 +15,7 @@ class SearchController < ApplicationController
         tracker.track_user_search(isbn, current_user)
         isbn = isbn.gsub("-", "")   # strip out the - if in submitted ISBN
 
-        isbn_result = Rails.cache.read(isbn.strip)
+        isbn_result = Rails.cache.read(isbn.strip + '-' + request.subdomain)
         params = get_tenant_params
 
         if isbn_result.nil?    # not in cache
@@ -27,7 +27,7 @@ class SearchController < ApplicationController
             result << book_info
             result << vendor.get_all_results(isbn.strip, current_user)
 
-            Rails.cache.write(isbn.strip, result, :expires_in => 1440.minutes)
+            Rails.cache.write(isbn.strip + '-' + request.subdomain, result, :expires_in => 1440.minutes)
             results[isbn.strip] = result
           end
         else #in cache - use it
