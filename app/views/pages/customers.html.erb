@@ -1,3 +1,4 @@
+<h3>Customers</h3>
 <table class="table table-striped">
 
   <thead>
@@ -20,6 +21,39 @@
             <td><%= image_tag(tenant.logo, size: "30x30") %></td>
           </tr>
       <% end %>
+  <% end %>
+</table>
+<br/>
+
+<h3>Searches Conducted by Customer</h3>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Customer</th>
+    <th>Count</th>
+  </tr>
+  </thead>
+  <% @search_counts.each do |search_count| %>
+      <tr>
+        <td><%= search_count[0] %></td>
+        <td><%= search_count[1] %></td>
+      </tr>
+  <% end %>
+</table>
+
+<h3>Buy Clicks Conducted by Customer</h3>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Customer</th>
+    <th>Count</th>
+  </tr>
+  </thead>
+  <% @buy_counts.each do |buy_count| %>
+      <tr>
+        <td><%= buy_count[0] %></td>
+        <td><%= buy_count[1] %></td>
+      </tr>
   <% end %>
 </table>
 
