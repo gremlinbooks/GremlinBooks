@@ -1,4 +1,5 @@
 namespace :db do
+  desc "Log clearing tasks for Gremlin Book platform."
 
   task :clear_all_logs => :environment do
     Rake::Task['db:clear_user_buy_log'].invoke
