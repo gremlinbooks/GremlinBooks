@@ -224,7 +224,7 @@ class VendorSearch
                                               :timeout => 100, # milliseconds
                                               :params => {:AuthToken => @bookbyte_auth_token,
                                                           :PublisherId => @bookbyte_publisher_id,
-                                                          :AffiliateType => "CJ",
+                                                          :AffiliateType => "GAN",
                                                           :ItemIdType => "ISBN",
                                                           :ItemId => search_text})
 
