@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/AlphaSig.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ChipsiSeal.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/PIKE_logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/SigEpLogoLarge.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/pikapp_logo.png" afterPath="$PROJECT_DIR$/app/assets/images/pikapp_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/PIKE_small.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/SigEpLogo_small.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/chiPsi_small.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/pikappa_small.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -128,7 +127,7 @@
     <file path="$PROJECT_DIR$/../unitmanager/lib/tasks/sample_data.rake" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361080436526" ignored="false" />
     <file path="/sample_data.rake" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361080369050" ignored="false" />
     <file path="$PROJECT_DIR$/../unitmanager/db/seeds.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361081231001" ignored="false" />
-    <file path="/seeds.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376525845869" ignored="false" />
+    <file path="/seeds.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1376537519605" ignored="false" />
     <file path="$PROJECT_DIR$/../unitmanager/Gemfile" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1363321666172" ignored="false" />
     <file path="/a.rxml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361042210718" ignored="false" />
     <file path="/a.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1361042217463" ignored="false" />
@@ -374,33 +373,7 @@
     <favorites_list name="GremlinBooks" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="25" selection-start="9112" selection-end="9112" vertical-scroll-proportion="0.55196506">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vendor_search.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="330" column="56" selection-start="13320" selection-end="13320" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1533#1789#0" expanded="false" />
-                <element signature="e#1793#3424#0" expanded="false" />
-                <element signature="e#3428#5191#0" expanded="false" />
-                <element signature="e#5195#7378#0" expanded="false" />
-                <element signature="e#7382#13262#0" expanded="false" />
-                <element signature="e#13266#17501#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -1081,14 +1054,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1360" height="1281" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67241377" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940334" sideWeight="0.670977" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23744293" sideWeight="0.671521" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23744293" sideWeight="0.671521" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.670977" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1251,11 +1224,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="201" column="13" selection-start="8897" selection-end="8897" vertical-scroll-proportion="0.7652099">
-          <folding>
-            <element signature="tag#div#2" expanded="false" />
-            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#2" expanded="false" />
-            <element signature="tag#div#1;tag#div#2" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,21 +1237,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="330" column="56" selection-start="13320" selection-end="13320" vertical-scroll-proportion="0.0">
+        <state line="210" column="54" selection-start="7434" selection-end="7434" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#1533#1789#0" expanded="false" />
             <element signature="e#1793#3424#0" expanded="false" />
             <element signature="e#3428#5191#0" expanded="false" />
-            <element signature="e#5195#7378#0" expanded="false" />
-            <element signature="e#7382#13262#0" expanded="false" />
-            <element signature="e#13266#17501#0" expanded="false" />
+            <element signature="e#7382#13263#0" expanded="false" />
+            <element signature="e#13267#17502#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="25" selection-start="9112" selection-end="9112" vertical-scroll-proportion="0.55196506">
+        <state line="112" column="40" selection-start="6231" selection-end="6231" vertical-scroll-proportion="1.8585153">
           <folding />
         </state>
       </provider>

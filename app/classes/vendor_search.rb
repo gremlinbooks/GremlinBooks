@@ -245,7 +245,7 @@ class VendorSearch
       end
     end
 
-    buy_url = "http://www.jdoqocy.com/click-#{@cj_website_id}-1427863?url=" + ad_url
+    buy_url = "http://www.jdoqocy.com/click-#{@cj_website_id}-10365124?url=" + ad_url
 
     #best used
     if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["IsOfferAvailable"]
