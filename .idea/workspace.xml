@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
-    </list>
+    <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="" />
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/.amazonrc" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1359916551888" ignored="false" />
@@ -371,7 +369,7 @@
       <file leaf-file-name="vendor_search.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="232" column="95" selection-start="8506" selection-end="8506" vertical-scroll-proportion="0.44803494">
+            <state line="221" column="45" selection-start="7623" selection-end="8425" vertical-scroll-proportion="0.4097035">
               <folding>
                 <element signature="e#1533#1789#0" expanded="false" />
                 <element signature="e#1793#3424#0" expanded="false" />
@@ -424,7 +422,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1360" />
-    <option name="height" value="1281" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -1063,7 +1061,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1360" height="1281" extended-state="0" />
+    <frame x="0" y="22" width="1360" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1254,7 +1252,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="95" selection-start="8506" selection-end="8506" vertical-scroll-proportion="0.44803494">
+        <state line="221" column="45" selection-start="7623" selection-end="8425" vertical-scroll-proportion="0.4097035">
           <folding>
             <element signature="e#1533#1789#0" expanded="false" />
             <element signature="e#1793#3424#0" expanded="false" />
