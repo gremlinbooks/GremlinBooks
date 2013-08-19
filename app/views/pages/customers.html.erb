@@ -57,6 +57,22 @@
   <% end %>
 </table>
 
+<h3>User Count by Customer</h3>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Customer</th>
+    <th>Count</th>
+  </tr>
+  </thead>
+  <% @user_counts.each do |user_count| %>
+      <tr>
+        <td><%= user_count[0] %></td>
+        <td><%= user_count[1] %></td>
+      </tr>
+  <% end %>
+</table>
+
 
 
 

@@ -6,6 +6,7 @@
       <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
           <%= devise_error_messages! %>
 
+          <%= f.hidden_field :sub_domain, :value => request.subdomain %>
           <div><%= f.label :email %>
 
             <%= f.email_field :email, :autofocus => true %></div>
