@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   end
 
   def get_tenant_params
-    tenant = Tenant.find_by_subdomain request.subdomain
+    tenant = current_tenant
 
     params[:amazon_access_key] = tenant.amazon_access_key
     params[:amazon_secret_key] = tenant.amazon_secret_key
@@ -34,7 +34,13 @@ class ApplicationController < ActionController::Base
   private
 
   def current_tenant
-     Tenant.find_by_subdomain request.subdomain
+    tenant = Tenant.find_by_subdomain request.subdomain
+
+    if !tenant
+      tenant = Tenant.find_by_subdomain 'www'
+    end
+
+    tenant
   end
   helper_method :current_tenant
 

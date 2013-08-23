@@ -31,6 +31,7 @@ group :development, :test do
   gem 'daemons'
   gem 'rack-mini-profiler'
   gem 'crack'
+  gem 'debugger'
 end
 
 # Gems used only for assets and not required

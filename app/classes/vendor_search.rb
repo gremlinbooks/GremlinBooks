@@ -117,7 +117,7 @@ class VendorSearch
                                        :timeout => 100, # milliseconds
                                        :params => {:'website-id' => @cj_website_id,
                                                    :isbn => search_text,
-                                                   :'advertiser-ids' => '1087150,1845757,520129,3812999',
+                                                   :'advertiser-ids' => '1087150,1845757,520129,3812999,4020873',
                                                    :'serviceable-area' => 'US'})
 
     hydra = Typhoeus::Hydra.new
@@ -236,93 +236,98 @@ class VendorSearch
 
     # create the url for a user buy click
     cart_url = book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Cart_URL"]
-    cart_url_parts = cart_url.split('&')
-    ad_url = ''
 
-    cart_url_parts.each do |part|
-      if part.starts_with?('adurl=')
-        ad_url = part.slice(6, part.length - 1)
+    if cart_url
+
+      cart_url_parts = cart_url.split('&')
+      ad_url = ''
+
+      cart_url_parts.each do |part|
+        if part.starts_with?('adurl=')
+          ad_url = part.slice(6, part.length - 1)
+        end
       end
-    end
 
-    buy_url = "http://www.jdoqocy.com/click-#{@cj_website_id}-10365124?url=" + ad_url
+      buy_url = "http://www.jdoqocy.com/click-#{@cj_website_id}-10365124?url=" + ad_url
 
-    #best used
-    if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["IsOfferAvailable"]
-      results << {vendor: "Book Byte",
-                  price: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Price"],
-                  cart: true,
-                  buy: true,
-                  rent: false,
-                  cart_link: buy_url,
-                  buy_link: buy_url,
-                  condition: "Used",
-                  rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Cart_URL"],
-                  shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"],
-                  total_cost: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Price"].to_f,
-                  notes: "",
-                  best_offer: false,
-                  results_string: book_byte_response
-      }
-    end
+      #best used
+      if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["IsOfferAvailable"]
+        results << {vendor: "Book Byte",
+                    price: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Price"],
+                    cart: true,
+                    buy: true,
+                    rent: false,
+                    cart_link: buy_url,
+                    buy_link: buy_url,
+                    condition: "Used",
+                    rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Cart_URL"],
+                    shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"],
+                    total_cost: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_Used"]["Price"].to_f,
+                    notes: "",
+                    best_offer: false,
+                    results_string: book_byte_response
+        }
+      end
 
-    #best new
-    if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["IsOfferAvailable"]
-      results << {vendor: "Book Byte",
-                  price: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Price"],
-                  cart: true,
-                  buy: true,
-                  rent: false,
-                  cart_link: buy_url,
-                  buy_link: buy_url,
-                  condition: "New",
-                  rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Cart_URL"],
-                  shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"],
-                  total_cost: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Price"].to_f,
-                  notes: "",
-                  best_offer: false,
-                  results_string: book_byte_response
-      }
-    end
+      #best new
+      if book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["IsOfferAvailable"]
+        results << {vendor: "Book Byte",
+                    price: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Price"],
+                    cart: true,
+                    buy: true,
+                    rent: false,
+                    cart_link: buy_url,
+                    buy_link: buy_url,
+                    condition: "New",
+                    rent_link: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Cart_URL"],
+                    shipping: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"],
+                    total_cost: book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Bookbyte_Offers"]["Best_New"]["Price"].to_f,
+                    notes: "",
+                    best_offer: false,
+                    results_string: book_byte_response
+        }
+      end
 
-    #rentals?
+      #rentals?
 
-    #marketplace new
-    if book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["IsOfferAvailable"]
-      results << {vendor: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["SellerName"],
-                  price: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Price"],
-                  cart: true,
-                  buy: true,
-                  rent: false,
-                  cart_link: buy_url,
-                  buy_link: buy_url,
-                  condition: "New",
-                  rent_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Cart_URL"],
-                  shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"],
-                  total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Price"].to_f,
-                  notes: "",
-                  best_offer: false,
-                  results_string: book_byte_response
-      }
-    end
+      #marketplace new
+      if book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["IsOfferAvailable"]
+        results << {vendor: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["SellerName"],
+                    price: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Price"],
+                    cart: true,
+                    buy: true,
+                    rent: false,
+                    cart_link: buy_url,
+                    buy_link: buy_url,
+                    condition: "New",
+                    rent_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Cart_URL"],
+                    shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"],
+                    total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_New"]["Price"].to_f,
+                    notes: "",
+                    best_offer: false,
+                    results_string: book_byte_response
+        }
+      end
 
-    #marketplace used
-    if book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["IsOfferAvailable"]
-      results << {vendor: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["SellerName"],
-                  price: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"],
-                  cart: true,
-                  buy: true,
-                  rent: false,
-                  cart_link: buy_url,
-                  buy_link: buy_url,
-                  condition: "Used",
-                  rent_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Cart_URL"],
-                  shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"],
-                  total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"].to_f,
-                  notes: "",
-                  best_offer: false,
-                  results_string: book_byte_response
-      }
+      #marketplace used
+      if book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["IsOfferAvailable"]
+        results << {vendor: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["SellerName"],
+                    price: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"],
+                    cart: true,
+                    buy: true,
+                    rent: false,
+                    cart_link: buy_url,
+                    buy_link: buy_url,
+                    condition: "Used",
+                    rent_link: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Cart_URL"],
+                    shipping: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"],
+                    total_cost: book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Shipping"].to_f + book_byte_response["InventoryInfo"]["Marketplace_Offers"]["Best_Used"]["Price"].to_f,
+                    notes: "",
+                    best_offer: false,
+                    results_string: book_byte_response
+        }
+      end
+
     end
 
     results

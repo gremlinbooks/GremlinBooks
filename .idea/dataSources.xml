@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="3102082279">
-    <data-source source="LOCAL" name="Rails GremlinBooks: development" uuid="2ce81653-36b2-4275-a388-a9580c2d4bfe">
+    <data-source source="LOCAL" name="Rails GremlinBooks: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="2ce81653-36b2-4275-a388-a9580c2d4bfe">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:GremlinBooks_development</jdbc-url>
       <user-name>postgres</user-name>
@@ -15,7 +15,7 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails GremlinBooks: production" uuid="3af1a2f5-101a-4667-901a-5cddf203e01c">
+    <data-source source="LOCAL" name="Rails GremlinBooks: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="3af1a2f5-101a-4667-901a-5cddf203e01c">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:GremlinBooks_production</jdbc-url>
       <user-name>postgres</user-name>
@@ -29,7 +29,7 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails GremlinBooks: test" uuid="54d505e9-bde5-4cfb-a2c0-504b0f672b32">
+    <data-source source="LOCAL" name="Rails GremlinBooks: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="54d505e9-bde5-4cfb-a2c0-504b0f672b32">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:GremlinBooks_test</jdbc-url>
       <user-name>postgres</user-name>
@@ -43,7 +43,7 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails GremlinBooks: production" uuid="08f3d3f0-5564-42f8-b84e-c7213456fa47">
+    <data-source source="LOCAL" name="Rails GremlinBooks: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="08f3d3f0-5564-42f8-b84e-c7213456fa47">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:GremlinBooks_production</jdbc-url>
       <user-name>postgres</user-name>
@@ -57,7 +57,8 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails GremlinBooks: development" uuid="c8c2d47d-c1c0-44c3-b2ab-0d58bbfdd151">
+    <data-source source="LOCAL" name="Rails GremlinBooks: development" product="PostgreSQL" version="9.2.2" jdbc-version="3.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.1 JDBC3 (build 901)" uuid="c8c2d47d-c1c0-44c3-b2ab-0d58bbfdd151">
+      <identifier-quote-string>&quot;</identifier-quote-string>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:GremlinBooks_development</jdbc-url>
       <user-name>postgres</user-name>
@@ -71,7 +72,7 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails GremlinBooks: test" uuid="49e975e2-5fcf-470e-ab36-e820c880098a">
+    <data-source source="LOCAL" name="Rails GremlinBooks: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="49e975e2-5fcf-470e-ab36-e820c880098a">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:GremlinBooks_test</jdbc-url>
       <user-name>postgres</user-name>
