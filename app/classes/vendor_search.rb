@@ -359,70 +359,73 @@ class VendorSearch
 
     book_renter_response = ActiveSupport::JSON.decode(book_renter_request.response.body)
 
-    # create the url for a user buy click
-    cart_url = book_renter_response["response"]["book"]["add_to_cart_url"]
-    buy_url = "http://www.jdoqocy.com/click-#{@cj_website_id}-10737829?url=" + cart_url
+    if book_renter_response
+
+      # create the url for a user buy click
+      cart_url = book_renter_response["response"]["book"]["add_to_cart_url"]
+      buy_url = "http://www.jdoqocy.com/click-#{@cj_website_id}-10737829?url=" + cart_url
 
 
-    # book renter response is kind of jacked
-    # first check if there is anything in the prices collection
-    if  book_renter_response["response"]["book"]["prices"]
-      # there are items in the prices collection
-      # now pull out the rentals and purchases
-      book_renter_response["response"]["book"]["prices"].each do |item|
-        if item["term"] # rentals
-          results << {vendor: "Book Renter",
-                      price: item["rental_price"].sub('$', '').to_f,
-                      cart: true,
-                      buy: false,
-                      rent: true,
-                      cart_link: book_renter_response["response"]["book"]["add_to_cart_url"],
-                      buy_link: "",
-                      condition: "Rental",
-                      rent_link: buy_url.sub('RENTAL_PERIOD', item["days"].to_s),
-                      shipping: 0,
-                      total_cost: item["rental_price"].sub('$', '').to_f,
-                      notes: item["term"] + ' ' + item["days"],
-                      best_offer: false,
-                      results_string: book_renter_response
-          }
-        else
-          if item["condition"] # purchase
+      # book renter response is kind of jacked
+      # first check if there is anything in the prices collection
+      if  book_renter_response["response"]["book"]["prices"]
+        # there are items in the prices collection
+        # now pull out the rentals and purchases
+        book_renter_response["response"]["book"]["prices"].each do |item|
+          if item["term"] # rentals
             results << {vendor: "Book Renter",
-                        price: item["purchase_price"].sub('$', '').to_f,
+                        price: item["rental_price"].sub('$', '').to_f,
                         cart: true,
-                        buy: true,
-                        rent: false,
-                        cart_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
-                        buy_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
-                        condition: item["condition"],
-                        rent_link: "",
+                        buy: false,
+                        rent: true,
+                        cart_link: book_renter_response["response"]["book"]["add_to_cart_url"],
+                        buy_link: "",
+                        condition: "Rental",
+                        rent_link: buy_url.sub('RENTAL_PERIOD', item["days"].to_s),
                         shipping: 0,
-                        total_cost: item["purchase_price"].sub('$', '').to_f,
-                        notes: "",
+                        total_cost: item["rental_price"].sub('$', '').to_f,
+                        notes: item["term"] + ' ' + item["days"],
                         best_offer: false,
                         results_string: book_renter_response
             }
+          else
+            if item["condition"] # purchase
+              results << {vendor: "Book Renter",
+                          price: item["purchase_price"].sub('$', '').to_f,
+                          cart: true,
+                          buy: true,
+                          rent: false,
+                          cart_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                          buy_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                          condition: item["condition"],
+                          rent_link: "",
+                          shipping: 0,
+                          total_cost: item["purchase_price"].sub('$', '').to_f,
+                          notes: "",
+                          best_offer: false,
+                          results_string: book_renter_response
+              }
+            end
           end
         end
+      else
+        # there aren't any price items in the collection, therefore pull standard book info
+        results << {vendor: "Book Renter",
+                    price: book_renter_response["response"]["book"]["info"]["retail_price"].sub('$', '').to_f,
+                    cart: true,
+                    buy: true,
+                    rent: false,
+                    cart_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                    buy_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                    condition: "Unknown",
+                    rent_link: "",
+                    shipping: 0,
+                    total_cost: book_renter_response["response"]["book"]["info"]["retail_price"].sub('$', '').to_f,
+                    notes: "",
+                    best_offer: false,
+                    results_string: book_renter_response
+        }
       end
-    else
-      # there aren't any price items in the collection, therefore pull standard book info
-      results << {vendor: "Book Renter",
-                  price: book_renter_response["response"]["book"]["info"]["retail_price"].sub('$', '').to_f,
-                  cart: true,
-                  buy: true,
-                  rent: false,
-                  cart_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
-                  buy_link: buy_url.sub('RENTAL_PERIOD', 90.to_s),
-                  condition: "Unknown",
-                  rent_link: "",
-                  shipping: 0,
-                  total_cost: book_renter_response["response"]["book"]["info"]["retail_price"].sub('$', '').to_f,
-                  notes: "",
-                  best_offer: false,
-                  results_string: book_renter_response
-      }
     end
 
     results

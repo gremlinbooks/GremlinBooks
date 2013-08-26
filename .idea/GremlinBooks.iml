@@ -214,6 +214,7 @@
     <orderEntry type="library" scope="PROVIDED" name="thin (v1.5.1, RVM: ruby-1.9.3-p362) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.18.1, RVM: ruby-1.9.3-p362) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.37, RVM: ruby-1.9.3-p362) [gem]" level="application" />
+    <orderEntry type="module" module-name="conclusivelabs" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
