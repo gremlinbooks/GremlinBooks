@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/settings/development.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/settings/production.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/settings/test.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,92 +30,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="vendor_search.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="25" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2033">
-              <folding>
-                <element signature="e#1537#2798#0" expanded="false" />
-                <element signature="e#2813#3069#0" expanded="false" />
-                <element signature="e#3073#4714#0" expanded="false" />
-                <element signature="e#6516#8699#0" expanded="false" />
-                <element signature="e#8703#14774#0" expanded="false" />
-                <element signature="e#14778#19176#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="31" selection-start="2018" selection-end="2018" vertical-scroll-proportion="1.3343512" vertical-offset="494" max-vertical-offset="2014">
+            <state line="53" column="6" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.0" vertical-offset="979" max-vertical-offset="2014">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="9" selection-start="1681" selection-end="1681" vertical-scroll-proportion="-7.464286" vertical-offset="437" max-vertical-offset="5472">
-              <folding>
-                <marker date="1377721437000" expanded="true" signature="40:709" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="747:765" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="766:1363" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="1296:1328" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="1412:1430" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="1431:1538" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="1441:1448" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="1744:2159" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="2231:12294" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="2452:8181" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="2541:8139" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="2607:4562" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="2635:4539" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="2692:4510" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="2739:2767" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="2816:4481" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="2853:2883" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="2884:2988" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="3025:3035" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="3036:4453" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="3070:4423" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="3103:3251" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="3284:3446" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="3479:3607" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="3640:3819" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="3852:4008" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="4041:4193" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="4226:4388" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="4664:8115" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="4707:4735" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="4783:4829" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="4830:5272" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="5417:7874" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="7345:7377" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="7378:7673" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="7483:7509" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="7962:8062" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="8226:9131" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="8248:9112" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="8269:9089" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="8292:9067" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="8325:8342" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="8343:9043" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="8370:8555" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="8582:9017" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="9171:9308" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="9190:9287" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="9557:12059" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="9600:9628" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="9736:9782" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="9783:10188" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="10277:11818" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="11906:12006" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="12123:12260" placeholder="..." />
-                <marker date="1377721437000" expanded="true" signature="12142:12239" placeholder="..." />
-              </folding>
+            <state line="44" column="2" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.2275449" vertical-offset="684" max-vertical-offset="1691">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,7 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/classes/tracker.rb" />
         <option value="$PROJECT_DIR$/app/models/user_search_log.rb" />
         <option value="$PROJECT_DIR$/app/models/user_buy_log.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/log_clean_up.rb" />
@@ -159,6 +82,7 @@
         <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
         <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -852,69 +776,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="9" selection-start="1681" selection-end="1681" vertical-scroll-proportion="-7.464286" vertical-offset="437" max-vertical-offset="5472">
-          <folding>
-            <marker date="1377721437000" expanded="true" signature="40:709" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="747:765" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="766:1363" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="1296:1328" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="1412:1430" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="1431:1538" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="1441:1448" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="1744:2159" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="2231:12294" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="2452:8181" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="2541:8139" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="2607:4562" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="2635:4539" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="2692:4510" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="2739:2767" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="2816:4481" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="2853:2883" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="2884:2988" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="3025:3035" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="3036:4453" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="3070:4423" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="3103:3251" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="3284:3446" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="3479:3607" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="3640:3819" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="3852:4008" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="4041:4193" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="4226:4388" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="4664:8115" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="4707:4735" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="4783:4829" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="4830:5272" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="5417:7874" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="7345:7377" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="7378:7673" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="7483:7509" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="7962:8062" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="8226:9131" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="8248:9112" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="8269:9089" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="8292:9067" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="8325:8342" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="8343:9043" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="8370:8555" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="8582:9017" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="9171:9308" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="9190:9287" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="9557:12059" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="9600:9628" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="9736:9782" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="9783:10188" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="10277:11818" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="11906:12006" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="12123:12260" placeholder="..." />
-            <marker date="1377721437000" expanded="true" signature="12142:12239" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="29" selection-start="471" selection-end="471" vertical-scroll-proportion="-2.3206108" vertical-offset="1767" max-vertical-offset="3591">
@@ -940,20 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2033">
-          <folding>
-            <element signature="e#1537#2798#0" expanded="false" />
-            <element signature="e#2813#3069#0" expanded="false" />
-            <element signature="e#3073#4714#0" expanded="false" />
-            <element signature="e#6516#8699#0" expanded="false" />
-            <element signature="e#8703#14774#0" expanded="false" />
-            <element signature="e#14778#19176#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -992,27 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1672">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.028443113" vertical-offset="19" max-vertical-offset="1026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="15" selection-start="264" selection-end="264" vertical-scroll-proportion="0.4266467" vertical-offset="0" max-vertical-offset="1349">
@@ -1020,9 +846,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="9" selection-start="1681" selection-end="1681" vertical-scroll-proportion="0.33333334" vertical-offset="437" max-vertical-offset="5472">
+          <folding>
+            <element signature="e#740#766#0" expanded="true" />
+            <element signature="e#1405#1431#0" expanded="true" />
+            <element signature="e#2732#2768#0" expanded="true" />
+            <element signature="e#2846#2884#0" expanded="true" />
+            <element signature="e#3018#3036#0" expanded="true" />
+            <element signature="e#4700#4736#0" expanded="true" />
+            <element signature="e#4776#4830#0" expanded="true" />
+            <element signature="e#7338#7378#0" expanded="true" />
+            <element signature="e#7476#7510#0" expanded="true" />
+            <element signature="e#8318#8343#0" expanded="true" />
+            <element signature="e#9593#9629#0" expanded="true" />
+            <element signature="e#9729#9783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="442" selection-end="442" vertical-scroll-proportion="0.29007635" vertical-offset="0" max-vertical-offset="2033">
+          <folding>
+            <element signature="e#1537#2798#0" expanded="false" />
+            <element signature="e#2813#3069#0" expanded="false" />
+            <element signature="e#3073#4714#0" expanded="false" />
+            <element signature="e#6516#8699#0" expanded="false" />
+            <element signature="e#8703#14774#0" expanded="false" />
+            <element signature="e#14778#19176#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.4550898" vertical-offset="304" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="31" selection-start="2018" selection-end="2018" vertical-scroll-proportion="1.3343512" vertical-offset="494" max-vertical-offset="2014">
+        <state line="53" column="6" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.0" vertical-offset="979" max-vertical-offset="2014">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="2" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.2275449" vertical-offset="684" max-vertical-offset="1691">
           <folding />
         </state>
       </provider>

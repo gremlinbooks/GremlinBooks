@@ -43,6 +43,7 @@ GremlinBooks::Application.configure do
   config.action_controller.perform_caching = true
   config.cache_store = :dalli_store
 
+
   # Enable serving of images, stylesheets, and JavaScripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
 
