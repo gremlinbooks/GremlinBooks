@@ -207,7 +207,7 @@
             <% @search_results.each do |key, search_result| %>
 
                 <table class="table table-bordered table-striped table-hover">
-                  <th colspan="7" style="background-color: ghostwhite">Search Results</th>
+                  <th colspan="6" style="background-color: ghostwhite">Search Results</th>
 
                   <% if search_result.count > 0 %>
 
@@ -217,7 +217,7 @@
                         <td>Author</td>
                         <td>Publisher</td>
                         <td>ISBN</td>
-                        <td></td>
+
                         <% if Rails.env.development? %>
                             <td>Raw Results</td>
                         <% end %>
