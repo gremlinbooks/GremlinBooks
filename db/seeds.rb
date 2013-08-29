@@ -10,7 +10,7 @@ Tenant.delete_all
 
 #AOII
 Tenant.create(sub_domain: 'aoii',
-              logo: 'aoii_logo.jpeg',
+              logo: 'gremlin_small.png',
               color: 'Red',
               title: 'AOII Bookstore',
               amazon_access_key: 'AKIAJGEEG4RCTCF2DCHQ',

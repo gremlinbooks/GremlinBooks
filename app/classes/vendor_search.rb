@@ -22,14 +22,62 @@ class VendorSearch
     @sub_domain = params[:sub_domain]
   end
 
-  def get_all_results(search_text, current_user)
-    amazon_results = get_amazon_results(search_text, current_user)
+  def get_all_isbn_results(search_text, current_user)
+    amazon_results = get_amazon_results_from_isbn(search_text, current_user)
     cj_results = get_cj_results(search_text, current_user)
     chegg_results = get_chegg_results(search_text, current_user)
     book_byte_results = get_book_byte_results(search_text, current_user)
     book_renter_results = get_book_renter_results(search_text, current_user)
     all_results = (amazon_results + book_byte_results + book_renter_results + chegg_results + cj_results).sort_by { |hsh| hsh[:total_cost] }
     determine_best_offer(all_results)
+  end
+
+  def get_results_from_text(search_text, current_user)
+    require 'amazon/ecs'
+    require 'json'
+    require 'tracker.rb'
+
+    tracker = Tracker.new()
+    tracker.track_vendor_search(search_text, current_user, 'Amazon', @sub_domain)
+
+    Amazon::Ecs.options = {
+        :associate_tag => @amazon_associate_tag,
+        :AWS_access_key_id => @amazon_access_key,
+        :AWS_secret_key => @amazon_secret_key
+    }
+
+    # make api call to amazon
+    res = Amazon::Ecs.item_search(search_text, :search_index => 'Books', :response_group => 'Large')
+
+    results = Array.new
+
+    if res.items.count > 0
+      res.items.each do |item|
+
+        item_attributes = item.get_element('ItemAttributes')
+        offers = item.get_element('Offers')
+
+        if !offers.nil?
+
+          if !item_attributes.nil?
+
+            result = {title: item_attributes.get('Title'),
+                      publisher: item_attributes.get('Publisher'),
+                      author: item_attributes.get('Author'),
+                      isbn: item_attributes.get('ISBN'),
+                      small_image: item.get('SmallImage/URL'),
+                      results_string: item.to_s
+            }
+
+            results << result
+
+          end
+
+        end
+      end
+    end
+
+    results
   end
 
   private
@@ -44,7 +92,7 @@ class VendorSearch
     results
   end
 
-  def get_amazon_results(search_text, current_user)
+  def get_amazon_results_from_isbn(search_text, current_user)
     require 'amazon/ecs'
     require 'json'
     require 'tracker.rb'
@@ -117,7 +165,7 @@ class VendorSearch
                                        :timeout => 100, # milliseconds
                                        :params => {:'website-id' => @cj_website_id,
                                                    :isbn => search_text,
-                                                   :'advertiser-ids' => '1087150,1845757,520129,3812999,4020873',
+                                                   :'advertiser-ids' => '1087150,1845757,520129,3812999,4020873,904879,2544507,4069992',
                                                    :'serviceable-area' => 'US'})
 
     hydra = Typhoeus::Hydra.new

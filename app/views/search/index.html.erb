@@ -9,7 +9,7 @@
 
 <div style="text-align: center">
   <%= form_tag search_index_path, :method => "get" do %>
-      <%= search_field_tag :search, params[:search], :placeholder => "Search ISBN", :results => 0 %>
+      <%= search_field_tag :search, params[:search], :placeholder => "ISBN, Title, or Author", :results => 0 %>
       <%= button_tag "Search", :type => 'submit', class: "btn btn-primary" %>
 
       <% if !params[:search].nil? %>
@@ -29,174 +29,255 @@
 
 <% if !params[:search].nil? %>
 
+    <% if @isbn_search %>
+        <! - ISBN SEARCH -->
+        <% if @search_results.count > 0 %>
 
-    <% if @search_results.count > 0 %>
-
-        <!-- TABS -->
-        <ul class="nav nav-tabs">
-          <% @search_results.each do |key, search_result| %>
-              <% if @search_results.keys[0] == key %>
-                  <li class="active"><a href="#tab<%= key %>" data-toggle="tab"><%= key %></a></li>
-              <% else %>
-                  <li><a href="#tab<%= key %>" data-toggle="tab"><%= key %></a></li>
-              <% end %>
-          <% end %>
-        </ul>
-
-        <!-- TAB CONTENT -->
-        <div class="tab-content">
-          <% @search_results.each do |key, search_result| %>
-              <!-- DETAILS -->
-              <% if @search_results.keys[0] == key %>
-                  <div class="tab-pane active" id="tab<%= key %>">
-              <% else %>
-                  <div class="tab-pane" id="tab<%= key %>">
-              <% end %>
-              <div class="container">
-                <article>
-                  <table class="table table-bordered">
-                    <th colspan="2" style="background-color: ghostwhite">Book Information</th>
-                    <tr>
-                      <td style="width: 20%; text-align: center">
-                        <img src="<%= search_result[0].image_link %>"/>
-                      </td>
-                      <td style="width: 80%">
-                        <table>
-                          <tr>
-                            <td>Title</td>
-                            <td><%= search_result[0].title %></td>
-                          </tr>
-                          <tr>
-                            <td>Author</td>
-                            <td><%= search_result[0].author.to_sentence %></td>
-                          </tr>
-                          <tr>
-                            <td>ISBN</td>
-                            <td><%= key %></td>
-                          </tr>
-                          <tr>
-                            <td>Description</td>
-                            <td class="expandable"><%= search_result[0].description %></td>
-                          </tr>
-                          <tr>
-                            <td>Publisher</td>
-                            <td><%= search_result[0].publisher %></td>
-                          </tr>
-                          <tr>
-                            <td>Binding</td>
-                            <td><%= search_result[0].binding %></td>
-                          </tr>
-                          <tr>
-                            <td>Retail Price</td>
-                            <td><%= search_result[0].retail_price %></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </article>
-              </div>
-
-              <br>
-
-              <table class="table table-bordered table-striped table-hover">
-                <th colspan="8" style="background-color: ghostwhite">Book Offers</th>
-                <tr style="background-color: lightgrey; font-weight: bold">
-                  <td>Vendor</td>
-                  <td>Condition</td>
-                  <td>Price</td>
-                  <td>Shipping</td>
-                  <td>Total Cost</td>
-                  <td>Notes</td>
-                  <td>Rent/Buy</td>
-                  <td></td>
-                  <% if Rails.env.development? %>
-                      <td>Raw Results</td>
+            <!-- TABS -->
+            <ul class="nav nav-tabs">
+              <% @search_results.each do |key, search_result| %>
+                  <% if @search_results.keys[0] == key %>
+                      <li class="active"><a href="#tab<%= key %>" data-toggle="tab"><%= key %></a></li>
+                  <% else %>
+                      <li><a href="#tab<%= key %>" data-toggle="tab"><%= key %></a></li>
                   <% end %>
-                </tr>
-                <% if search_result[1].count > 0 %>
-                    <% search_result[1].each do |item| %>
-                        <tr>
-                          <td><%= item[:vendor] %></td>
+              <% end %>
+            </ul>
 
-                          <% if item[:condition].nil? %>
-                              <td>Unknown</td>
-                          <% else %>
-                              <td><%= item[:condition].to_s.titleize %></td>
-                          <% end %>
-
-                          <% if item[:price] == 0 %>
-                              <td>Unknown</td>
-                          <% else %>
-                              <td><%= number_to_currency(item[:price]) %></td>
-                          <% end %>
-
-                          <% if item[:shipping] == 0 %>
-                              <td>Unknown or Numerous</td>
-                          <% else %>
-                              <td><%= number_to_currency(item[:shipping]) %></td>
-                          <% end %>
-
-                          <% if item[:total_cost] == 0 %>
-                              <td>Unknown</td>
-                          <% else %>
-                              <td><%= number_to_currency(item[:total_cost]) %></td>
-                          <% end %>
-                          <td><%= item[:notes] %></td>
-                          <% if item[:rent] %>
-                              <td><%= link_to "Rent", {:controller => "search", :action => "buy", :buy_link => item[:rent_link], :user => current_user, :isbn => key, :item_cost => item[:price], :vendor => item[:vendor], :sub_domain => request.subdomain }, :target => "_new" %></td>
-                          <% else %>
-                              <td><%= link_to "Buy", {:controller => "search", :action => "buy", :buy_link => item[:buy_link], :user => current_user, :isbn => key, :item_cost => item[:price], :vendor => item[:vendor], :sub_domain => request.subdomain }, :target => "_new" %></td>
-                          <% end %>
-                          <td style="text-align: center; color: green">
-                            <% if item[:best_offer] %>
-                                <img style="height: 35px; width: 35px;" src="<%= image_path("check.png") %>"/>
-                                <br/>Best Choice
-                            <% end %>
-                          </td>
-                          <% if Rails.env.development? %>
-                              <td><%= item[:results_string] %></td>
-                          <% end %>
-
-                        </tr>
-                    <% end %>
+            <!-- TAB CONTENT -->
+            <div class="tab-content">
+            <% @search_results.each do |key, search_result| %>
+                <!-- DETAILS -->
+                <% if @search_results.keys[0] == key %>
+                    <div class="tab-pane active" id="tab<%= key %>">
                 <% else %>
-                    <tr>
-                      <td>No results to display for <%= key %></td>
-                    </tr>
+                    <div class="tab-pane" id="tab<%= key %>">
                 <% end %>
+                <div class="container">
+                  <article>
+                    <table class="table table-bordered">
+                      <th colspan="2" style="background-color: ghostwhite">Book Information</th>
+                      <tr>
+                        <td style="width: 20%; text-align: center">
+                          <img src="<%= search_result[0].image_link %>"/>
+                        </td>
+                        <td style="width: 80%">
+                          <table>
+                            <tr>
+                              <td>Title</td>
+                              <td><%= search_result[0].title %></td>
+                            </tr>
+                            <tr>
+                              <td>Author</td>
+                              <td><%= search_result[0].author.to_sentence %></td>
+                            </tr>
+                            <tr>
+                              <td>ISBN</td>
+                              <td><%= key %></td>
+                            </tr>
+                            <tr>
+                              <td>Description</td>
+                              <td class="expandable"><%= search_result[0].description %></td>
+                            </tr>
+                            <tr>
+                              <td>Publisher</td>
+                              <td><%= search_result[0].publisher %></td>
+                            </tr>
+                            <tr>
+                              <td>Binding</td>
+                              <td><%= search_result[0].binding %></td>
+                            </tr>
+                            <tr>
+                              <td>Retail Price</td>
+                              <td><%= search_result[0].retail_price %></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </article>
+                </div>
+
+                <br>
+
+                <table class="table table-bordered table-striped table-hover">
+                  <th colspan="8" style="background-color: ghostwhite">Book Offers</th>
+                  <tr style="background-color: lightgrey; font-weight: bold">
+                    <td>Vendor</td>
+                    <td>Condition</td>
+                    <td>Price</td>
+                    <td>Shipping</td>
+                    <td>Total Cost</td>
+                    <td>Notes</td>
+                    <td>Rent/Buy</td>
+                    <td></td>
+                    <% if Rails.env.development? %>
+                        <td>Raw Results</td>
+                    <% end %>
+                  </tr>
+                  <% if search_result[1].count > 0 %>
+                      <% search_result[1].each do |item| %>
+                          <tr>
+                            <td><%= item[:vendor] %></td>
+
+                            <% if item[:condition].nil? %>
+                                <td>Unknown</td>
+                            <% else %>
+                                <td><%= item[:condition].to_s.titleize %></td>
+                            <% end %>
+
+                            <% if item[:price] == 0 %>
+                                <td>Unknown</td>
+                            <% else %>
+                                <td><%= number_to_currency(item[:price]) %></td>
+                            <% end %>
+
+                            <% if item[:shipping] == 0 %>
+                                <td>Unknown or Numerous</td>
+                            <% else %>
+                                <td><%= number_to_currency(item[:shipping]) %></td>
+                            <% end %>
+
+                            <% if item[:total_cost] == 0 %>
+                                <td>Unknown</td>
+                            <% else %>
+                                <td><%= number_to_currency(item[:total_cost]) %></td>
+                            <% end %>
+                            <td><%= item[:notes] %></td>
+                            <% if item[:rent] %>
+                                <td><%= link_to "Rent", {:controller => "search", :action => "buy", :buy_link => item[:rent_link], :user => current_user, :isbn => key, :item_cost => item[:price], :vendor => item[:vendor], :sub_domain => request.subdomain}, :target => "_new" %></td>
+                            <% else %>
+                                <td><%= link_to "Buy", {:controller => "search", :action => "buy", :buy_link => item[:buy_link], :user => current_user, :isbn => key, :item_cost => item[:price], :vendor => item[:vendor], :sub_domain => request.subdomain}, :target => "_new" %></td>
+                            <% end %>
+                            <td style="text-align: center; color: green">
+                              <% if item[:best_offer] %>
+                                  <img style="height: 35px; width: 35px;" src="<%= image_path("check.png") %>"/>
+                                  <br/>Best Choice
+                              <% end %>
+                            </td>
+                            <% if Rails.env.development? %>
+                                <td><%= item[:results_string] %></td>
+                            <% end %>
+
+                          </tr>
+                      <% end %>
+                  <% else %>
+                      <tr>
+                        <td>a No results to display for <%= key %></td>
+                      </tr>
+                  <% end %>
+                </table>
+
+                </div>
+            <% end %>
+
+            </div>
+
+            <div class="alert alert-block">
+              <table>
+                <tr>
+                  <td>
+                    <ul style="font-size: small ">
+                      <li>Please note that all prices are subject to change. Please verify purchase prices when you
+                        complete your purchase through each vendor.
+                      </li>
+                      <li>Any item marked unknown usually is the result of minimal vendor information. For example, it
+                        could indicate that shipping is free, or that shipping is truly unknown. It could also
+                        indicate
+                        that the item is out of stock. Please confirm
+                        pricing and availability on the vendor site before completing your purchase.
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
               </table>
+            </div>
 
-              </div>
-          <% end %>
-
-          </div>
-
-          <div class="alert alert-block">
+        <% else %>
             <table>
               <tr>
-                <td>
-                  <ul style="font-size: small ">
-                    <li>Please note that all prices are subject to change. Please verify purchase prices when you
-                      complete your purchase through each vendor.
-                    </li>
-                    <li>Any item marked unknown usually is the result of minimal vendor information. For example, it
-                      could indicate that shipping is free, or that shipping is truly unknown. It could also indicate
-                      that the item is out of stock. Please confirm
-                      pricing and availability on the vendor site before completing your purchase.
-                    </li>
-                  </ul>
-                </td>
+                <td>b No results to display for <%= params[:search] %>.</td>
               </tr>
             </table>
-          </div>
-
+        <% end %>
     <% else %>
-        <table>
-          <tr>
-            <td>No results to display for <%= params[:search] %>.</td>
-          </tr>
-        </table>
+        <! - TEXT SEARCH -->
+        <% if @search_results.count > 0 %>
+
+            <% @search_results.each do |key, search_result| %>
+
+                <table class="table table-bordered table-striped table-hover">
+                  <th colspan="7" style="background-color: ghostwhite">Search Results</th>
+
+                  <% if search_result.count > 0 %>
+
+                      <tr style="background-color: lightgrey; font-weight: bold">
+                        <td>Book Image</td>
+                        <td>Title</td>
+                        <td>Author</td>
+                        <td>Publisher</td>
+                        <td>ISBN</td>
+                        <td></td>
+                        <% if Rails.env.development? %>
+                            <td>Raw Results</td>
+                        <% end %>
+                      </tr>
+
+                      <% search_result.each do |item| %>
+                          <tr>
+                            <% if item[:small_image].nil? %>
+                                <td>Unknown</td>
+                            <% else %>
+                                <td><%= image_tag(item[:small_image], size: "75x75") %></td>
+                            <% end %>
+
+                            <% if item[:title].nil? %>
+                                <td>Unknown</td>
+                            <% else %>
+                                <td><%= link_to item[:title], {:controller => "search", :action => "index", :search => item[:isbn]} %></td>
+                            <% end %>
+
+                            <% if item[:author].nil? %>
+                                <td>Unknown</td>
+                            <% else %>
+                                <td><%= item[:author] %></td>
+                            <% end %>
+
+                            <% if item[:publisher].nil? %>
+                                <td>Unknown</td>
+                            <% else %>
+                                <td><%= item[:publisher] %></td>
+                            <% end %>
+
+                            <% if item[:isbn].nil? %>
+                                <td>Unknown</td>
+                            <% else %>
+                                <td><%= item[:isbn] %></td>
+                            <% end %>
+
+                            <% if Rails.env.development? %>
+                                <td><%= item[:results_string] %></td>
+                            <% end %>
+
+                          </tr>
+                      <% end %>
+                  <% else %>
+                      <tr>
+                        <td>c No results to display for <%= key %></td>
+                      </tr>
+                  <% end %>
+                </table>
+
+
+            <% end %>
+
+        <% else %>
+            <table>
+              <tr>
+                <td>d No results to display for <%= params[:search] %>.</td>
+              </tr>
+            </table>
+        <% end %>
     <% end %>
 
 <% end %>
