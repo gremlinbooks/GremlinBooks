@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__conclusivelabs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__conclusivelabs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/spec.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/test.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/GremlinBooks.iml" afterPath="$PROJECT_DIR$/.idea/GremlinBooks.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/index.html.erb" afterPath="$PROJECT_DIR$/app/views/search/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,10 +51,22 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="5" selection-start="728" selection-end="728" vertical-scroll-proportion="0.10815939" vertical-offset="0" max-vertical-offset="5434">
+            <state line="5" column="57" selection-start="730" selection-end="730" vertical-scroll-proportion="0.090132825" vertical-offset="0" max-vertical-offset="5434">
               <folding>
                 <element signature="e#248#301#0" expanded="true" />
-                <element signature="e#610#665#0" expanded="true" />
+                <element signature="e#613#668#0" expanded="true" />
+                <element signature="e#737#763#0" expanded="true" />
+                <element signature="e#1402#1428#0" expanded="true" />
+                <element signature="e#2729#2765#0" expanded="true" />
+                <element signature="e#2843#2881#0" expanded="true" />
+                <element signature="e#3015#3033#0" expanded="true" />
+                <element signature="e#4697#4733#0" expanded="true" />
+                <element signature="e#4773#4827#0" expanded="true" />
+                <element signature="e#7335#7375#0" expanded="true" />
+                <element signature="e#7473#7507#0" expanded="true" />
+                <element signature="e#8313#8338#0" expanded="true" />
+                <element signature="e#9586#9622#0" expanded="true" />
+                <element signature="e#9722#9776#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -807,10 +812,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="728" selection-end="728" vertical-scroll-proportion="0.10815939" vertical-offset="0" max-vertical-offset="5434">
+        <state line="5" column="57" selection-start="730" selection-end="730" vertical-scroll-proportion="0.090132825" vertical-offset="0" max-vertical-offset="5434">
           <folding>
             <element signature="e#248#301#0" expanded="true" />
-            <element signature="e#610#665#0" expanded="true" />
+            <element signature="e#613#668#0" expanded="true" />
+            <element signature="e#737#763#0" expanded="true" />
+            <element signature="e#1402#1428#0" expanded="true" />
+            <element signature="e#2729#2765#0" expanded="true" />
+            <element signature="e#2843#2881#0" expanded="true" />
+            <element signature="e#3015#3033#0" expanded="true" />
+            <element signature="e#4697#4733#0" expanded="true" />
+            <element signature="e#4773#4827#0" expanded="true" />
+            <element signature="e#7335#7375#0" expanded="true" />
+            <element signature="e#7473#7507#0" expanded="true" />
+            <element signature="e#8313#8338#0" expanded="true" />
+            <element signature="e#9586#9622#0" expanded="true" />
+            <element signature="e#9722#9776#0" expanded="true" />
           </folding>
         </state>
       </provider>
