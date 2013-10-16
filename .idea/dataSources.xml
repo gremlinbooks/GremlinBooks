@@ -5,7 +5,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:GremlinBooks_development</jdbc-url>
       <user-name>postgres</user-name>
-      <user-password>df9bdf98df99</user-password>
+      <user-password>dfcbdfc8dfc9df9bdf98df99</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -19,7 +19,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:GremlinBooks_production</jdbc-url>
       <user-name>postgres</user-name>
-      <user-password>df9bdf98df99</user-password>
+      <user-password>dfcbdfc8dfc9df9bdf98df99</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -33,7 +33,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:GremlinBooks_test</jdbc-url>
       <user-name>postgres</user-name>
-      <user-password>df9bdf98df99</user-password>
+      <user-password>dfcbdfc8dfc9df9bdf98df99</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>

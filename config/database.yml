@@ -4,7 +4,7 @@ development:
   database: GremlinBooks_development
   pool: 5
   username: postgres
-  password: 123
+  password: abc123
 
 test:
   adapter: postgresql
@@ -12,7 +12,7 @@ test:
   database: GremlinBooks_test
   pool: 5
   username: postgres
-  password: 123
+  password: abc123
 
 production:
   adapter: postgresql
@@ -20,5 +20,5 @@ production:
   database: GremlinBooks_production
   pool: 5
   username: postgres
-  password: 123
+  password: abc123
 
