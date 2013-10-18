@@ -41,7 +41,10 @@ GremlinBooks::Application.configure do
 
   # Use a different cache store in production
   config.action_controller.perform_caching = true
-  config.cache_store = :dalli_store
+  config.cache_store = :dalli_store,
+      (ENV["MEMCACHIER_SERVERS"] || "").split(","),
+      {:username => ENV["MEMCACHIER_USERNAME"],
+       :password => ENV["MEMCACHIER_PASSWORD"]}
 
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server
