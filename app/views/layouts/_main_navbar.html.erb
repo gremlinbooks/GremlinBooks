@@ -17,16 +17,7 @@
           <li><%= link_to "Mission", pages_mission_path %></li>
           <li><%= link_to "Contact Us", new_contact_path %></li>
         </ul>
-        <div class="nav pull-right" id="main-menu-right">
 
-          <% if user_signed_in? %>
-              <%= current_user.email %> |
-              <%= link_to "Sign out", destroy_user_session_path, :method => "delete" %>
-          <% else %>
-              <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
-          <% end %>
-
-        </div>
       </div>
     </div>
   </div>

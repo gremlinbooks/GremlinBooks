@@ -1,45 +1,14 @@
 <br>
-<table>
-  <tr>
-    <td style="text-align: center"><%= image_tag(current_tenant.logo) %></td>
-  </tr>
-  <tr>
-    <td style="text-align: center"><h4>Textbooks are really expensive...we can help!! </h4></td>
-  </tr>
-  <tr>
-    <td style="text-align: center"><h5> It's fast, it's free, it's awesome.</h5></td>
-  </tr>
-  <tr>
-    <td><br></td>
-  </tr>
-  <tr>
-    <td><br></td>
-  </tr>
-  <tr>
+<div>
+  <p class="text-center"><%= image_tag(current_tenant.logo) %></p>
 
-    <td>
-      <center>
-        <table style="width: 50%">
-          <tr>
-            <td style="width: 50%; text-align: center"><%= link_to "Sign Up", new_user_registration_path, :class => "btn btn-primary btn-large custom_button_size" %></td>
-            <td style="width: 50%; text-align: center"><%= link_to "Sign In", new_user_session_path, :class => "btn btn-inverse btn-large custom_button_size" %></td>
-          </tr>
-          <tr>
-            <td style="width: 50%; text-align: center">
-              <h7>Signing up is easy and fast. Just provide an email and password and you're on your way. Listen, we
-                like
-                junk
-                email as much as you do, so we promise never to sell your information to anyone. Pinky promise.</h7>
-            </td>
-            <td style="width: 50%; text-align: center">
-              <h7>Existing users, click here to sign in. <br> Welcome back!</h7>
-            </td>
-          </tr>
-        </table>
-      </center>
-    </td>
-  </tr>
-</table>
+  <h4><p class="text-center">Textbooks are really expensive...we can help!!</p></h4>
+  <h5><p class="text-center">It's fast, it's free, it's awesome.</p></h5>
+  <p class="text-center"><%= link_to "Buy", search_index_path, :class => "btn btn-primary btn-large custom_button_size" %>
+    <%= link_to "Sell", current_tenant.sell_books_url, :class => "btn btn-inverse btn-large custom_button_size", :target => "_blank" %>
+  </p>
+</div>
+
 
 
 

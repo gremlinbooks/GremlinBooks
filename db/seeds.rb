@@ -30,7 +30,8 @@ Tenant.create(sub_domain: 'aoii',
               chegg_aid: '10692263',
               chegg_pid: '7208985',
               chegg_sid: '',
-              url: 'http://aoii.grmbkstr.com'
+              url: 'http://aoii.grmbkstr.com',
+              sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=aoii'
 )
 
 #Gremlin
@@ -55,7 +56,8 @@ Tenant.create(sub_domain: 'www',
               chegg_aid: '10692263',
               chegg_pid: '7045869',
               chegg_sid: '',
-              url: 'http://www.gremlinbooks.com'
+              url: 'http://www.gremlinbooks.com',
+              sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=Gremlin'
 )
 
 #Chi Psi
@@ -80,7 +82,8 @@ Tenant.create(sub_domain: 'chipsi',
               chegg_aid: '10692263',
               chegg_pid: '7225055',
               chegg_sid: '',
-              url: 'http://chipsi.grmbkstr.com'
+              url: 'http://chipsi.grmbkstr.com',
+              sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=chipsi'
 )
 
 #Alpha Sig
@@ -105,7 +108,8 @@ Tenant.create(sub_domain: 'alphasig',
               chegg_aid: '10692263',
               chegg_pid: '7208989',
               chegg_sid: '',
-              url: 'http://alphasig.grmbkstr.com'
+              url: 'http://alphasig.grmbkstr.com',
+              sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=alphasig'
 )
 
 #Sig Ep
@@ -130,7 +134,8 @@ Tenant.create(sub_domain: 'sigep',
               chegg_aid: '10692263',
               chegg_pid: '7208987',
               chegg_sid: '',
-              url: 'http://sigep.grmbkstr.com'
+              url: 'http://sigep.grmbkstr.com',
+              sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=sigep'
 )
 
 #pikapp
@@ -155,7 +160,8 @@ Tenant.create(sub_domain: 'pikapp',
               chegg_aid: '10692263',
               chegg_pid: '7225069',
               chegg_sid: '',
-              url: 'http://pikapp.grmbkstr.com'
+              url: 'http://pikapp.grmbkstr.com',
+              sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=pikappa'
 )
 
 #pike
@@ -180,7 +186,8 @@ Tenant.create(sub_domain: 'pike',
               chegg_aid: '10692263',
               chegg_pid: '7225058',
               chegg_sid: '',
-              url: 'http://pike.grmbkstr.com'
+              url: 'http://pike.grmbkstr.com',
+              sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=pike'
 )
 
 #kappa kappa gamma
@@ -205,7 +212,8 @@ Tenant.create(sub_domain: 'kkg',
               chegg_aid: '10692263',
               chegg_pid: '7225064',
               chegg_sid: '',
-              url: 'http://kkg.grmbkstr.com'
+              url: 'http://kkg.grmbkstr.com',
+              sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=kkg'
 )
 
 #UIU Link
@@ -230,5 +238,6 @@ Tenant.create(sub_domain: 'uiulink',
               chegg_aid: '10692263',
               chegg_pid: '7279899',
               chegg_sid: '',
-              url: 'http://uiulink.grmbkstr.com'
+              url: 'http://uiulink.grmbkstr.com',
+              sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=uiulink'
 )
