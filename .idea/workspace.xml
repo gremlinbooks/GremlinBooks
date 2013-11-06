@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_main_navbar.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_main_navbar.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/search_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/search_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/tenant.rb" afterPath="$PROJECT_DIR$/app/models/tenant.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/Kappa_Logo_Color.jpg" afterPath="$PROJECT_DIR$/app/assets/images/Kappa_Logo_Color.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383236528950" ignored="false" />
+    <file path="/Dummy.txt" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383714223746" ignored="false" />
     <file path="/index.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383239817407" ignored="false" />
     <file path="/seeds.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383238877375" ignored="false" />
     <file path="$PROJECT_DIR$/../jarmoluk/app/assets/classes/vendor_search.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1378779762068" ignored="false" />
@@ -21,10 +15,59 @@
     <file path="$PROJECT_DIR$/../jarmoluk/app/assets/classes/book_info.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1378779816769" ignored="false" />
     <file path="$PROJECT_DIR$/../encore/app/classes/zillow.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1379550895819" ignored="false" />
     <file path="/zillow.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1379549564138" ignored="false" />
-    <file path="/database.yml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1381897808371" ignored="false" />
+    <file path="/database.yml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383668574627" ignored="false" />
     <file path="/development.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1382415420995" ignored="false" />
     <file path="/tenant.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383238773660" ignored="false" />
     <file path="/20131031165959_add_sell_books_url_to_tenant.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383238835010" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/controllers/iterations_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383624365533" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/Gemfile" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383672942218" ignored="false" />
+    <file path="/Gemfile" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383714346852" ignored="false" />
+    <file path="/iterations_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383624365533" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/views/iterations/show.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383626204248" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/public/sample_data.json" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383625996791" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/assets/javascripts/storyjs-embed.js" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383624686896" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/public/example_json.json" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383624986205" ignored="false" />
+    <file path="/show.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383625639199" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/views/layouts/application.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383625131153" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/assets/javascripts/timeline.js" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383625611616" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/assets/stylesheets/timeline.css" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383625694649" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/assets/javascripts/example_json.json" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383625794802" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/assets/classes/pivotal_synch.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383674967780" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/assets/classes/pivotal_iteration_synch.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383666066575" ignored="false" />
+    <file path="/pivotal_synch.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383691060024" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/models/project.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383690905316" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/config/database.yml" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383668578905" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/assets/classes/pivotal_project_synch.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383675417580" ignored="false" />
+    <file path="/pivotal_project_synch.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383680774891" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/lib/tasks/pivotal_tasks.rake" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383691491705" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick/lib/tasks/pivotal_tasks.rake" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383673090923" ignored="false" />
+    <file path="/pivotal_tasks.rake" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383691466548" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/config/application.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383675118262" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/classes/job_manager.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383675660830" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/classes/pivotal_project_synch.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383691033571" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/db/migrate/20131105182601_change_weekly_start_date.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383676025394" ignored="false" />
+    <file path="/20131105182601_change_weekly_start_date.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383676023043" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/db/migrate/20131105182747_change_updated_at.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383676124961" ignored="false" />
+    <file path="/20131105182747_change_updated_at.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383676124961" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/classes/pivotal_synch.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383691060024" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/classes/pivotal_iteration_synch.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383697240954" ignored="false" />
+    <file path="/pivotal_iteration_synch.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383697184511" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/models/iteration.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383697572142" ignored="false" />
+    <file path="/20131105222725_create_iterations.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383690694224" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/db/migrate/20131105222725_create_iterations.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383690765164" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/db/migrate/20131105223316_change_primary_key_field_name.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383690831934" ignored="false" />
+    <file path="/20131105223316_change_primary_key_field_name.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383690831255" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/app/models/iteration_label.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383696699791" ignored="false" />
+    <file path="/iteration_label.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383694503600" ignored="false" />
+    <file path="/iteration.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383694535357" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/db/migrate/20131106001217_change_iterations_foreign_key.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383696762881" ignored="false" />
+    <file path="/20131106001217_change_iterations_foreign_key.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383696755104" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/db/schema.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383697034307" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_4/db/migrate/20131106001605_change_type_to_kind_in_iterations.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383696988474" ignored="false" />
+    <file path="/20131106001605_change_type_to_kind_in_iterations.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383696988474" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_Mongo/Gemfile" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383717485345" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_Mongo/config/application.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383718251171" ignored="false" />
+    <file path="$PROJECT_DIR$/../YellowBrick_Mongo/Gemfile.lock" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1383717731954" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +92,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="179" selection-start="528" selection-end="528" vertical-scroll-proportion="0.34234995">
-              <folding />
-            </state>
+      <file leaf-file-name="Kappa_Logo_Color.jpg" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/images/Kappa_Logo_Color.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -97,9 +138,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="2560" />
-    <option name="height" value="1330" />
+    <option name="x" value="393" />
+    <option name="y" value="201" />
+    <option name="width" value="1440" />
+    <option name="height" value="808" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -127,6 +169,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -453,22 +497,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GremlinBooks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GremlinBooks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jarmoluk" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YellowBrick_Mongo" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -700,7 +764,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
       <method />
@@ -774,14 +838,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="2560" height="1330" extended-state="6" />
+    <frame x="393" y="201" width="1440" height="808" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67241377" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940334" sideWeight="0.670977" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18138425" sideWeight="0.671521" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33213773" sideWeight="0.671521" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.670977" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -861,95 +925,49 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_navbar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="793" selection-end="793" vertical-scroll-proportion="-11.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_message_bar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user_search_log.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user_buy_log.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="23" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/search_log.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="76" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="76" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.1792054">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.1792054" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130813212001_add_url_to_tenant.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131031165959_add_sell_books_url_to_tenant.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="95" selection-end="109" vertical-scroll-proportion="0.024855012">
-          <folding />
-        </state>
+        <state line="2" column="31" selection-start="95" selection-end="109" vertical-scroll-proportion="0.024855012" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/tenant.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="26" selection-start="796" selection-end="810" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="24" column="26" selection-start="796" selection-end="810" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130819213352_add_sub_domain_to_user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="41" selection-start="68" selection-end="107" vertical-scroll-proportion="0.024855012">
-          <folding />
-        </state>
+        <state line="2" column="41" selection-start="68" selection-end="107" vertical-scroll-proportion="0.024855012" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
@@ -961,16 +979,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="274" selection-start="6917" selection-end="6938" vertical-scroll-proportion="0.4871795">
-          <folding />
-        </state>
+        <state line="145" column="274" selection-start="6917" selection-end="6938" vertical-scroll-proportion="0.4871795" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="179" selection-start="528" selection-end="528" vertical-scroll-proportion="0.34234995">
+        <state line="27" column="179" selection-start="528" selection-end="528" vertical-scroll-proportion="0.34234995" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/book_info.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="30" selection-start="423" selection-end="2176" vertical-scroll-proportion="0.34306568">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="22" selection-start="2919" selection-end="3050" vertical-scroll-proportion="0.02232143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/Kappa_Logo_Color.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
