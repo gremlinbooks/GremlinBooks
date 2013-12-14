@@ -114,9 +114,9 @@ Tenant.create(sub_domain: 'alphasig',
 
 #Sig Ep
 Tenant.create(sub_domain: 'sigep',
-              logo: 'SigEpLogo_small.png',
+              logo: 'Gb with Sigep_Small.png',
               color: 'Default',
-              title: 'SigEp Bookstore',
+              title: 'Gremlin Books',
               amazon_access_key: 'AKIAJGEEG4RCTCF2DCHQ',
               amazon_secret_key: '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',
               amazon_associate_tag: 'sigep-grmbkstr-20',
@@ -192,9 +192,9 @@ Tenant.create(sub_domain: 'pike',
 
 #kappa kappa gamma
 Tenant.create(sub_domain: 'kkg',
-              logo: 'Kappa_Logo_Color.jpg',
+              logo: 'kkglogo_RIFV2.png',
               color: 'Default',
-              title: 'Kappa Kappa Gamma Bookstore',
+              title: 'Gremlin Books',
               amazon_access_key: 'AKIAJGEEG4RCTCF2DCHQ',
               amazon_secret_key: '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',
               amazon_associate_tag: 'kkg-grmbkstr-20',
