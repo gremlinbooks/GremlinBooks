@@ -264,6 +264,6 @@ Tenant.create(sub_domain: 'piphi',
     chegg_aid: '10692263',
     chegg_pid: '7355825',
     chegg_sid: '',
-    url: 'http://uiulink.grmbkstr.com',
+    url: 'http://piphi.grmbkstr.com',
     sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=piphi'
 )
