@@ -29,7 +29,7 @@ Tenant.create(sub_domain: 'aoii',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7208985',
-              chegg_sid: '',
+              chegg_sid: 'aoii',
               url: 'http://aoii.grmbkstr.com',
               sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=aoii'
 )
@@ -55,7 +55,7 @@ Tenant.create(sub_domain: 'www',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7045869',
-              chegg_sid: '',
+              chegg_sid: 'gremlin',
               url: 'http://www.gremlinbooks.com',
               sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=Gremlin'
 )
@@ -81,7 +81,7 @@ Tenant.create(sub_domain: 'chipsi',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7225055',
-              chegg_sid: '',
+              chegg_sid: 'chipsi',
               url: 'http://chipsi.grmbkstr.com',
               sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=chipsi'
 )
@@ -107,7 +107,7 @@ Tenant.create(sub_domain: 'alphasig',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7208989',
-              chegg_sid: '',
+              chegg_sid: 'alphasig',
               url: 'http://alphasig.grmbkstr.com',
               sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=alphasig'
 )
@@ -133,7 +133,7 @@ Tenant.create(sub_domain: 'sigep',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7208987',
-              chegg_sid: '',
+              chegg_sid: 'sigep',
               url: 'http://sigep.grmbkstr.com',
               sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=sigep'
 )
@@ -159,7 +159,7 @@ Tenant.create(sub_domain: 'pikapp',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7225069',
-              chegg_sid: '',
+              chegg_sid: 'pikapp',
               url: 'http://pikapp.grmbkstr.com',
               sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=pikappa'
 )
@@ -185,7 +185,7 @@ Tenant.create(sub_domain: 'pike',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7225058',
-              chegg_sid: '',
+              chegg_sid: 'pike',
               url: 'http://pike.grmbkstr.com',
               sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=pike'
 )
@@ -211,7 +211,7 @@ Tenant.create(sub_domain: 'kkg',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7225064',
-              chegg_sid: '',
+              chegg_sid: 'kkg',
               url: 'http://kkg.grmbkstr.com',
               sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=kkg'
 )
@@ -237,7 +237,7 @@ Tenant.create(sub_domain: 'uiulink',
               chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
               chegg_aid: '10692263',
               chegg_pid: '7279899',
-              chegg_sid: '',
+              chegg_sid: 'uiulink',
               url: 'http://uiulink.grmbkstr.com',
               sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=uiulink'
 )
@@ -263,7 +263,7 @@ Tenant.create(sub_domain: 'piphi',
     chegg_key: '1522fa5538fd041d8855c507ac1bf6a5',
     chegg_aid: '10692263',
     chegg_pid: '7355825',
-    chegg_sid: '',
+    chegg_sid: 'piphi',
     url: 'http://piphi.grmbkstr.com',
     sell_books_url: 'http://www.valorebooks.com/sell-textbooks?IsIFrame=1&w=640&site_id=sAx095&t_id=piphi'
 )

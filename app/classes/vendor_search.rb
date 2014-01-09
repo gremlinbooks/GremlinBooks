@@ -240,7 +240,8 @@ class VendorSearch
                           cart_link: "",
                           buy_link: "",
                           condition: "Rent",
-                          rent_link: "http://www.chegg.com/?referrer=CJGATEWAY&PID=#{@chegg_pid}&AID=#{@chegg_aid}&SID=#{@chegg_sid}&pids=#{term["pid"]}",
+                          #rent_link: "http://www.chegg.com/?referrer=CJGATEWAY&PID=#{@chegg_pid}&AID=#{@chegg_aid}&SID=#{@chegg_sid}&pids=#{term["pid"]}",
+                          rent_link: "http://www.tqlkg.com/click-7045869-10692263?SID=#{@chegg_sid}&URL=http://www.chegg.com/?referrer=CJGATEWAY&pids=#{term["pid"]}",
                           shipping: 0,
                           total_cost: term["price"].to_f,
                           notes: term["name"],
@@ -255,6 +256,10 @@ class VendorSearch
 
     results
   end
+
+
+
+
 
   def get_book_byte_results(search_text, current_user)
     require 'typhoeus'
