@@ -241,7 +241,7 @@ class VendorSearch
                           buy_link: "",
                           condition: "Rent",
                           #rent_link: "http://www.chegg.com/?referrer=CJGATEWAY&PID=#{@chegg_pid}&AID=#{@chegg_aid}&SID=#{@chegg_sid}&pids=#{term["pid"]}",
-                          rent_link: "http://www.tqlkg.com/click-7045869-10692263?SID=#{@chegg_sid}&URL=http://www.chegg.com/?referrer=CJGATEWAY&pids=#{term["pid"]}",
+                          rent_link: "http://www.tqlkg.com/click-#{@chegg_pid}-10692263?SID=#{@chegg_sid}&URL=http://www.chegg.com/?referrer=CJGATEWAY&pids=#{term["pid"]}",
                           shipping: 0,
                           total_cost: term["price"].to_f,
                           notes: term["name"],
