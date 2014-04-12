@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/sigmanu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,7 +75,7 @@
     <file path="/_footer.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1387046959310" ignored="false" />
     <file path="/_main_navbar.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1387383482939" ignored="false" />
     <file path="/mission.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1387383503635" ignored="false" />
-    <file path="/vendor_search.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1397339045892" ignored="false" />
+    <file path="/vendor_search.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1397340342486" ignored="false" />
     <file path="$PROJECT_DIR$/../YellowBrick_Mongo/app/controllers/release_plan_controller.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1389639385846" ignored="false" />
     <file path="$PROJECT_DIR$/../YellowBrick_Mongo/app/views/api/v1/projects/show.json.jbuilder" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1390071788334" ignored="false" />
     <file path="$PROJECT_DIR$/../YellowBrick_Mongo/app/views/layouts/_header.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1389891445583" ignored="false" />
@@ -135,7 +132,17 @@
     <favorites_list name="GremlinBooks" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="vendor_search.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="424" column="34" selection-start="16236" selection-end="16236" vertical-scroll-proportion="5.7870793">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -782,14 +789,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2176" height="1235" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67241377" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940334" sideWeight="0.670977" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34413147" sideWeight="0.671521" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34413147" sideWeight="0.671521" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.670977" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -945,16 +952,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="36" selection-start="8462" selection-end="8462" vertical-scroll-proportion="3.343949">
+        <state line="278" column="140" selection-start="16262" selection-end="16262" vertical-scroll-proportion="0.699727">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+    <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="278" column="140" selection-start="16262" selection-end="16262" vertical-scroll-proportion="0.699727">
+        <state line="424" column="34" selection-start="16236" selection-end="16236" vertical-scroll-proportion="5.7870793">
           <folding />
         </state>
       </provider>
