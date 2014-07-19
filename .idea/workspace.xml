@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/chiomega.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/deltagamma.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/kappadelta.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/kat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/sigmakappa.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/tke.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1405727839277" ignored="false" />
     <file path="/index.html.erb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1384219544924" ignored="false" />
-    <file path="/seeds.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1397338784802" ignored="false" />
+    <file path="/seeds.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1405804861266" ignored="false" />
     <file path="$PROJECT_DIR$/../jarmoluk/app/assets/classes/vendor_search.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1378779762068" ignored="false" />
     <file path="$PROJECT_DIR$/../jarmoluk/app/assets/classes/tracker.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1378779793280" ignored="false" />
     <file path="$PROJECT_DIR$/../jarmoluk/app/assets/classes/book_info.rb" changelist="2f576cbd-4e9f-454b-ab14-bc616924f983" time="1378779816769" ignored="false" />
@@ -133,10 +140,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="vendor_search.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="vendor_search.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="482" column="2" selection-start="18614" selection-end="18614" vertical-scroll-proportion="1.3246425">
+            <state line="482" column="2" selection-start="18614" selection-end="18614" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#3061#4666#0" expanded="false" />
                 <element signature="e#4670#6402#0" expanded="false" />
@@ -144,6 +151,15 @@
                 <element signature="e#8521#14343#0" expanded="false" />
                 <element signature="e#14347#18560#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="446" column="33" selection-start="23307" selection-end="23307" vertical-scroll-proportion="1.4793944">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,8 +197,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_main_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/mission.html.erb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -883,11 +899,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/images/Kappa_Logo_Color.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" />
@@ -956,14 +967,14 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="278" column="140" selection-start="16262" selection-end="16262" vertical-scroll-proportion="0.699727" />
+    <entry file="file://$PROJECT_DIR$/app/assets/images/Kappa_Logo_Color.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="482" column="2" selection-start="18614" selection-end="18614" vertical-scroll-proportion="1.3246425">
+        <state line="482" column="2" selection-start="18614" selection-end="18614" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#3061#4666#0" expanded="false" />
             <element signature="e#4670#6402#0" expanded="false" />
@@ -971,6 +982,13 @@
             <element signature="e#8521#14343#0" expanded="false" />
             <element signature="e#14347#18560#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="446" column="33" selection-start="23307" selection-end="23307" vertical-scroll-proportion="1.4793944">
+          <folding />
         </state>
       </provider>
     </entry>
