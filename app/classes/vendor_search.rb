@@ -256,7 +256,6 @@ class VendorSearch
     results
   end
 
-
   def get_book_byte_results(search_text, current_user)
     require 'typhoeus'
     require 'tracker.rb'
@@ -480,5 +479,9 @@ class VendorSearch
     results
   end
 
+  def get_valore_results(search_text, current_user)
+
+
+  end
 
 end
