@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f576cbd-4e9f-454b-ab14-bc616924f983" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/vendor_search.rb" afterPath="$PROJECT_DIR$/app/classes/vendor_search.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GremlinBooks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,20 +34,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="vendor_search.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="vendor_search.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.2125163" vertical-offset="2128" max-vertical-offset="2895">
-              <caret line="431" column="85" selection-start-line="431" selection-start-column="85" selection-end-line="431" selection-end-column="85" />
+            <state vertical-scroll-proportion="-23.6" vertical-offset="2740" max-vertical-offset="3645">
+              <caret line="468" column="52" selection-start-line="468" selection-start-column="37" selection-end-line="468" selection-end-column="37" />
               <folding>
                 <element signature="e#64#942#0" expanded="false" />
                 <element signature="e#946#1533#0" expanded="false" />
                 <element signature="e#1537#2786#0" expanded="false" />
                 <element signature="e#4670#6402#0" expanded="false" />
-                <element signature="e#6406#8517#0" expanded="false" />
                 <element signature="e#8521#14343#0" expanded="false" />
-                <element signature="e#18936#19684#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.45068493" vertical-offset="1861" max-vertical-offset="4290">
+              <caret line="146" column="88" selection-start-line="146" selection-start-column="38" selection-end-line="146" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="devise.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.2" vertical-offset="810" max-vertical-offset="3705">
+              <caret line="86" column="2" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,12 +105,14 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/rebay.rb" />
         <option value="$PROJECT_DIR$/public/sample.json" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/public/sample.xml" />
         <option value="$PROJECT_DIR$/app/models/tenant.rb" />
         <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/search/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
+        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/app/classes/vendor_search.rb" />
       </list>
     </option>
@@ -755,9 +779,7 @@
             <element signature="e#946#1533#0" expanded="false" />
             <element signature="e#1537#2786#0" expanded="false" />
             <element signature="e#4670#6402#0" expanded="false" />
-            <element signature="e#6406#8517#0" expanded="false" />
             <element signature="e#8521#14343#0" expanded="false" />
-            <element signature="e#18936#19684#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -795,9 +817,7 @@
             <element signature="e#946#1533#0" expanded="false" />
             <element signature="e#1537#2786#0" expanded="false" />
             <element signature="e#4670#6402#0" expanded="false" />
-            <element signature="e#6406#8517#0" expanded="false" />
             <element signature="e#8521#14343#0" expanded="false" />
-            <element signature="e#18936#19684#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -895,14 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20547946" vertical-offset="0" max-vertical-offset="1168">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/sample.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6822034" vertical-offset="770" max-vertical-offset="2010">
@@ -975,14 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0" vertical-offset="0" max-vertical-offset="4290">
-          <caret line="146" column="88" selection-start-line="146" selection-start-column="38" selection-end-line="146" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.807537" vertical-offset="0" max-vertical-offset="1380">
@@ -991,19 +995,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2685">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6649283" vertical-offset="0" max-vertical-offset="767">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.2" vertical-offset="810" max-vertical-offset="3705">
+          <caret line="86" column="2" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/vendor_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.2125163" vertical-offset="2128" max-vertical-offset="2895">
-          <caret line="431" column="85" selection-start-line="431" selection-start-column="85" selection-end-line="431" selection-end-column="85" />
+        <state vertical-scroll-proportion="-23.6" vertical-offset="2740" max-vertical-offset="3645">
+          <caret line="468" column="52" selection-start-line="468" selection-start-column="37" selection-end-line="468" selection-end-column="37" />
           <folding>
             <element signature="e#64#942#0" expanded="false" />
             <element signature="e#946#1533#0" expanded="false" />
             <element signature="e#1537#2786#0" expanded="false" />
             <element signature="e#4670#6402#0" expanded="false" />
-            <element signature="e#6406#8517#0" expanded="false" />
             <element signature="e#8521#14343#0" expanded="false" />
-            <element signature="e#18936#19684#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45068493" vertical-offset="1861" max-vertical-offset="4290">
+          <caret line="146" column="88" selection-start-line="146" selection-start-column="38" selection-end-line="146" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>

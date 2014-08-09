@@ -426,10 +426,10 @@ class VendorSearch
                         :cart => true,
                         :buy => false,
                         :rent => true,
-                        :cart_link => book_renter_response["response"]["book"]["add_to_cart_url"],
+                        :cart_link => URI.encode(book_renter_response["response"]["book"]["add_to_cart_url"]),
                         :buy_link => "",
                         :condition => "Rental",
-                        :rent_link => buy_url.sub('RENTAL_PERIOD', item["days"].to_s),
+                        :rent_link => URI.encode(buy_url.sub('RENTAL_PERIOD', item["days"].to_s)),
                         :shipping => 0,
                         :total_cost => item["rental_price"].sub('$', '').to_f,
                         :notes => item["term"] + ' ' + item["days"],
@@ -443,8 +443,8 @@ class VendorSearch
                           :cart => true,
                           :buy => true,
                           :rent => false,
-                          :cart_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
-                          :buy_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                          :cart_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
+                          :buy_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
                           :condition => item["condition"],
                           :rent_link => "",
                           :shipping => 0,
@@ -463,8 +463,8 @@ class VendorSearch
                     :cart => true,
                     :buy => true,
                     :rent => false,
-                    :cart_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
-                    :buy_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                    :cart_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
+                    :buy_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
                     :condition => "Unknown",
                     :rent_link => "",
                     :shipping => 0,
@@ -479,28 +479,6 @@ class VendorSearch
     results
   end
 
-  def get_valore_results(search_text, current_user)
 
-  end
-
-  def get_ebay_results(search_text, current_user)
-    require 'typhoeus'
-    require 'tracker.rb'
-
-    tracker = Tracker.new()
-    tracker.track_vendor_search(search_text, current_user, 'Book Renter', @sub_domain)
-
-    results = Array.new
-
-    ebay_request = Typhoeus::Request.new('https://svcs.ebay.com/services/half/HalfFindingService/v1?OPERATION-NAME=findHalfItems&X-EBAY-SOA-SERVICE-NAME=HalfFindingService&SERVICE-VERSION=1.0.0&GLOBAL-ID=EBAY-US&X-EBAY-SOA-SECURITY-APPNAME=‘GremlinB-d162-4ea4-ba62-5d4af0238c9c’&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD&productID=&productID.@type=ISBN')
-
-
-    hydra = Typhoeus::Hydra.new
-    hydra.queue ebay_request
-    hydra.run
-
-    ebay_response = ActiveSupport::JSON.decode(ebay_request.response.body)
-
-  end
 
 end
