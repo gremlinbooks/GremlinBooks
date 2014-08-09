@@ -28,9 +28,6 @@ class VendorSearch
     chegg_results = get_chegg_results(search_text, current_user)
     book_byte_results = get_book_byte_results(search_text, current_user)
     book_renter_results = get_book_renter_results(search_text, current_user)
-    #ebay_results = get_ebay_results(search_text, current_user)
-    #valore_results = get_valore_results(search_text, current_user)
-
     all_results = (amazon_results + book_byte_results + book_renter_results + chegg_results + cj_results).sort_by { |hsh| hsh[:total_cost] }
     determine_best_offer(all_results)
   end
@@ -429,10 +426,10 @@ class VendorSearch
                         :cart => true,
                         :buy => false,
                         :rent => true,
-                        :cart_link => URI.encode(book_renter_response["response"]["book"]["add_to_cart_url"]),
+                        :cart_link => book_renter_response["response"]["book"]["add_to_cart_url"],
                         :buy_link => "",
                         :condition => "Rental",
-                        :rent_link => URI.encode(buy_url.sub('RENTAL_PERIOD', item["days"].to_s)),
+                        :rent_link => buy_url.sub('RENTAL_PERIOD', item["days"].to_s),
                         :shipping => 0,
                         :total_cost => item["rental_price"].sub('$', '').to_f,
                         :notes => item["term"] + ' ' + item["days"],
@@ -446,8 +443,8 @@ class VendorSearch
                           :cart => true,
                           :buy => true,
                           :rent => false,
-                          :cart_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
-                          :buy_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
+                          :cart_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                          :buy_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
                           :condition => item["condition"],
                           :rent_link => "",
                           :shipping => 0,
@@ -466,8 +463,8 @@ class VendorSearch
                     :cart => true,
                     :buy => true,
                     :rent => false,
-                    :cart_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
-                    :buy_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
+                    :cart_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                    :buy_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
                     :condition => "Unknown",
                     :rent_link => "",
                     :shipping => 0,
