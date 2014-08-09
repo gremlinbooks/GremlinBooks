@@ -4,6 +4,7 @@ class SearchController < ApplicationController
     require 'vendor_search.rb'
     require 'dalli'
     require 'tracker.rb'
+    require 'book_info.rb'
 
     if !params[:search].nil?
 

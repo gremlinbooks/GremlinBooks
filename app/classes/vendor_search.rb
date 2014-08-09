@@ -28,6 +28,9 @@ class VendorSearch
     chegg_results = get_chegg_results(search_text, current_user)
     book_byte_results = get_book_byte_results(search_text, current_user)
     book_renter_results = get_book_renter_results(search_text, current_user)
+    #ebay_results = get_ebay_results(search_text, current_user)
+    #valore_results = get_valore_results(search_text, current_user)
+
     all_results = (amazon_results + book_byte_results + book_renter_results + chegg_results + cj_results).sort_by { |hsh| hsh[:total_cost] }
     determine_best_offer(all_results)
   end
@@ -422,36 +425,36 @@ class VendorSearch
         book_renter_response["response"]["book"]["prices"].each do |item|
           if item["term"] # rentals
             results << {:vendor => "Book Renter",
-                :price => item["rental_price"].sub('$', '').to_f,
-                :cart => true,
-                :buy => false,
-                :rent => true,
-                :cart_link => book_renter_response["response"]["book"]["add_to_cart_url"],
-                :buy_link => "",
-                :condition => "Rental",
-                :rent_link => buy_url.sub('RENTAL_PERIOD', item["days"].to_s),
-                :shipping => 0,
-                :total_cost => item["rental_price"].sub('$', '').to_f,
-                :notes => item["term"] + ' ' + item["days"],
-                :best_offer => false,
-                :results_string => book_renter_response
+                        :price => item["rental_price"].sub('$', '').to_f,
+                        :cart => true,
+                        :buy => false,
+                        :rent => true,
+                        :cart_link => book_renter_response["response"]["book"]["add_to_cart_url"],
+                        :buy_link => "",
+                        :condition => "Rental",
+                        :rent_link => buy_url.sub('RENTAL_PERIOD', item["days"].to_s),
+                        :shipping => 0,
+                        :total_cost => item["rental_price"].sub('$', '').to_f,
+                        :notes => item["term"] + ' ' + item["days"],
+                        :best_offer => false,
+                        :results_string => book_renter_response
             }
           else
             if item["condition"] # purchase
               results << {:vendor => "Book Renter",
-                  :price => item["purchase_price"].sub('$', '').to_f,
-                  :cart => true,
-                  :buy => true,
-                  :rent => false,
-                  :cart_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
-                  :buy_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
-                  :condition => item["condition"],
-                  :rent_link => "",
-                  :shipping => 0,
-                  :total_cost => item["purchase_price"].sub('$', '').to_f,
-                  :notes => "",
-                  :best_offer => false,
-                  :results_string => book_renter_response
+                          :price => item["purchase_price"].sub('$', '').to_f,
+                          :cart => true,
+                          :buy => true,
+                          :rent => false,
+                          :cart_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                          :buy_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                          :condition => item["condition"],
+                          :rent_link => "",
+                          :shipping => 0,
+                          :total_cost => item["purchase_price"].sub('$', '').to_f,
+                          :notes => "",
+                          :best_offer => false,
+                          :results_string => book_renter_response
               }
             end
           end
@@ -459,19 +462,19 @@ class VendorSearch
       else
         # there aren't any price items in the collection, therefore pull standard book info
         results << {:vendor  => "Book Renter",
-            :price => book_renter_response["response"]["book"]["info"]["retail_price"].sub('$', '').to_f,
-            :cart => true,
-            :buy => true,
-            :rent => false,
-            :cart_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
-            :buy_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
-            :condition => "Unknown",
-            :rent_link => "",
-            :shipping => 0,
-            :total_cost => book_renter_response["response"]["book"]["info"]["retail_price"].sub('$', '').to_f,
-            :notes => "",
-            :best_offer => false,
-            :results_string => book_renter_response
+                    :price => book_renter_response["response"]["book"]["info"]["retail_price"].sub('$', '').to_f,
+                    :cart => true,
+                    :buy => true,
+                    :rent => false,
+                    :cart_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                    :buy_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                    :condition => "Unknown",
+                    :rent_link => "",
+                    :shipping => 0,
+                    :total_cost => book_renter_response["response"]["book"]["info"]["retail_price"].sub('$', '').to_f,
+                    :notes => "",
+                    :best_offer => false,
+                    :results_string => book_renter_response
         }
       end
     end
@@ -481,6 +484,25 @@ class VendorSearch
 
   def get_valore_results(search_text, current_user)
 
+  end
+
+  def get_ebay_results(search_text, current_user)
+    require 'typhoeus'
+    require 'tracker.rb'
+
+    tracker = Tracker.new()
+    tracker.track_vendor_search(search_text, current_user, 'Book Renter', @sub_domain)
+
+    results = Array.new
+
+    ebay_request = Typhoeus::Request.new('https://svcs.ebay.com/services/half/HalfFindingService/v1?OPERATION-NAME=findHalfItems&X-EBAY-SOA-SERVICE-NAME=HalfFindingService&SERVICE-VERSION=1.0.0&GLOBAL-ID=EBAY-US&X-EBAY-SOA-SECURITY-APPNAME=‘GremlinB-d162-4ea4-ba62-5d4af0238c9c’&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD&productID=&productID.@type=ISBN')
+
+
+    hydra = Typhoeus::Hydra.new
+    hydra.queue ebay_request
+    hydra.run
+
+    ebay_response = ActiveSupport::JSON.decode(ebay_request.response.body)
 
   end
 

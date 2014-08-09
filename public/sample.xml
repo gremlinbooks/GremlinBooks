@@ -1,643 +1,129 @@
-<Item>
-  <ASIN>1430218339</ASIN>
-  <DetailPageURL>
-    http://www.amazon.com/Pro-Experts-Voice-Software-Development/dp/1430218339%3FSubscriptionId%3DAKIAJGEEG4RCTCF2DCHQ%26tag%3Dwwwgremlinboo-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1430218339
-  </DetailPageURL>
-  <ItemLinks>
-    <ItemLink>
-      <Description>Technical Details</Description>
-      <URL>
-        http://www.amazon.com/Pro-Experts-Voice-Software-Development/dp/tech-data/1430218339%3FSubscriptionId%3DAKIAJGEEG4RCTCF2DCHQ%26tag%3Dwwwgremlinboo-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1430218339
-      </URL>
-    </ItemLink>
-    <ItemLink>
-      <Description>Add To Baby Registry</Description>
-      <URL>
-        http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D1430218339%26SubscriptionId%3DAKIAJGEEG4RCTCF2DCHQ%26tag%3Dwwwgremlinboo-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1430218339
-      </URL>
-    </ItemLink>
-    <ItemLink>
-      <Description>Add To Wedding Registry</Description>
-      <URL>
-        http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D1430218339%26SubscriptionId%3DAKIAJGEEG4RCTCF2DCHQ%26tag%3Dwwwgremlinboo-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1430218339
-      </URL>
-    </ItemLink>
-    <ItemLink>
-      <Description>Add To Wishlist</Description>
-      <URL>
-        http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D1430218339%26SubscriptionId%3DAKIAJGEEG4RCTCF2DCHQ%26tag%3Dwwwgremlinboo-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1430218339
-      </URL>
-    </ItemLink>
-    <ItemLink>
-      <Description>Tell A Friend</Description>
-      <URL>
-        http://www.amazon.com/gp/pdp/taf/1430218339%3FSubscriptionId%3DAKIAJGEEG4RCTCF2DCHQ%26tag%3Dwwwgremlinboo-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1430218339
-      </URL>
-    </ItemLink>
-    <ItemLink>
-      <Description>All Customer Reviews</Description>
-      <URL>
-        http://www.amazon.com/review/product/1430218339%3FSubscriptionId%3DAKIAJGEEG4RCTCF2DCHQ%26tag%3Dwwwgremlinboo-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1430218339
-      </URL>
-    </ItemLink>
-    <ItemLink>
-      <Description>All Offers</Description>
-      <URL>
-        http://www.amazon.com/gp/offer-listing/1430218339%3FSubscriptionId%3DAKIAJGEEG4RCTCF2DCHQ%26tag%3Dwwwgremlinboo-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1430218339
-      </URL>
-    </ItemLink>
-  </ItemLinks>
-  <SalesRank>31025</SalesRank>
-  <SmallImage>
-    <URL>http://ecx.images-amazon.com/images/I/51QmI82PSNL._SL75_.jpg</URL>
-    <Height Units="pixels">75</Height>
-    <Width Units="pixels">57</Width>
-  </SmallImage>
-  <MediumImage>
-    <URL>http://ecx.images-amazon.com/images/I/51QmI82PSNL._SL160_.jpg</URL>
-    <Height Units="pixels">160</Height>
-    <Width Units="pixels">121</Width>
-  </MediumImage>
-  <LargeImage>
-    <URL>http://ecx.images-amazon.com/images/I/51QmI82PSNL.jpg</URL>
-    <Height Units="pixels">500</Height>
-    <Width Units="pixels">378</Width>
-  </LargeImage>
-  <ImageSets>
-    <ImageSet Category="primary">
-      <SwatchImage>
-        <URL>http://ecx.images-amazon.com/images/I/51QmI82PSNL._SL30_.jpg</URL>
-        <Height Units="pixels">30</Height>
-        <Width Units="pixels">23</Width>
-      </SwatchImage>
-      <SmallImage>
-        <URL>http://ecx.images-amazon.com/images/I/51QmI82PSNL._SL75_.jpg</URL>
-        <Height Units="pixels">75</Height>
-        <Width Units="pixels">57</Width>
-      </SmallImage>
-      <ThumbnailImage>
-        <URL>http://ecx.images-amazon.com/images/I/51QmI82PSNL._SL75_.jpg</URL>
-        <Height Units="pixels">75</Height>
-        <Width Units="pixels">57</Width>
-      </ThumbnailImage>
-      <TinyImage>
-        <URL>http://ecx.images-amazon.com/images/I/51QmI82PSNL._SL110_.jpg</URL>
-        <Height Units="pixels">110</Height>
-        <Width Units="pixels">83</Width>
-      </TinyImage>
-      <MediumImage>
-        <URL>http://ecx.images-amazon.com/images/I/51QmI82PSNL._SL160_.jpg</URL>
-        <Height Units="pixels">160</Height>
-        <Width Units="pixels">121</Width>
-      </MediumImage>
-      <LargeImage>
-        <URL>http://ecx.images-amazon.com/images/I/51QmI82PSNL.jpg</URL>
-        <Height Units="pixels">500</Height>
-        <Width Units="pixels">378</Width>
-      </LargeImage>
-    </ImageSet>
-  </ImageSets>
-  <ItemAttributes>
-    <Author>Scott Chacon</Author>
-    <Binding>Paperback</Binding>
-    <EAN>9781430218333</EAN>
-    <EANList>
-      <EANListElement>9781430218333</EANListElement>
-    </EANList>
-    <Edition>1</Edition>
-    <ISBN>1430218339</ISBN>
-    <IsEligibleForTradeIn>1</IsEligibleForTradeIn>
-    <ItemDimensions>
-      <Height Units="hundredths-inches">902</Height>
-      <Length Units="hundredths-inches">76</Length>
-      <Weight Units="hundredths-pounds">110</Weight>
-      <Width Units="hundredths-inches">701</Width>
-    </ItemDimensions>
-    <Label>Apress</Label>
-    <Languages>
-      <Language>
-        <Name>English</Name>
-        <Type>Unknown</Type>
-      </Language>
-      <Language>
-        <Name>English</Name>
-        <Type>Original Language</Type>
-      </Language>
-      <Language>
-        <Name>English</Name>
-        <Type>Published</Type>
-      </Language>
-    </Languages>
-    <ListPrice>
-      <Amount>3499</Amount>
-      <CurrencyCode>USD</CurrencyCode>
-      <FormattedPrice>$34.99</FormattedPrice>
-    </ListPrice>
-    <Manufacturer>Apress</Manufacturer>
-    <NumberOfItems>1</NumberOfItems>
-    <NumberOfPages>288</NumberOfPages>
-    <PackageDimensions>
-      <Height Units="hundredths-inches">94</Height>
-      <Length Units="hundredths-inches">992</Length>
-      <Weight Units="hundredths-pounds">137</Weight>
-      <Width Units="hundredths-inches">772</Width>
-    </PackageDimensions>
-    <ProductGroup>Book</ProductGroup>
-    <ProductTypeName>ABIS_BOOK</ProductTypeName>
-    <PublicationDate>2009-08-27</PublicationDate>
-    <Publisher>Apress</Publisher>
-    <SKU>ACOM-INT_book_usedgood_1430218339</SKU>
-    <Studio>Apress</Studio>
-    <Title>Pro Git (Expert's Voice in Software Development)</Title>
-    <TradeInValue>
-      <Amount>851</Amount>
-      <CurrencyCode>USD</CurrencyCode>
-      <FormattedPrice>$8.51</FormattedPrice>
-    </TradeInValue>
-  </ItemAttributes>
-  <OfferSummary>
-    <LowestNewPrice>
-      <Amount>1869</Amount>
-      <CurrencyCode>USD</CurrencyCode>
-      <FormattedPrice>$18.69</FormattedPrice>
-    </LowestNewPrice>
-    <LowestUsedPrice>
-      <Amount>1595</Amount>
-      <CurrencyCode>USD</CurrencyCode>
-      <FormattedPrice>$15.95</FormattedPrice>
-    </LowestUsedPrice>
-    <TotalNew>40</TotalNew>
-    <TotalUsed>25</TotalUsed>
-    <TotalCollectible>0</TotalCollectible>
-    <TotalRefurbished>0</TotalRefurbished>
-  </OfferSummary>
-  <Offers>
-    <TotalOffers>1</TotalOffers>
-    <TotalOfferPages>1</TotalOfferPages>
-    <MoreOffersUrl>
-      http://www.amazon.com/gp/offer-listing/1430218339%3FSubscriptionId%3DAKIAJGEEG4RCTCF2DCHQ%26tag%3Dwwwgremlinboo-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1430218339
-    </MoreOffersUrl>
-    <Offer>
-      <OfferAttributes>
-        <Condition>New</Condition>
-      </OfferAttributes>
-      <OfferListing>
-        <OfferListingId>
-          yRoqUoxY8evE3gyohsAXRUNUUl0QDLyRvnN6oTnpSDwZWdbzjdsaNUh5eXvJwD%2FHUm46JUsa%2BHraNpvE44%2BKY7jhVzz%2B5dNVWWrDts1YZr8%3D
-        </OfferListingId>
-        <Price>
-          <Amount>2109</Amount>
-          <CurrencyCode>USD</CurrencyCode>
-          <FormattedPrice>$21.09</FormattedPrice>
-        </Price>
-        <AmountSaved>
-          <Amount>1390</Amount>
-          <CurrencyCode>USD</CurrencyCode>
-          <FormattedPrice>$13.90</FormattedPrice>
-        </AmountSaved>
-        <PercentageSaved>40</PercentageSaved>
-        <Availability>Usually ships in 24 hours</Availability>
-        <AvailabilityAttributes>
-          <AvailabilityType>now</AvailabilityType>
-          <MinimumHours>24</MinimumHours>
-          <MaximumHours>24</MaximumHours>
-        </AvailabilityAttributes>
-        <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
-      </OfferListing>
-    </Offer>
-  </Offers>
-  <CustomerReviews>
-    <IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAJGEEG4RCTCF2DCHQ&amp;alinkCode=xm2&amp;asin=1430218339&amp;atag=wwwgremlinboo-20&amp;exp=2013-08-29T00%3A51%3A42Z&amp;v=2&amp;sig=88luwlrS0M2PKK158kAdbzKe93G1WvUEpAhzRWmJvCA%3D</IFrameURL>
-    <HasReviews>true</HasReviews>
-  </CustomerReviews>
-  <EditorialReviews>
-    <EditorialReview>
-      <Source>Product Description</Source>
-      <Content>&lt;p&gt;Git is the version control system developed by Linus Torvalds for Linux kernel development. It
-        took the open source world by storm since its inception in 2005, and is used by small development shops and
-        giants like Google, Red Hat, and IBM, and of course many open source projects.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A
-        book by Git experts to turn you into a Git expert &lt;/li&gt; &lt;li&gt;Introduces the world of distributed
-        version control &lt;/li&gt; &lt;li&gt;Shows how to build a Git development workflow &lt;/li&gt; &lt;/ul&gt; &lt;h3&gt;What
-        you’ll learn&lt;/h3&gt;&lt;ul&gt; &lt;li&gt;Use Git as a programmer or a project leader&lt;/li&gt; &lt;li&gt;Become
-        a fluent Git user&lt;/li&gt; &lt;li&gt;Use distributed features of Git to the full&lt;/li&gt; &lt;li&gt;Acquire
-        the ability to insert Git in the development workflow&lt;/li&gt; &lt;li&gt;Migrate programming projects from
-        other SCMs to Git&lt;/li&gt; &lt;li&gt;Learn how to extend Git&lt;/li&gt; &lt;/ul&gt; &lt;h3&gt;Who this book is
-        for&lt;/h3&gt; &lt;p&gt; This book is for all open source developers: you are bound to encounter Git somewhere
-        in the course of your working life. Proprietary software developers will appreciate Git’s enormous scalability,
-        since it is used for the Linux project, which comprises thousands of developers and testers. &lt;/p&gt; &lt;h3&gt;Table
-        of Contents&lt;/h3&gt;&lt;ol&gt; &lt;li&gt;Getting Started &lt;/li&gt; &lt;li&gt;Git Basics &lt;/li&gt; &lt;li&gt;Git
-        Branching &lt;/li&gt; &lt;li&gt;Git on the Server &lt;/li&gt; &lt;li&gt;Distributed Git &lt;/li&gt; &lt;li&gt;Git
-        Tools &lt;/li&gt; &lt;li&gt;Customizing Git &lt;/li&gt; &lt;li&gt;Git and Other Systems &lt;/li&gt; &lt;li&gt;Git
-        Internals &lt;/li&gt; &lt;/ol&gt;</Content>
-      <IsLinkSuppressed>0</IsLinkSuppressed>
-    </EditorialReview>
-  </EditorialReviews>
-  <SimilarProducts>
-    <SimilarProduct>
-      <ASIN>1449316387</ASIN>
-      <Title>Version Control with Git: Powerful tools and techniques for collaborative software development</Title>
-    </SimilarProduct>
-    <SimilarProduct>
-      <ASIN>1934356727</ASIN>
-      <Title>Pragmatic Guide to Git (Pragmatic Programmers)</Title>
-    </SimilarProduct>
-    <SimilarProduct>
-      <ASIN>1449305350</ASIN>
-      <Title>Jenkins: The Definitive Guide</Title>
-    </SimilarProduct>
-    <SimilarProduct>
-      <ASIN>1449325866</ASIN>
-      <Title>Git Pocket Guide</Title>
-    </SimilarProduct>
-    <SimilarProduct>
-      <ASIN>1430230576</ASIN>
-      <Title>Pro Puppet</Title>
-    </SimilarProduct>
-  </SimilarProducts>
-  <BrowseNodes>
-    <BrowseNode>
-      <BrowseNodeId>280310</BrowseNodeId>
-      <Name>Design Tools &amp; Techniques</Name>
-      <Ancestors>
-        <BrowseNode>
-          <BrowseNodeId>280309</BrowseNodeId>
-          <Name>Software Engineering</Name>
-          <Ancestors>
-            <BrowseNode>
-              <BrowseNodeId>3508</BrowseNodeId>
-              <Name>Computer Science</Name>
-              <Ancestors>
-                <BrowseNode>
-                  <BrowseNodeId>5</BrowseNodeId>
-                  <Name>Computers &amp; Technology</Name>
-                  <Ancestors>
-                    <BrowseNode>
-                      <BrowseNodeId>1000</BrowseNodeId>
-                      <Name>Subjects</Name>
-                      <IsCategoryRoot>1</IsCategoryRoot>
-                      <Ancestors>
-                        <BrowseNode>
-                          <BrowseNodeId>283155</BrowseNodeId>
-                          <Name>Books</Name>
-                        </BrowseNode>
-                      </Ancestors>
-                    </BrowseNode>
-                  </Ancestors>
-                </BrowseNode>
-              </Ancestors>
-            </BrowseNode>
-          </Ancestors>
-        </BrowseNode>
-      </Ancestors>
-    </BrowseNode>
-    <BrowseNode>
-      <BrowseNodeId>3952</BrowseNodeId>
-      <Name>Languages &amp; Tools</Name>
-      <Children>
-        <BrowseNode>
-          <BrowseNodeId>379359011</BrowseNodeId>
-          <Name>Ajax</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3954</BrowseNodeId>
-          <Name>Assembly Language Programming</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3955</BrowseNodeId>
-          <Name>Borland Delphi</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3956</BrowseNodeId>
-          <Name>C</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>697342</BrowseNodeId>
-          <Name>C#</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3970</BrowseNodeId>
-          <Name>Compiler Design</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3971</BrowseNodeId>
-          <Name>Compilers</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>379357011</BrowseNodeId>
-          <Name>CSS</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3974</BrowseNodeId>
-          <Name>Debugging</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>285855</BrowseNodeId>
-          <Name>Delphi</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>379358011</BrowseNodeId>
-          <Name>DHTML</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3977</BrowseNodeId>
-          <Name>Fortran</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3608</BrowseNodeId>
-          <Name>Java</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3981</BrowseNodeId>
-          <Name>Lisp</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>6134005011</BrowseNodeId>
-          <Name>Perl</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3987</BrowseNodeId>
-          <Name>Prolog</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>285856</BrowseNodeId>
-          <Name>Python</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3990</BrowseNodeId>
-          <Name>RPG</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>6134006011</BrowseNodeId>
-          <Name>Ruby</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3996</BrowseNodeId>
-          <Name>Visual Basic</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>3962</BrowseNodeId>
-          <Name>Visual C++</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>285859</BrowseNodeId>
-          <Name>XHTML</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>4052</BrowseNodeId>
-          <Name>XML</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>285858</BrowseNodeId>
-          <Name>XSL</Name>
-        </BrowseNode>
-      </Children>
-      <Ancestors>
-        <BrowseNode>
-          <BrowseNodeId>3839</BrowseNodeId>
-          <Name>Programming</Name>
-          <Ancestors>
-            <BrowseNode>
-              <BrowseNodeId>5</BrowseNodeId>
-              <Name>Computers &amp; Technology</Name>
-              <Ancestors>
-                <BrowseNode>
-                  <BrowseNodeId>1000</BrowseNodeId>
-                  <Name>Subjects</Name>
-                  <IsCategoryRoot>1</IsCategoryRoot>
-                  <Ancestors>
-                    <BrowseNode>
-                      <BrowseNodeId>283155</BrowseNodeId>
-                      <Name>Books</Name>
-                    </BrowseNode>
-                  </Ancestors>
-                </BrowseNode>
-              </Ancestors>
-            </BrowseNode>
-          </Ancestors>
-        </BrowseNode>
-      </Ancestors>
-    </BrowseNode>
-    <BrowseNode>
-      <BrowseNodeId>4016</BrowseNodeId>
-      <Name>Software Development</Name>
-      <Ancestors>
-        <BrowseNode>
-          <BrowseNodeId>4011</BrowseNodeId>
-          <Name>Software Design, Testing &amp; Engineering</Name>
-          <Ancestors>
-            <BrowseNode>
-              <BrowseNodeId>3839</BrowseNodeId>
-              <Name>Programming</Name>
-              <Ancestors>
-                <BrowseNode>
-                  <BrowseNodeId>5</BrowseNodeId>
-                  <Name>Computers &amp; Technology</Name>
-                  <Ancestors>
-                    <BrowseNode>
-                      <BrowseNodeId>1000</BrowseNodeId>
-                      <Name>Subjects</Name>
-                      <IsCategoryRoot>1</IsCategoryRoot>
-                      <Ancestors>
-                        <BrowseNode>
-                          <BrowseNodeId>283155</BrowseNodeId>
-                          <Name>Books</Name>
-                        </BrowseNode>
-                      </Ancestors>
-                    </BrowseNode>
-                  </Ancestors>
-                </BrowseNode>
-              </Ancestors>
-            </BrowseNode>
-          </Ancestors>
-        </BrowseNode>
-      </Ancestors>
-    </BrowseNode>
-    <BrowseNode>
-      <BrowseNodeId>21</BrowseNodeId>
-      <Name>Education &amp; Reference</Name>
-      <Children>
-        <BrowseNode>
-          <BrowseNodeId>11444</BrowseNodeId>
-          <Name>Almanacs &amp; Yearbooks</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11448</BrowseNodeId>
-          <Name>Atlases &amp; Maps</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>2572</BrowseNodeId>
-          <Name>Careers</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11626</BrowseNodeId>
-          <Name>Catalogs &amp; Directories</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>69820</BrowseNodeId>
-          <Name>College &amp; University</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11472</BrowseNodeId>
-          <Name>Consumer Guides</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11475</BrowseNodeId>
-          <Name>Dictionaries &amp; Thesauruses</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11713</BrowseNodeId>
-          <Name>Encyclopedias</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11823</BrowseNodeId>
-          <Name>English as a Second Language</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11761</BrowseNodeId>
-          <Name>Etiquette</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11773</BrowseNodeId>
-          <Name>Foreign Language Study &amp; Reference</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11880</BrowseNodeId>
-          <Name>Genealogy</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>5267709011</BrowseNodeId>
-          <Name>Graduate School</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11902</BrowseNodeId>
-          <Name>Quotations</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>5267708011</BrowseNodeId>
-          <Name>Schools &amp; Teaching</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>5267723011</BrowseNodeId>
-          <Name>Studying &amp; Workbooks</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>5267710011</BrowseNodeId>
-          <Name>Test Preparation</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11871</BrowseNodeId>
-          <Name>Trivia &amp; Fun Facts</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>11970</BrowseNodeId>
-          <Name>Words, Language &amp; Grammar</Name>
-        </BrowseNode>
-        <BrowseNode>
-          <BrowseNodeId>5267707011</BrowseNodeId>
-          <Name>Writing, Research &amp; Publishing Guides</Name>
-        </BrowseNode>
-      </Children>
-      <Ancestors>
-        <BrowseNode>
-          <BrowseNodeId>1000</BrowseNodeId>
-          <Name>Subjects</Name>
-          <IsCategoryRoot>1</IsCategoryRoot>
-          <Ancestors>
-            <BrowseNode>
-              <BrowseNodeId>283155</BrowseNodeId>
-              <Name>Books</Name>
-            </BrowseNode>
-          </Ancestors>
-        </BrowseNode>
-      </Ancestors>
-    </BrowseNode>
-    <BrowseNode>
-      <BrowseNodeId>491314</BrowseNodeId>
-      <Name>Programming Languages</Name>
-      <Ancestors>
-        <BrowseNode>
-          <BrowseNodeId>468204</BrowseNodeId>
-          <Name>Computer Science</Name>
-          <Ancestors>
-            <BrowseNode>
-              <BrowseNodeId>465600</BrowseNodeId>
-              <Name>New, Used &amp; Rental Textbooks</Name>
-              <Ancestors>
-                <BrowseNode>
-                  <BrowseNodeId>2349030011</BrowseNodeId>
-                  <Name>Specialty Boutique</Name>
-                  <Ancestors>
-                    <BrowseNode>
-                      <BrowseNodeId>283155</BrowseNodeId>
-                      <Name>Books</Name>
-                    </BrowseNode>
-                  </Ancestors>
-                </BrowseNode>
-              </Ancestors>
-            </BrowseNode>
-          </Ancestors>
-        </BrowseNode>
-      </Ancestors>
-    </BrowseNode>
-    <BrowseNode>
-      <BrowseNodeId>491316</BrowseNodeId>
-      <Name>Software Design &amp; Engineering</Name>
-      <Ancestors>
-        <BrowseNode>
-          <BrowseNodeId>468204</BrowseNodeId>
-          <Name>Computer Science</Name>
-          <Ancestors>
-            <BrowseNode>
-              <BrowseNodeId>465600</BrowseNodeId>
-              <Name>New, Used &amp; Rental Textbooks</Name>
-              <Ancestors>
-                <BrowseNode>
-                  <BrowseNodeId>2349030011</BrowseNodeId>
-                  <Name>Specialty Boutique</Name>
-                  <Ancestors>
-                    <BrowseNode>
-                      <BrowseNodeId>283155</BrowseNodeId>
-                      <Name>Books</Name>
-                    </BrowseNode>
-                  </Ancestors>
-                </BrowseNode>
-              </Ancestors>
-            </BrowseNode>
-          </Ancestors>
-        </BrowseNode>
-      </Ancestors>
-    </BrowseNode>
-    <BrowseNode>
-      <BrowseNodeId>1288264011</BrowseNodeId>
-      <Name>All Products</Name>
-      <Ancestors>
-        <BrowseNode>
-          <BrowseNodeId>1267878011</BrowseNodeId>
-          <Name>Products</Name>
-          <IsCategoryRoot>1</IsCategoryRoot>
-          <Ancestors>
-            <BrowseNode>
-              <BrowseNodeId>1267877011</BrowseNodeId>
-            </BrowseNode>
-          </Ancestors>
-        </BrowseNode>
-      </Ancestors>
-    </BrowseNode>
-    <BrowseNode>
-      <BrowseNodeId>1294449011</BrowseNodeId>
-      <Name>Books</Name>
-      <Ancestors>
-        <BrowseNode>
-          <BrowseNodeId>1267878011</BrowseNodeId>
-          <Name>Products</Name>
-          <IsCategoryRoot>1</IsCategoryRoot>
-          <Ancestors>
-            <BrowseNode>
-              <BrowseNodeId>1267877011</BrowseNodeId>
-            </BrowseNode>
-          </Ancestors>
-        </BrowseNode>
-      </Ancestors>
-    </BrowseNode>
-  </BrowseNodes>
-</Item>
+<?xml version='1.0' encoding='UTF-8'?>
+<findHalfItemsResponse xmlns=\"http://www.ebay.com/marketplace/half/v1/services\"><ack>Success</ack><version>1.3.0
+</version><timestamp>2014-07-24T04:49:43.439Z</timestamp><paginationOutput>
+<pageNumber>1</pageNumber>
+<entriesPerPage>5</entriesPerPage>
+<totalEntries>5</totalEntries>
+<totalPages>1</totalPages>
+</paginationOutput><product>
+<title>Teaching Mathematics to Children by Robert J. Sovchik (1997, Paperback)</title>
+<detailsURL>
+  http://product.half.ebay.com/Teaching-Mathematics-to-Children-by-Robert-J-Sovchik-1997-Paperback_W0QQprZ32535QQtgZinfo
+</detailsURL>
+<productID type=\"Reference\">32535
+</productID><productID type=\"ISBN\">9780065023572</productID><productID
+type=\"ISBN\">0065023579</productID><itemSpecifics>
+<nameValueList>
+  <name>Author</name>
+  <value>Robert J. Sovchik</value>
+</nameValueList>
+</itemSpecifics><item>
+<itemID>344359735725</itemID>
+<itemURL>
+  http://product.half.ebay.com/Teaching-Mathematics-to-Children-by-Robert-J-Sovchik-1997-Paperback-Robert-J-Sovchik-1997_W0QQprZ32535QQtgZvidetailsQQitemZ344359735725
+</itemURL>
+<quantity>1</quantity>
+<seller>
+  <userID>alibris_books_09</userID>
+  <feedbackScore>51322</feedbackScore>
+  <positiveFeedbackPercent>96.7</positiveFeedbackPercent>
+</seller>
+<price currencyId=\"$\">55.35
+</price><shippingService>
+<type>ShippingMethodStandard</type>
+<cost>3.49</cost>
+<expeditedService>false</expeditedService>
+</shippingService><itemLocation>Multiple</itemLocation><excludedShippingAreas></excludedShippingAreas><condition>
+BrandNew
+</condition><comments>Softcover 2nd Edition New Condition Brand New in shrinkwrap Quantity Available: 1....
+</comments><description></description><storefront>
+<storeURL>http://shops.half.ebay.com/alibris-books-09_W0QQsellerZalibris_books_09</storeURL>
+<storeName>alibris_books_09</storeName>
+</storefront></item><item>
+<itemID>342992133144</itemID>
+<itemURL>
+  http://product.half.ebay.com/Teaching-Mathematics-to-Children-by-Robert-J-Sovchik-1997-Paperback-Robert-J-Sovchik-Trade-Paper-1997_W0QQprZ32535QQtgZvidetailsQQitemZ342992133144
+</itemURL>
+<quantity>2</quantity>
+<seller>
+  <userID>labsbooks11</userID>
+  <feedbackScore>13899</feedbackScore>
+  <positiveFeedbackPercent>94.4</positiveFeedbackPercent>
+</seller>
+<price currencyId=\"$\">61.26
+</price><shippingService>
+<type>ShippingMethodStandard</type>
+<cost>3.49</cost>
+<expeditedService>false</expeditedService>
+</shippingService><itemLocation>Multiple</itemLocation><excludedShippingAreas></excludedShippingAreas><condition>
+BrandNew
+</condition><comments>Great customer service. Brand New .</comments><description></description><storefront>
+<storeURL>http://shops.half.ebay.com/labsbooks11_W0QQsellerZlabsbooks11</storeURL>
+<storeName>labsbooks11</storeName>
+</storefront></item><item>
+<itemID>343823090017</itemID>
+<itemURL>
+  http://product.half.ebay.com/Teaching-Mathematics-to-Children-by-Robert-J-Sovchik-1997-Paperback-Robert-J-Sovchik-1997_W0QQprZ32535QQtgZvidetailsQQitemZ343823090017
+</itemURL>
+<quantity>1</quantity>
+<seller>
+  <userID>extremelyreliable</userID>
+  <feedbackScore>12821</feedbackScore>
+  <positiveFeedbackPercent>97.7</positiveFeedbackPercent>
+</seller>
+<price currencyId=\"$\">69.14
+</price><shippingService>
+<type>ShippingMethodStandard</type>
+<cost>3.49</cost>
+<expeditedService>false</expeditedService>
+</shippingService><itemLocation>Multiple</itemLocation><excludedShippingAreas></excludedShippingAreas><condition>
+BrandNew
+</condition><comments>Buy with confidence. Excellent Customer Service &amp; Return policy. Ships Fast. Expe...
+</comments><description></description><storefront>
+<storeURL>http://shops.half.ebay.com/extremelyreliable_W0QQsellerZextremelyreliable</storeURL>
+<storeName>extremelyreliable</storeName>
+</storefront></item><item>
+<itemID>343450468931</itemID>
+<itemURL>
+  http://product.half.ebay.com/Teaching-Mathematics-to-Children-by-Robert-J-Sovchik-1997-Paperback-Robert-J-Sovchik-1997_W0QQprZ32535QQtgZvidetailsQQitemZ343450468931
+</itemURL>
+<quantity>1</quantity>
+<seller>
+  <userID>purpleglen70</userID>
+  <feedbackScore>10725</feedbackScore>
+  <positiveFeedbackPercent>99.6</positiveFeedbackPercent>
+</seller>
+<price currencyId=\"$\">69.9
+</price><shippingService>
+<type>ShippingMethodStandard</type>
+<cost>3.49</cost>
+<expeditedService>false</expeditedService>
+</shippingService><itemLocation>Multiple</itemLocation><excludedShippingAreas></excludedShippingAreas><condition>
+BrandNew
+</condition><comments>New Book. Fast shipping</comments><description></description><storefront>
+<storeURL>http://shops.half.ebay.com/purpleglen70_W0QQsellerZpurpleglen70</storeURL>
+<storeName>purpleglen70</storeName>
+</storefront></item><item>
+<itemID>344362889529</itemID>
+<itemURL>
+  http://product.half.ebay.com/Teaching-Mathematics-to-Children-by-Robert-J-Sovchik-1997-Paperback-Robert-J-Sovchik-1997_W0QQprZ32535QQtgZvidetailsQQitemZ344362889529
+</itemURL>
+<quantity>2</quantity>
+<seller>
+  <userID>alibris_books_03</userID>
+  <feedbackScore>16696</feedbackScore>
+  <positiveFeedbackPercent>97.8</positiveFeedbackPercent>
+</seller>
+<price currencyId=\"$\">136.04
+</price><shippingService>
+<type>ShippingMethodStandard</type>
+<cost>3.49</cost>
+<expeditedService>false</expeditedService>
+</shippingService><itemLocation>Multiple</itemLocation><excludedShippingAreas></excludedShippingAreas><condition>
+BrandNew
+</condition><comments>Softcover New Great customer service. You will be happy!
+</comments><description></description><storefront>
+<storeURL>http://shops.half.ebay.com/alibris-books-03_W0QQsellerZalibris_books_03</storeURL>
+<storeName>alibris_books_03</storeName>
+</storefront></item><listPrice currencyId=\"$\">0.0</listPrice><reviewCount>0
+</reviewCount></product></findHalfItemsResponse>

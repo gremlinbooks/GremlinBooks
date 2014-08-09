@@ -143,9 +143,9 @@
                             <% end %>
                             <td><%= item[:notes] %></td>
                             <% if item[:rent] %>
-                                <td><%= link_to "Rent", {:controller => "search", :action => "buy", :buy_link => item[:rent_link], :user => current_user, :isbn => key, :item_cost => item[:price], :vendor => item[:vendor], :sub_domain => request.subdomain}, :target => "_blank" %></td>
+                                <td><a href="<%= item[:rent_link] %>" target="_blank">Rent</a> </td>
                             <% else %>
-                                <td><%= link_to "Buy", {:controller => "search", :action => "buy", :buy_link => item[:buy_link], :user => current_user, :isbn => key, :item_cost => item[:price], :vendor => item[:vendor], :sub_domain => request.subdomain}, :target => "_blank" %></td>
+                                <td><a href="<%= item[:buy_link] %>" target="_blank">Rent</a> </td>
                             <% end %>
                             <td style="text-align: center; color: green">
                               <% if item[:best_offer] %>
