@@ -15,6 +15,7 @@ gem 'daemons'
 gem 'crack'
 gem 'safe_yaml', '~> 0.9.5'
 gem 'jquery-rails'
+gem 'url_escape'
 
 group :development, :test do
   gem 'rack-mini-profiler'
