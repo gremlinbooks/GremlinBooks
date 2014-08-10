@@ -410,7 +410,7 @@ class VendorSearch
     if book_renter_response
 
       # create the url for a user buy click
-      cart_url = book_renter_response["response"]["book"]["add_to_cart_url"]
+      cart_url = URI.encode(book_renter_response["response"]["book"]["add_to_cart_url"])
       buy_url = "http://www.jdoqocy.com/click-#{@cj_website_id}-10737829?url=" + cart_url
 
 
@@ -426,10 +426,10 @@ class VendorSearch
                         :cart => true,
                         :buy => false,
                         :rent => true,
-                        :cart_link => URI.encode(book_renter_response["response"]["book"]["add_to_cart_url"]),
+                        :cart_link => cart_url,
                         :buy_link => "",
                         :condition => "Rental",
-                        :rent_link => URI.encode(buy_url.sub('RENTAL_PERIOD', item["days"].to_s)),
+                        :rent_link => buy_url.sub('RENTAL_PERIOD', item["days"].to_s),
                         :shipping => 0,
                         :total_cost => item["rental_price"].sub('$', '').to_f,
                         :notes => item["term"] + ' ' + item["days"],
@@ -443,8 +443,8 @@ class VendorSearch
                           :cart => true,
                           :buy => true,
                           :rent => false,
-                          :cart_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
-                          :buy_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
+                          :cart_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                          :buy_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
                           :condition => item["condition"],
                           :rent_link => "",
                           :shipping => 0,
@@ -463,8 +463,8 @@ class VendorSearch
                     :cart => true,
                     :buy => true,
                     :rent => false,
-                    :cart_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
-                    :buy_link => URI.encode(buy_url.sub('RENTAL_PERIOD', 90.to_s)),
+                    :cart_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
+                    :buy_link => buy_url.sub('RENTAL_PERIOD', 90.to_s),
                     :condition => "Unknown",
                     :rent_link => "",
                     :shipping => 0,
