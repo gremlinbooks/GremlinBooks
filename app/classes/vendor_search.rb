@@ -11,8 +11,8 @@ class VendorSearch
     @cj_website_id = params[:cj_website_id]
     @cj_auth_key = params[:cj_auth_key]
     @cj_base_url = params[:cj_base_url]
-    @bookrenter_base_url = params[:bookrenter_base_url]
-    @bookrenter_developer_key = params[:bookrenter_developer_key]
+    #@bookrenter_base_url = params[:bookrenter_base_url]
+    #@bookrenter_developer_key = params[:bookrenter_developer_key]
     @chegg_base_url = params[:chegg_base_url]
     @chegg_password = params[:chegg_password]
     @chegg_key = params[:chegg_key]
@@ -27,8 +27,9 @@ class VendorSearch
     cj_results = get_cj_results(search_text, current_user)
     chegg_results = get_chegg_results(search_text, current_user)
     book_byte_results = get_book_byte_results(search_text, current_user)
-    book_renter_results = get_book_renter_results(search_text, current_user)
-    all_results = (amazon_results + book_byte_results + book_renter_results + chegg_results + cj_results).sort_by { |hsh| hsh[:total_cost] }
+    # book_renter_results = get_book_renter_results(search_text, current_user)
+    all_results = (amazon_results + book_byte_results + chegg_results + cj_results).sort_by { |hsh| hsh[:total_cost] }
+    # all_results = (amazon_results + book_byte_results + book_renter_results + chegg_results + cj_results).sort_by { |hsh| hsh[:total_cost] }
     determine_best_offer(all_results)
   end
 
@@ -165,7 +166,7 @@ class VendorSearch
                                        :timeout => 100, # milliseconds
                                        :params => {:'website-id' => @cj_website_id,
                                                    :isbn => search_text,
-                                                   :'advertiser-ids' => '1087150,1845757,520129,3812999,4020873,904879,2544507,4069992',
+                                                   :'advertiser-ids' => '1087150,1845757,520129,3812999,4020873,904879,2544507,4069992,4258829,1427863,2842866,904879,3804526,4281592,3812999,4022901,422902,4020873,3745578,3929865',
                                                    :'serviceable-area' => 'US'})
 
     hydra = Typhoeus::Hydra.new
@@ -380,15 +381,15 @@ class VendorSearch
 
     results
   end
-
+=begin
   def get_book_renter_results(search_text, current_user)
     require 'typhoeus'
     require 'tracker.rb'
 
     tracker = Tracker.new()
-    tracker.track_vendor_search(search_text, current_user, 'Book Renter', @sub_domain)
+   tracker.track_vendor_search(search_text, current_user, 'Book Renter', @sub_domain)
 
-    results = Array.new
+   results = Array.new
 
     book_renter_request = Typhoeus::Request.new(@bookrenter_base_url,
                                                 :body => "Gremlin Books",
@@ -411,7 +412,7 @@ class VendorSearch
 
       # create the url for a user buy click
       cart_url = book_renter_response["response"]["book"]["add_to_cart_url"]
-      buy_url = "http://www.jdoqocy.com/click-#{@cj_website_id}-10737829?url="
+	  buy_url = "http://www.jdoqocy.com/click-#{@cj_website_id}-10737829?url="
 
       # book renter response is kind of jacked
       # first check if there is anything in the prices collection
@@ -477,7 +478,7 @@ class VendorSearch
 
     results
   end
-
+=end
 
 
 end

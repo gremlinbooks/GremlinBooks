@@ -1,0 +1,10 @@
+Rails.application.config.assets.precompile += %w( bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( bootstrap-responsive.min.css )
+Rails.application.config.assets.precompile += %w( font-awesome.min )
+Rails.application.config.assets.precompile += %w( bootswatch.css )
+Rails.application.config.assets.precompile += %w( modernizer.js )
+Rails.application.config.assets.precompile += %w( bootstrap.min.js )
+Rails.application.config.assets.precompile += %w( app.js )
+Rails.application.config.assets.precompile += %w( bootswatch.js )
+Rails.application.config.assets.precompile += %w( application.js )
+

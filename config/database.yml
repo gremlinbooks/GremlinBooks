@@ -2,23 +2,32 @@ development:
   adapter: postgresql
   encoding: unicode
   database: GremlinBooks_development
+  host: 127.0.0.1
+  port: 5432
   pool: 5
   username: postgres
-  password: abc123
+  password: 37027tn
+ 
 
 test:
   adapter: postgresql
   encoding: unicode
   database: GremlinBooks_test
+  host: 127.0.0.1
+  port: 5432
   pool: 5
   username: postgres
-  password: abc123
+  password: 37027tn
+
 
 production:
   adapter: postgresql
   encoding: unicode
   database: GremlinBooks_production
+  host: 127.0.0.1
+  port: 5432
   pool: 5
   username: postgres
-  password: abc123
+  password: 37027tn
+  
 

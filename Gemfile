@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '4.2.2'
 gem 'pg'
 gem 'amazon-ecs'
 gem 'thin'
@@ -13,20 +13,23 @@ gem 'memcachier'
 gem 'delayed_job_active_record'
 gem 'daemons'
 gem 'crack'
-gem 'safe_yaml', '~> 0.9.5'
+gem 'safe_yaml' #, '~> 0.9.5'
 gem 'jquery-rails'
 gem 'url_escape'
+gem 'unicorn'
+gem 'protected_attributes'
 
 group :development, :test do
   gem 'rack-mini-profiler'
-  gem 'debugger'
+  #gem 'debugger'
+  gem 'web-console', '~> 2.0' 
 end
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'   #'~> 3.2.3'
+  gem 'coffee-rails' #'~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
