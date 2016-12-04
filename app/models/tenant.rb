@@ -1,5 +1,5 @@
 class Tenant < ActiveRecord::Base
-
+	
   attr_accessible :sub_domain,
                   :amazon_access_key,
                   :amazon_associate_tag,

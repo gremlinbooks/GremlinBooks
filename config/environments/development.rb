@@ -7,19 +7,18 @@ GremlinBooks::Application.configure do
   config.cache_classes = false
 
   # Log error messages when you accidentally call methods on nil.
-  #config.whiny_nils = true  ##removed because of update to 4.2
+  config.whiny_nils = true  ##Should this be removed because of update to 4.2
   
   config.eager_load = false #added because of update to rails 4.2
   
-  config.active_record.migration_error = :page_load #added because of update to rails 4.2
+  ###config.active_record.migration_error = :page_load #added because of update to rails 4.2
   
   # Show full error reports and disable caching
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
   # config.cache_store = :dalli_store
-  #config.cache_store = :dalli_store => config.cache_store = :mem_cache_store #added because of update to rails 4.2
-
+  
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
 
@@ -27,7 +26,7 @@ GremlinBooks::Application.configure do
   config.active_support.deprecation = :log
 
   # Only use best-standards-support built into browsers
-  #config.action_dispatch.best_standards_support = :builtin ##removed because of update to 4.2
+  config.action_dispatch.best_standards_support = :builtin ##Should this be removed because of update to 4.2
 
   # Raise exception on mass assignment protection for Active Record models
   # config.active_record.mass_assignment_sanitizer = :strict # commented out per update to 4.2.2--11-30-2016

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.2.6'
 gem 'rails', '4.2.2'
 gem 'pg'
 gem 'amazon-ecs'
