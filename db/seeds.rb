@@ -36,7 +36,7 @@ Tenant.create(sub_domain: 'aoii',
 
 #Gremlin
 Tenant.create(sub_domain: 'www',
-    logo: 'GB_Christmas.png',
+    logo: 'Gremlin.png',
     color: 'Default',
     title: 'Gremlin Books',
     amazon_access_key: 'AKIAJGEEG4RCTCF2DCHQ',
