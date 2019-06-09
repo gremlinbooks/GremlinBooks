@@ -1,5 +1,5 @@
-class Contact < ActiveRecord::Base
-  attr_accessible :comments, :email, :name
+class Contact < ApplicationRecord
+  #attr_accessible :comments, :email, :name
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -11,5 +11,6 @@ class Contact < ActiveRecord::Base
 
   validates :comments,  :presence => true,
             :length => { :maximum => 200 }
+
 
 end

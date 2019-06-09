@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.4.1'
-gem 'rails', '4.2.2'
+gem 'rails', '=5.1.7'
 gem 'pg'
 gem 'amazon-ecs'
 gem 'thin'
@@ -18,7 +18,7 @@ gem 'safe_yaml' #, '~> 0.9.5'
 gem 'jquery-rails'
 gem 'url_escape'
 gem 'unicorn'
-gem 'protected_attributes'
+#gem 'protected_attributes'
 
 group :development, :test do
   gem 'rack-mini-profiler'
