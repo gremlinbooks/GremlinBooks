@@ -60,6 +60,6 @@ module GremlinBooks
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    ActiveSupport.halt_callback_chains_on_return_false = false
+    #ActiveSupport.halt_callback_chains_on_return_false = false
   end
 end

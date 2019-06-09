@@ -5,7 +5,7 @@ class ContactMailer < ActionMailer::Base
     @email = contact[:email]
     @comment = contact[:comments]
 
-    mail(:from => @email, :to => "cnowotny@gremlinbooks.com, djarmoluk@gmail.com", :subject => "Gremlin Books - Contact Form Submitted")
+    mail(:from => @email, :to => "cnowotny@gremlinbooks.com, craig.nowotny@gmail.com", :subject => "Gremlin Books - Contact Form Submitted")
   end
 
 end
