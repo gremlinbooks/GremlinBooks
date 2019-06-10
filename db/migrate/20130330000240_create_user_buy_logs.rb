@@ -1,4 +1,4 @@
-class CreateUserBuyLogs < ActiveRecord::Migration[5.1.7]
+class CreateUserBuyLogs < ActiveRecord::Migration[5.1]
   def change
     create_table :user_buy_logs do |t|
       t.string :user

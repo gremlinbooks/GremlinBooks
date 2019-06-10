@@ -1,4 +1,4 @@
-class CreateSearchLogs < ActiveRecord::Migration[5.1.7]
+class CreateSearchLogs < ActiveRecord::Migration[5.1]
   def change
     create_table :search_logs do |t|
       t.string :search_term
