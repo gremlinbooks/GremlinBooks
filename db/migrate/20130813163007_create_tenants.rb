@@ -1,4 +1,4 @@
-class CreateTenants < ActiveRecord::Migration
+class CreateTenants < ActiveRecord::Migration[5.1.7]
   def change
     create_table :tenants do |t|
       t.string :amazon_access_key

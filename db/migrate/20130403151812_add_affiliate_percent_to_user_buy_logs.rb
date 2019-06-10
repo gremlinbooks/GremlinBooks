@@ -1,4 +1,4 @@
-class AddAffiliatePercentToUserBuyLogs < ActiveRecord::Migration
+class AddAffiliatePercentToUserBuyLogs < ActiveRecord::Migration[5.1.7]
   def change
     add_column :user_buy_logs, :affiliate_percent, :decimal
   end
